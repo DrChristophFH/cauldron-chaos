@@ -86,6 +86,10 @@ There are three types of properties:
     - Plastic
   - Gas
 
+##### Creating materials
+
+To define a material, `Create -> Cauldron Chaos -> Ingredient Material`. Place the material in the `Data` folder. You can select the parent of the material in the inspector. Children will be automatically added to the parent's properties.
+
 ### Ingredients
 
 Ingredients are defined by a set of properties and a name. 
@@ -95,6 +99,10 @@ Ingredients are defined by a set of properties and a name.
   - Characteristic: Red, Edible
   - Material
     - Organic 10
+
+#### Creating ingredients
+
+To declare an object (or prefab) as an ingredient, add the `Ingredient` component to it. Define the name of the ingredient and add `Part`s to it. `Part`s are the composition of the ingredient. For example, an apple could be composed of 10 units of organic material.
 
 ### Recipes
 
@@ -122,3 +130,6 @@ Each state has a set of transitions that will be taken once the cauldron has the
       - Water 5 (consumed)
     - Ingredient
       - 1x of "Magical" characteristic
+
+
+## 
