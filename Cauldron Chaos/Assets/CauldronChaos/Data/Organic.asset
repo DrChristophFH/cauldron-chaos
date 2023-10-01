@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02499b766d2a63f4e84ac5d5d089e66e, type: 3}
-  m_Name: Solid
+  m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
+  m_Name: Organic
   m_EditorClassIdentifier: 
-  nodeName: Solid
-  children:
-  - {fileID: 11400000, guid: b0983ba0c0811034ebaf968cfd46c724, type: 2}
+  ParentMaterial: {fileID: 11400000, guid: 09a94b5a3335d4349b765597beae387b, type: 2}
