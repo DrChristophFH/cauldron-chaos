@@ -5,6 +5,8 @@ This is a small VR game made for the Virtual Reality course at the University of
 - [Christoph Daxerer](https://github.com/DrChristophFH)
 - [Christopher Eberl]()
 
+CC by CD and CE 2023 aka CxCDE 23 lul
+
 ## Description
 
 Two or more players embark on a magical yet chaotic journey to master the strange art of potion crafting. One player takes the role of the apprentice, mixing and juggling the ingredients, while the other player takes the role of the master, who has the book of recipes and has to guide the apprentice through the process of creating the potion.
