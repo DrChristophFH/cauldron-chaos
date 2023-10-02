@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+using Valve.VR.InteractionSystem;
+
+[RequireComponent(typeof(Throwable))]
 public class Ingredient : MonoBehaviour {
   [SerializeField]
   private string ingredientName;

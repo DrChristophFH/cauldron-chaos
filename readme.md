@@ -132,4 +132,24 @@ Each state has a set of transitions that will be taken once the cauldron has the
       - 1x of "Magical" characteristic
 
 
-## 
+## TODO
+
+- [ ] Menu scene
+  - [ ] Start Button
+- [ ] Populate Level with ingredients
+- [ ] Create Cauldron State System
+  - [ ] Visual Feedback: Entry, During (Exit uniform?)
+  - [ ] Audio Feedback: Entry, During
+  - [ ] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.)
+- [ ] Fully create all materials
+  - [ ] Hierarchy
+- [ ] Configure Ingredient stats
+  - [ ] Balance
+- [ ] Build States and Transitions
+- [ ] Add sound effects (music, ingredient into cauldron)
+- [ ] Add physics interactions to world objects 
+  - [ ] doors (circular drive or joints)
+  - [ ] drawers (linear drives)
+  - [ ] potions from ceiling(joints?)
+- [ ] Create small task system
+- [ ] Create Player 2 Book
