@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 2737513841638154667}
   - component: {fileID: 1320189935885594126}
   - component: {fileID: 3870481631153314500}
-  - component: {fileID: 3360461205457987349}
   - component: {fileID: -4109055510405176372}
   - component: {fileID: 5406708878319906650}
   - component: {fileID: 1295015500922929215}
   - component: {fileID: 5481498384630553581}
+  - component: {fileID: -4029499611076155649}
   m_Layer: 0
   m_Name: Topaz
   m_TagString: Untagged
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3360461205457987349
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3365960206293859089}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020294283, y: 0.06206991, z: 0.049328722}
-  m_Center: {x: -0.000011999626, y: 0.007367337, z: -0.00010670815}
 --- !u!114 &-4109055510405176372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +235,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &-4029499611076155649
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365960206293859089}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7266199458682237215, guid: 258b1198d7ea18848a63c8d1c5a0eee3, type: 3}

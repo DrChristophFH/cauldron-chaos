@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5597801312000988278}
   - component: {fileID: 8791230121773620179}
   - component: {fileID: 6765618843979558681}
-  - component: {fileID: 1394843651071022288}
   - component: {fileID: 10574114849289236}
   - component: {fileID: 7166391117343826719}
   - component: {fileID: -3484003838852744917}
   - component: {fileID: 699071417224756429}
+  - component: {fileID: 6610311388222102346}
   m_Layer: 0
   m_Name: Iron Bar
   m_TagString: Untagged
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1394843651071022288
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.084980324, y: 0.059898943, z: 0.22914352}
-  m_Center: {x: 0, y: 0.029949486, z: 0}
 --- !u!114 &10574114849289236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +235,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &6610311388222102346
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5108403651076460236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5999150836873101527, guid: 0948094890e6c8446a54d0cd3312fc33, type: 3}

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5700232947087132808}
   - component: {fileID: -722445505794012418}
   - component: {fileID: 7839351037338542938}
+  - component: {fileID: -7803532433828705715}
   m_Layer: 0
   m_Name: Calculator
   m_TagString: Untagged
@@ -234,3 +235,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &-7803532433828705715
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463368340771084}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 84e1b3127ad7e447088a94c9996a9ce5, type: 3}

@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 2474852456159997294}
   - component: {fileID: 1582921428664345291}
   - component: {fileID: 3608331007481386497}
-  - component: {fileID: 2725460966917933699}
-  - component: {fileID: 8757476233098679365}
   - component: {fileID: -7043667322736855331}
   - component: {fileID: 8919354233751670598}
   - component: {fileID: -653056622707909714}
   - component: {fileID: 2574121014633626236}
+  - component: {fileID: 4610439207568546198}
   m_Layer: 0
   m_Name: Galaxy Dust
   m_TagString: Untagged
@@ -90,48 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2725460966917933699
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2959887083484428244}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.20615673, y: 0.14544481, z: 0.19086894}
-  m_Center: {x: 0, y: 0.072722435, z: 0}
---- !u!65 &8757476233098679365
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2959887083484428244}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.20615673, y: 0.14544481, z: 0.19086894}
-  m_Center: {x: 0, y: 0.072722435, z: 0}
 --- !u!114 &-7043667322736855331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +236,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &4610439207568546198
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959887083484428244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4185115140104149712, guid: 98ab3dc7b75d49847a83b9e11d692635, type: 3}
 --- !u!1001 &125550294734396613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347,7 +326,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: AWS_Powder_011
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4234096213763062696, guid: c6c06a48e13317a478d8cc03d284023e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

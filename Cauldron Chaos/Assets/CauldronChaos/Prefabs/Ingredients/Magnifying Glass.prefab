@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 7840497066229305995}
   - component: {fileID: 6584492587247738158}
   - component: {fileID: 8972338511978490340}
-  - component: {fileID: 1670280339781729721}
   - component: {fileID: 8002961198041494238}
   - component: {fileID: 5605928690581900915}
   - component: {fileID: -442200494975108368}
   - component: {fileID: 2891523787429290001}
+  - component: {fileID: -6478860098943652929}
   m_Layer: 0
   m_Name: Magnifying Glass
   m_TagString: Untagged
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1670280339781729721
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7459326743428941873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.033892673, y: 0.2479038, z: 0.13859528}
-  m_Center: {x: -0.0003572926, y: 0.12395188, z: -0.000056765974}
 --- !u!114 &8002961198041494238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +235,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &-6478860098943652929
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7459326743428941873}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6512269051683702330, guid: 54fa5669bbff2fa499b5d7effd8b1068, type: 3}

@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 6151731158980801936}
   - component: {fileID: 7129353722618952245}
   - component: {fileID: 4977737877558349567}
-  - component: {fileID: 5968940317976416893}
-  - component: {fileID: 1049314434380336315}
   - component: {fileID: -5934018656817117501}
   - component: {fileID: 3848718331214067327}
   - component: {fileID: -7479615531703915223}
   - component: {fileID: 2765103875342988649}
+  - component: {fileID: 8304914159676266771}
   m_Layer: 0
   m_Name: Bag of Dirt
   m_TagString: Untagged
@@ -90,48 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5968940317976416893
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779190990653681450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.20615673, y: 0.14544481, z: 0.19086894}
-  m_Center: {x: 0, y: 0.072722435, z: 0}
---- !u!65 &1049314434380336315
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779190990653681450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.20615673, y: 0.14544481, z: 0.19086894}
-  m_Center: {x: 0, y: 0.072722435, z: 0}
 --- !u!114 &-5934018656817117501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +236,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &8304914159676266771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779190990653681450}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4185115140104149712, guid: 98ab3dc7b75d49847a83b9e11d692635, type: 3}
 --- !u!1001 &2169640063861683898
 PrefabInstance:
   m_ObjectHideFlags: 0

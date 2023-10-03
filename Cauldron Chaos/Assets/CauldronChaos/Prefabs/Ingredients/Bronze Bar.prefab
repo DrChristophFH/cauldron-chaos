@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 7338477349792767100}
   - component: {fileID: 5942598464858411993}
   - component: {fileID: 8474840568386168595}
-  - component: {fileID: 2134502570224758665}
   - component: {fileID: -4779870073611507198}
   - component: {fileID: 7408224072095669374}
   - component: {fileID: -1000588984240026490}
   - component: {fileID: -7565521237019690179}
+  - component: {fileID: 32896907284613825}
   m_Layer: 0
   m_Name: Bronze Bar
   m_TagString: Untagged
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2134502570224758665
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7970336598268413638}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.08498033, y: 0.059898943, z: 0.22914352}
-  m_Center: {x: 0, y: 0.029949486, z: 0}
 --- !u!114 &-4779870073611507198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +235,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts: []
+--- !u!64 &32896907284613825
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970336598268413638}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7196335917324490918, guid: 2ebf3d20a3295ad43a68f6094c6c7613, type: 3}

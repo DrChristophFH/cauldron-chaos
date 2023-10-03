@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 185463623280831558}
   - component: {fileID: 3836290333346767843}
   - component: {fileID: 1358339905045321513}
-  - component: {fileID: 230096764786135788}
   - component: {fileID: 8251737320243818623}
   - component: {fileID: -6850741252407535793}
   - component: {fileID: 7665704576603262405}
   - component: {fileID: -3863043827394285877}
+  - component: {fileID: -8366343982889821991}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &230096764786135788
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709658349651195644}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.024093648, y: 0.068697274, z: 0.05320749}
-  m_Center: {x: 0, y: 0.034348607, z: 0}
 --- !u!114 &8251737320243818623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +237,25 @@ MonoBehaviour:
   parts:
   - Material: {fileID: 11400000, guid: aaf3fb1c5c955a349a25eebfab542122, type: 2}
     Amount: 20
+--- !u!64 &-8366343982889821991
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709658349651195644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2170832236048312541, guid: 151f231590079f440815e1fb3713ba30, type: 3}
