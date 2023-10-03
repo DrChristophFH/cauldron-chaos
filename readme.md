@@ -134,22 +134,27 @@ Each state has a set of transitions that will be taken once the cauldron has the
 
 ## TODO
 
-- [ ] Menu scene
-  - [ ] Start Button
-- [ ] Populate Level with ingredients
-- [ ] Create Cauldron State System
-  - [ ] Visual Feedback: Entry, During (Exit uniform?)
-  - [ ] Audio Feedback: Entry, During
-  - [ ] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.)
-- [ ] Fully create all materials
-  - [ ] Hierarchy
-- [ ] Configure Ingredient stats
+--- Technical ---
+- [ ] Menu scene          CE
+  - [ ] Start Button      CE
+- [x] Create Cauldron State System
+  - [ ] Visual Feedback: Entry, During (Exit uniform?) CD
+  - [ ] Audio Feedback: Entry, During    CD
+  - [ ] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.) CD
+- [ ] Add sound effects (music, ingredient into cauldron) CD
+- [ ] Create small task system ??
+
+--- Gameplay ---
+- [ ] Populate Level with ingredients CD/CE
+- [ ] Fully create all materials   CE
+  - [ ] Hierarchy                  CE
+- [ ] Configure Ingredient stats   CD/CE
   - [ ] Balance
-- [ ] Build States and Transitions
-- [ ] Add sound effects (music, ingredient into cauldron)
+- [ ] Build States and Transitions 
+- [ ] Create Player 2 Book
+
+--- Polish ---
 - [ ] Add physics interactions to world objects 
   - [ ] doors (circular drive or joints)
   - [ ] drawers (linear drives)
   - [ ] potions from ceiling(joints?)
-- [ ] Create small task system
-- [ ] Create Player 2 Book
