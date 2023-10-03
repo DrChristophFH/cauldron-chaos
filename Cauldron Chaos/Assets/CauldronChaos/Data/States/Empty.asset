@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
+  m_Name: Empty
+  m_EditorClassIdentifier: 
+  transitions:
+  - destination: {fileID: 11400000, guid: c73a2b2761ca09e4a91e5a75351ca725, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
+      Amount: 15
+  - destination: {fileID: 11400000, guid: fe46476663570b547a4eef16535e49a9, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
+      Amount: 15
+  liquid: {fileID: 2100000, guid: ceb48f72b3325c74e95838fb760d0ab0, type: 2}
+  particles: {fileID: 0}
