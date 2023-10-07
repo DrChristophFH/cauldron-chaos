@@ -19,7 +19,7 @@ MonoBehaviour:
   StartSpeed: 0.05
   VelocityYMax: 0.6
   VelocityYMin: 0.5
-  StartColor: {r: 0.4672481, g: 0.5821804, b: 0.9433962, a: 1}
+  StartColor: {r: 0.9811321, g: 0.14618175, b: 0.06941971, a: 1}
   ColorOverLifetime:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}

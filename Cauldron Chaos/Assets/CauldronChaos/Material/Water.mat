@@ -63,6 +63,10 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
+    - _Bubble_Density: 3.7
+    - _Bubble_Spaceing: 0.44
+    - _Bubble_Speed: 1
+    - _Bubble_Strength: 0.94
     - _BumpScale: 1
     - _Circle_Size: 0.94
     - _Cutoff: 0.5
@@ -75,23 +79,27 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Ripple_Density: 7.9
-    - _Ripple_Slimness: 4.7
+    - _Ripple_Density: 0.09
+    - _Ripple_Slimness: 0.83
     - _Ripple_Speed: 1
+    - _Shades: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Wave_Height: 6.33
-    - _Wave_Speed: 0.22
-    - _Wave_Strength: 8
+    - _Wave_Height: 2.51
+    - _Wave_Rotation: 180
+    - _Wave_Speed: 0.05
+    - _Wave_Strength: 5.81
     - _ZWrite: 1
     m_Colors:
-    - _Base_Color: {r: 0.43921566, g: 0.7101176, b: 1, a: 0}
+    - _Base_Color: {r: 0.10506439, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 0.4269313, g: 0.5699431, b: 0.735849, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Ripple_Color: {r: 0.23113209, g: 1, b: 0.97522587, a: 0}
+    - _Ripple_Color: {r: 1, g: 0.61149544, b: 0, a: 1}
+    - _Stylize_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Top_Color: {r: 0, g: 0, b: 0, a: 1}
     - _Wave_Direction: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3046170692740647167
