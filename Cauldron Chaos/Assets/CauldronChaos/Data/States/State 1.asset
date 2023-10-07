@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitions: []
   liquid: {fileID: 0}
-  particles: {fileID: 0}
+  smokeConfig: {fileID: 11400000, guid: 2eb692305bf7c794c95ba54a6df6e282, type: 2}

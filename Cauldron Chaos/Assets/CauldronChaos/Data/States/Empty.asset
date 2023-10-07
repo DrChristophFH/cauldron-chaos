@@ -22,4 +22,4 @@ MonoBehaviour:
     - Material: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
       Amount: 15
   liquid: {fileID: 2100000, guid: ceb48f72b3325c74e95838fb760d0ab0, type: 2}
-  particles: {fileID: 0}
+  smokeConfig: {fileID: 11400000, guid: 889e5849b87cb424a8020bb690fed93d, type: 2}
