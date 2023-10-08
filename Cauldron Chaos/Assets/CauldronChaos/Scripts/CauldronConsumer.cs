@@ -8,13 +8,16 @@ public class CauldronConsumer : MonoBehaviour {
 
   private void OnTriggerEnter(Collider other) {
     if (other.TryGetComponent(out Ingredient ingredient)) {
-      foreach (Part part in ingredient.Parts) {
-        Debug.Log($" - Adding {part.Amount} {part.Material.name} to cauldron from {ingredient.Name}");
-        cauldron.AddPart(part);
-        Destroy(other.gameObject);
+      AddIngredients(ingredient);
+      Instantiate(dropParticles, other.transform.position, Quaternion.identity);
+      Destroy(other.gameObject);
+    }
+  }
 
-        Instantiate(dropParticles, other.transform.position, Quaternion.identity);
-      }
+  private void AddIngredients(Ingredient ingredient) {
+    foreach (Part part in ingredient.Parts) {
+      Debug.Log($" - Adding {part.Amount} {part.Material.name} to cauldron from {ingredient.Name}");
+      cauldron.AddPart(part);
     }
   }
 }
