@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1021826422970944747}
   - component: {fileID: 4143762605213057870}
   - component: {fileID: 2190277101982414724}
-  - component: {fileID: 6275758905170123359}
-  - component: {fileID: 7342662098398025582}
-  - component: {fileID: 1303065230263577873}
-  - component: {fileID: -7838575805953708047}
-  - component: {fileID: -4429055926901206710}
+  - component: {fileID: -6032441823500720320}
+  - component: {fileID: -7914402579030250110}
+  - component: {fileID: 5989939159962902138}
+  - component: {fileID: 238625297302066848}
+  - component: {fileID: -667155880854004366}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -88,28 +88,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6275758905170123359
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388876489497171537}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.10338468, y: 0.121037394, z: 0.108704925}
-  m_Center: {x: 0.00003996864, y: 0.007835953, z: 0.000018501654}
---- !u!114 &7342662098398025582
+--- !u!114 &-6032441823500720320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +140,7 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!54 &1303065230263577873
+--- !u!54 &-7914402579030250110
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,7 +167,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-7838575805953708047
+--- !u!114 &5989939159962902138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,7 +221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
---- !u!114 &-4429055926901206710
+--- !u!114 &238625297302066848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,3 +237,25 @@ MonoBehaviour:
   parts:
   - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
     Amount: 10
+--- !u!64 &-667155880854004366
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388876489497171537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -472147775963580301, guid: 12bf7c0de8c3b5b4bb67f4f585d5a093, type: 3}
