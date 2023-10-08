@@ -10,18 +10,28 @@ public class Cauldron : MonoBehaviour {
 
   [SerializeField]
   private CauldronState state;
-  
+
   [SerializeField]
   private ParticleSystem smokeParticles;
   [SerializeField]
   private Vector3 offset = new Vector3(0, 0.1f, 0);
 
+  [SerializeField]
+  private GameObject transitionParticles;
+
+  [SerializeField]
+  private GameObject content;
+
+  private Material liquid;
+
   public Dictionary<IngredientMaterial, int> Materials => materials;
 
   private void Start() {
+    liquid = content.GetComponent<Renderer>().material;
     // spawn in smoke particles
-    smokeParticles = Instantiate(smokeParticles, transform.position, Quaternion.identity);
+    smokeParticles = Instantiate(smokeParticles, transform.position + offset, Quaternion.identity);
     ApplySmokeConfig(state.SmokeConfig);
+    ApplyContentConfig(state.ContentConfig);
   }
 
   public void AddPart(Part part) {
@@ -42,7 +52,14 @@ public class Cauldron : MonoBehaviour {
   public void TransitionTo(CauldronState destination) {
     Debug.Log($"Transitioning from {state.name} to {destination.name}");
     state = destination;
+    PlayTransitionPuff();
     ApplySmokeConfig(destination.SmokeConfig);
+    ApplyContentConfig(destination.ContentConfig);
+  }
+
+  private void PlayTransitionPuff() {
+    var particles = Instantiate(transitionParticles, transform.position + offset, Quaternion.identity);
+    Destroy(particles, 5.0f);
   }
 
   private void ApplySmokeConfig(CauldronSmokeConfig config) {
@@ -71,5 +88,20 @@ public class Cauldron : MonoBehaviour {
       var renderer = smokeParticles.GetComponent<ParticleSystemRenderer>();
       renderer.mesh = config.Mesh;
     }
+  }
+
+  private void ApplyContentConfig(CauldronContentConfig config) {
+    liquid.SetColor("_Base_Color", config.BaseColor);
+    liquid.SetColor("_Top_Color", config.TopColor);
+    liquid.SetFloat("_Shades", config.Shades);
+    liquid.SetFloat("_Wave_Strength", config.WaveStrength);
+    liquid.SetFloat("_Wave_Height", config.WaveHeight);
+    liquid.SetFloat("_Wave_Speed", config.WaveSpeed);
+    liquid.SetFloat("_Wave_Rotation", config.WaveRotation);
+    liquid.SetFloat("_Bubble_Speed", config.BubbleSpeed);
+    liquid.SetFloat("_Bubble_Density", config.BubbleDensity);
+    liquid.SetFloat("_Bubble_Spacing", config.BubbleSpacing);
+    liquid.SetFloat("_Bubble_Strength", config.BubbleStrength);
+    liquid.SetFloat("_Circle_Size", config.CircleSize);
   }
 }

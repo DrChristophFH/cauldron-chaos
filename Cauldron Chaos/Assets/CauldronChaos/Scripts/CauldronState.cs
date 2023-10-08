@@ -8,12 +8,12 @@ public class CauldronState : ScriptableObject {
   [SerializeField]
   private List<CauldronTransition>  transitions = new();
   [SerializeField]
-  private Material liquid;
-  [SerializeField]
   private CauldronSmokeConfig smokeConfig;
+  [SerializeField]
+  private CauldronContentConfig contentConfig;
 
-  public Material Liquid => liquid;
   public CauldronSmokeConfig SmokeConfig => smokeConfig;
+  public CauldronContentConfig ContentConfig => contentConfig;
 
   public void CheckTransitions(Cauldron cauldron) {
     foreach (CauldronTransition transition in transitions) {

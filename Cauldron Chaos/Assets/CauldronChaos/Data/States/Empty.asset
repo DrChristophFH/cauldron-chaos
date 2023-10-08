@@ -21,5 +21,17 @@ MonoBehaviour:
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
       Amount: 15
-  liquid: {fileID: 2100000, guid: ceb48f72b3325c74e95838fb760d0ab0, type: 2}
   smokeConfig: {fileID: 11400000, guid: 889e5849b87cb424a8020bb690fed93d, type: 2}
+  contentConfig:
+    BaseColor: {r: 0.55602527, g: 0.65972257, b: 0.990566, a: 1}
+    TopColor: {r: 1, g: 1, b: 1, a: 1}
+    Shades: 3
+    WaveStrength: 5.8
+    WaveHeight: 2.5
+    WaveSpeed: 0.05
+    WaveRotation: 180
+    BubbleSpeed: 1
+    BubbleDensity: 3.7
+    BubbleSpacing: 0.45
+    BubbleStrength: 0.95
+    CircleSize: 0.94

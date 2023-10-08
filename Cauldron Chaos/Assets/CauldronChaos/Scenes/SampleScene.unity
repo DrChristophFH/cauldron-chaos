@@ -6352,7 +6352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cauldron: {fileID: 683025231}
-  dropParticles: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
+  dropParticles: {fileID: 8205706795460263314, guid: 501e88a802eb72843a9e523b04a8d2ef, type: 3}
 --- !u!1001 &522174795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8324,6 +8324,8 @@ MonoBehaviour:
   state: {fileID: 11400000, guid: 08e7d8c887b2c464cb5eb20834872f81, type: 2}
   smokeParticles: {fileID: 957358958818814529, guid: aec89c31d1b3c0a4ea1832dbf28a5c8c, type: 3}
   offset: {x: 0, y: 0.1, z: 0}
+  transitionParticles: {fileID: 957358958818814532, guid: 793d7761781f3dd419078de8064b5b45, type: 3}
+  content: {fileID: 1386045151}
 --- !u!1001 &695892386
 PrefabInstance:
   m_ObjectHideFlags: 0

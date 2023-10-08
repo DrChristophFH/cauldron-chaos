@@ -21,10 +21,13 @@ public class CauldronStateEditor : Editor
     // Show the editor for the SmokeConfig if it's not null
     if (smokeConfigProperty.objectReferenceValue != null)
     {
+      EditorGUILayout.Space();
+      EditorGUILayout.BeginFoldoutHeaderGroup(true, "Smoke Config");
       EditorGUI.indentLevel++;
       Editor smokeConfigEditor = CreateEditor(smokeConfigProperty.objectReferenceValue);
       smokeConfigEditor.OnInspectorGUI();
       EditorGUI.indentLevel--;
+      EditorGUILayout.EndFoldoutHeaderGroup();
     }
 
     serializedObject.ApplyModifiedProperties();
