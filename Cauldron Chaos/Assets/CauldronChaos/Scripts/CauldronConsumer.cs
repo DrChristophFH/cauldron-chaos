@@ -9,7 +9,8 @@ public class CauldronConsumer : MonoBehaviour {
   private void OnTriggerEnter(Collider other) {
     if (other.TryGetComponent(out Ingredient ingredient)) {
       AddIngredients(ingredient);
-      Instantiate(dropParticles, other.transform.position, Quaternion.identity);
+      var position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
+      Instantiate(dropParticles, position, Quaternion.identity);
       Destroy(other.gameObject);
     }
   }
