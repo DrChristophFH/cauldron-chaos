@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6496727219692933672}
   - component: {fileID: -3864205896783541894}
   - component: {fileID: 744882290955434048}
+  - component: {fileID: 8736377216787227839}
   m_Layer: 0
   m_Name: Bible
   m_TagString: Untagged
@@ -241,3 +242,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &8736377216787227839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871742554687684722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: 
+  parts: []
