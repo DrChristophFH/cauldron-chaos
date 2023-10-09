@@ -1,0 +1,296 @@
+digraph state_graph {
+  // Define the styles
+  graph [rankdir = TB; label = "Cauldron State Graph"; fontsize = 16; bgcolor = "#1F1F1F"; fontcolor = "#FFFFFF"; fontname = "Helvetica"; labelfontname = "Helvetica";];
+  node [shape = note; fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth=2.0;];
+  edge [fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth=2.0;];
+  
+  // -------------------- Materials --------------------
+  
+  /**
+   * Materials
+   * - Liquid
+   *   - Water
+   * - Solid
+   *   - Metal
+   *     - Iron
+   *     - lightgreen
+   *     - Silver
+   *     - Copper
+   *     - Fancy (Base for all other fancy metals if we want to add more)
+   *   - Organic
+   *     - Wood
+   *       - Paper
+   *     - Bone
+   *     - Flesh
+   *     - Leather
+   *   - Natural
+   *     - Stone
+   *     - Dirt
+   *     - Sand
+   *     - Clay
+   *     - Glass
+   *     - Gemstones
+   *     - Crystal
+   *   - Plastic
+   * - Gas
+   * - Magic Power
+   *   - Water Magic
+   *   - Fire Magic
+   *   - Earth Magic
+   *   - Wind Magic
+   */
+  
+  // -------------------- States --------------------
+  // Start State
+  EmptyCauldron;
+  
+  // Intermediate States
+  StimulatingSolution [color = red;];
+  VibrantTonic [color = red;];
+  
+  FourLeafFroth [color = lightgreen;];
+  FortuneFindingMix [color = lightgreen;];
+  
+  CondensingConcoction [color = teal;];
+  MinimizingMix [color = teal;];
+  
+  SoothingSyrup [color = darkblue;];
+  DrowsyDraught [color = darkblue;];
+  
+  ClarifyingCompound [color = blue;];
+  HonestyElixir [color = blue;];
+  
+  SimmeringBroth [color = purple;];
+  ClearBroth [color = purple;];
+  TranslucentTonic [color = purple;];
+  FadingFluid [color = purple;];
+  BarelyVisibleBrew [color = purple;];
+  NearlyInvisiblePotion [color = purple;];
+  
+  DandelionTea [color = grey;];
+  FloatingBubbles [color = grey;];
+  FizzyFoam [color = grey;];
+  LiftingLiquid [color = grey;];
+  LightweightElixir [color = grey;];
+  GravityDefyingDraught [color = grey;];
+  
+  ShimmeringSolution [color = lightblue;];
+  GlimmeringGlobs[color = lightblue;];
+  VaporizingVapors[color = lightblue;];
+  DisappearingDraught[color = lightblue;];
+  PhazingPotion[color = lightblue;];
+  CrossfadeConcoction[color = lightblue;];
+  
+  VitaminExtract [color = green;];
+  MuscleMassMixture [color = green;];
+  BulkingBrew [color = green;];
+  EnlargingElixir [color = green;];
+  ExpandingExtract [color = green;];
+  GrowthAccelerant [color = green;];
+  
+  SimmeringBroth [color = orange;];
+  BubblingBrimstone [color = orange;];
+  SearingAcidSolution [color = orange;];
+  FieryConcoction [color = orange;];
+  SmolderingPotion [color = orange;];
+  SmokeSpewingBrew [color = orange;];
+  
+  SimmeringBroth [color = bisque;];
+  StirringSolution [color = bisque;];
+  PlantExtractBase [color = bisque;];
+  ThickeningMixture [color = bisque;];
+  BubblingBrew [color = bisque;];
+  ViscousBlend [color = bisque;];
+  MorphingMud [color = bisque;];
+  TransformativeOoze [color = bisque;];
+  ShapeShiftingSludge [color = bisque;];
+  IdentifyingElixir [color = bisque;];
+  PersonalizingPotion [color = bisque;];
+  
+  NightshadeInfusion [color = black;];
+  ToxicBroth [color = black;];
+  SinisterSolution [color = black;];
+  WickedBrew [color = black;];
+  FatalBlend [color = black;];
+  LethalLiquid [color = black;];
+  SleepingSyrup [color = black;];
+  TranquilTonic [color = black;];
+  ComatoseConcoction [color = black;];
+  SuspendedAnimationSerum [color = black;];
+  NearDeathNostrum [color = black;];
+  
+  // End State
+  EnergyElixir [color = red;];
+  LuckSerum [color = lightgreen;];
+  ShrinkingPotion [color = teal;];
+  SleepingDraught [color = darkblue;];
+  TruthSerum [color = blue;];
+  InvisibilityPotion [color = purple;];
+  LevitationPotion [color = grey;];
+  TeleportationTincture [color = lightblue;];
+  GiantGrowthFormula [color = green;];
+  DragonsBreathBrew [color = orange;];
+  PolyjuicePotion [color = bisque;];
+  DraughtOfLivingDeath [color = black;];
+
+  // Inter Recipe States
+  DirtySoup [color = "#FFFFFF";];
+  
+  // -------------------- Potions --------------------
+  // difficulty depends on the intended path length
+  // length = 3 -> easy
+  // length = 3-5 -> medium
+  // length = 5+ -> hard
+  
+  // Energy Elixir
+  EmptyCauldron -> StimulatingSolution [color = red;];
+  StimulatingSolution -> VibrantTonic [color = red;];
+  VibrantTonic -> EnergyElixir [color = red;];
+  
+  // Luck Serum
+  EmptyCauldron -> FourLeafFroth [color = lightgreen;];
+  FourLeafFroth -> FortuneFindingMix [color = lightgreen;];
+  FortuneFindingMix -> LuckSerum [color = lightgreen;];
+  
+  // Shrinking Potion
+  EmptyCauldron -> CondensingConcoction [color = teal;];
+  CondensingConcoction -> MinimizingMix [color = teal;];
+  MinimizingMix -> ShrinkingPotion [color = teal;];
+  
+  // Sleeping Draught
+  EmptyCauldron -> SoothingSyrup [color = darkblue;];
+  SoothingSyrup -> DrowsyDraught [color = darkblue;];
+  DrowsyDraught -> SleepingDraught [color = darkblue;];
+  
+  // Truth Serum
+  EmptyCauldron -> ClarifyingCompound [color = blue;];
+  ClarifyingCompound -> HonestyElixir [color = blue;];
+  HonestyElixir -> TruthSerum [color = blue;];
+  
+  // Invisibility Potion
+  EmptyCauldron -> SimmeringBroth [color = purple;];
+  SimmeringBroth -> ClearBroth [color = purple;];
+  ClearBroth -> TranslucentTonic [color = purple;];
+  TranslucentTonic -> FadingFluid [color = purple;];
+  FadingFluid -> BarelyVisibleBrew [color = purple;];
+  BarelyVisibleBrew -> NearlyInvisiblePotion [color = purple;];
+  NearlyInvisiblePotion -> InvisibilityPotion [color = purple;];
+  
+  // Levitation Potion
+  EmptyCauldron -> DandelionTea [color = gray;];
+  DandelionTea -> FloatingBubbles [color = gray;];
+  FloatingBubbles -> FizzyFoam [color = gray;];
+  FizzyFoam -> LiftingLiquid [color = gray;];
+  LiftingLiquid -> LightweightElixir [color = gray;];
+  LightweightElixir -> GravityDefyingDraught [color = gray;];
+  GravityDefyingDraught -> LevitationPotion [color = gray;];
+  
+  // Teleportation Tincture
+  EmptyCauldron -> ShimmeringSolution [color = lightblue;];
+  ShimmeringSolution -> GlimmeringGlobs [color = lightblue;];
+  GlimmeringGlobs -> VaporizingVapors [color = lightblue;];
+  VaporizingVapors -> DisappearingDraught [color = lightblue;];
+  DisappearingDraught -> PhazingPotion [color = lightblue;];
+  PhazingPotion -> CrossfadeConcoction [color = lightblue;];
+  CrossfadeConcoction -> TeleportationTincture [color = lightblue;];
+  
+  // Giant's Growth Formula
+  EmptyCauldron -> VitaminExtract [color = green;];
+  VitaminExtract -> MuscleMassMixture [color = green;];
+  MuscleMassMixture -> BulkingBrew [color = green;];
+  BulkingBrew -> EnlargingElixir [color = green;];
+  EnlargingElixir -> ExpandingExtract [color = green;];
+  ExpandingExtract -> GrowthAccelerant [color = green;];
+  GrowthAccelerant -> GiantGrowthFormula [color = green;];
+  
+  // Dragon's Breath Brew
+  EmptyCauldron -> SimmeringBroth [color = orange;];
+  SimmeringBroth -> BubblingBrimstone [color = orange;];
+  BubblingBrimstone -> SearingAcidSolution [color = orange;];
+  SearingAcidSolution -> FieryConcoction [color = orange;];
+  FieryConcoction -> SmolderingPotion [color = orange;];
+  SmolderingPotion -> SmokeSpewingBrew [color = orange;];
+  SmokeSpewingBrew -> DragonsBreathBrew [color = orange;];
+  
+  // Polyjuice Potion
+  EmptyCauldron -> SimmeringBroth [color = bisque;];
+  SimmeringBroth -> StirringSolution [color = bisque;];
+  StirringSolution -> PlantExtractBase [color = bisque;];
+  PlantExtractBase -> ThickeningMixture [color = bisque;];
+  ThickeningMixture -> BubblingBrew [color = bisque;];
+  BubblingBrew -> ViscousBlend [color = bisque;];
+  ViscousBlend -> MorphingMud [color = bisque;];
+  MorphingMud -> TransformativeOoze [color = bisque;];
+  TransformativeOoze -> ShapeShiftingSludge [color = bisque;];
+  ShapeShiftingSludge -> IdentifyingElixir [color = bisque;];
+  IdentifyingElixir -> PersonalizingPotion [color = bisque;];
+  PersonalizingPotion -> PolyjuicePotion [color = bisque;];
+  
+  // Draught of Living Death
+  EmptyCauldron -> NightshadeInfusion [color = black;];
+  NightshadeInfusion -> ToxicBroth [color = black;];
+  ToxicBroth -> SinisterSolution [color = black;];
+  SinisterSolution -> WickedBrew [color = black;];
+  WickedBrew -> FatalBlend [color = black;];
+  FatalBlend -> LethalLiquid [color = black;];
+  LethalLiquid -> SleepingSyrup [color = black;];
+  SleepingSyrup -> TranquilTonic [color = black;];
+  TranquilTonic -> ComatoseConcoction [color = black;];
+  ComatoseConcoction -> SuspendedAnimationSerum [color = black;];
+  SuspendedAnimationSerum -> NearDeathNostrum [color = black;];
+  NearDeathNostrum -> DraughtOfLivingDeath [color = black;];
+  
+  // -------------------- Cross Recipe Connections --------------------
+  
+  SleepingDraught -> SleepingSyrup; // has to be a big transition
+  
+  
+  // -------------------- Inter Recipe States --------------------
+  // Dirty Soup
+  ClearBroth -> DirtySoup;
+  BubblingBrew -> DirtySoup;
+  DirtySoup -> SimmeringBroth;
+  DirtySoup -> BulkingBrew;
+  
+  
+  // DirtySoup;
+  // SimmeringBroth;
+  // BubblingStew;
+  // ThickeningGoo;
+  // StrangeBrew
+  // FoulConcoction
+  // WitchsBrew
+  // MagicalMixture
+  // MysticalBlend
+  // SpellbindingPotion
+  // EnchantedElixir
+  // TransformativeDraught
+  // MetamorphosisMix
+  // ShapeShiftingSerum
+  // CursedCompound;
+  // LevitationLiquid
+  // TeleportationTincture
+  // TimeTravelTonic
+  // DragonsBreathBrew
+  // GiantsGrowthFormula
+  // WizardsWisdomWater
+  // WarlocksWickedWares
+  // SorcerersSecretSauce
+  // AlchemistsAmalgamation
+  // DarkArtsDraught
+  // ForbiddenFormula
+  // CursedCompound
+  // HexedHumor
+  // CharmedChyme
+  // BewitchingBlend
+  // EvilElixir;
+  // VileVapors
+  // RevoltingResidue
+  // CongealedAbomination
+  // FailedExperiment
+  // VolatileConcoction
+  // UnstablePotion
+  // ChaoticCompound
+  // DangerousDraught;
+  // RuinedRecipe; // Game Over KABOOM!!!
+}
