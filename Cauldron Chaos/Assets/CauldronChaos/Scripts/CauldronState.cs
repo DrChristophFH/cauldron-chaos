@@ -3,14 +3,17 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CauldronState", menuName = "CauldronChaos/State", order = 1)]
+[CreateAssetMenu(fileName = "CauldronState", menuName = "Cauldron Chaos/State", order = 1)]
 public class CauldronState : ScriptableObject {
   [SerializeField]
   private List<CauldronTransition>  transitions = new();
   [SerializeField]
-  private Material liquid;
+  private CauldronSmokeConfig smokeConfig;
   [SerializeField]
-  private ParticleSystem particles;
+  private CauldronContentConfig contentConfig;
+
+  public CauldronSmokeConfig SmokeConfig => smokeConfig;
+  public CauldronContentConfig ContentConfig => contentConfig;
 
   public void CheckTransitions(Cauldron cauldron) {
     foreach (CauldronTransition transition in transitions) {

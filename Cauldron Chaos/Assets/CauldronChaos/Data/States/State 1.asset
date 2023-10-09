@@ -13,5 +13,17 @@ MonoBehaviour:
   m_Name: State 1
   m_EditorClassIdentifier: 
   transitions: []
-  liquid: {fileID: 0}
-  particles: {fileID: 0}
+  smokeConfig: {fileID: 11400000, guid: 2eb692305bf7c794c95ba54a6df6e282, type: 2}
+  contentConfig:
+    BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    TopColor: {r: 0.22638883, g: 1, b: 0.2216981, a: 1}
+    Shades: 3
+    WaveStrength: 5.8
+    WaveHeight: 2.5
+    WaveSpeed: 0.05
+    WaveRotation: 180
+    BubbleSpeed: 1
+    BubbleDensity: 3.7
+    BubbleSpacing: 0.45
+    BubbleStrength: 0.95
+    CircleSize: 0.94

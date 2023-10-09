@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "IngredientMaterial", menuName = "CauldronChaos/Ingredient Material", order = 0)]
+[CreateAssetMenu(fileName = "IngredientMaterial", menuName = "Cauldron Chaos/Ingredient Material", order = 0)]
 public class IngredientMaterial : ScriptableObject {
   public IngredientMaterial ParentMaterial;
   
