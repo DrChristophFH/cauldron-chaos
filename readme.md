@@ -44,7 +44,7 @@ Ingredients are primarily characterized by their properties. They describe the c
     - Crystal
   - Plastic
 - Gas
-- Magic Power
+- Magic
   - Water Magic
   - Fire Magic
   - Earth Magic
