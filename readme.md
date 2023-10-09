@@ -17,74 +17,49 @@ This section describes the technical details of the game and how ingredients and
 
 ### Property System
 
-Ingredients are primarily characterized by their properties.
+Ingredients are primarily characterized by their properties. They describe the compositional information of the ingredient in units. 
 
-There are three types of properties:
-- **Category**: A rough categorization of the ingredient.
-- **Characteristic**: Describe the characteristics, like color etc.
-- **Material**: Describe the compositional information of the ingredient in units.
+- Liquid
+  - Water
+- Solid
+  - Metal
+    - Iron
+    - Gold
+    - Silver
+    - Copper
+    - Fancy (Base for all other fancy metals if we want to add more)
+  - Organic
+    - Wood
+      - Paper
+    - Bone
+    - Flesh
+    - Leather
+  - Natural
+    - Stone
+    - Dirt
+    - Sand
+    - Clay
+    - Glass
+    - Gemstones
+    - Crystal
+  - Plastic
+- Gas
+- Magic Power
+  - Water Magic
+  - Fire Magic
+  - Earth Magic
+  - Wind Magic
 
-#### Category Hierarchy
-
-- Category (for rough categorization)
-  - Nature 
-    - Plant
-      - Vegetable
-      - Fruit
-      - Mushroom
-      - Flower
-    - Animal
-  - Man-made
-    - Office Supplies
-    - Weapon
-      - Sword
-      - Gun
-      - Ammo
-    - Game
-      - Chess
-
-#### Characteristic Hierarchy
+As well as a characteristic.
 
 - Characteristic
-  - Color
-    - Red
-    - Green
-    - Blue
-    - Yellow
-    - Orange
-    - Purple
-    - Pink
-    - Black
-    - White
-    - Brown
-    - Grey
   - Explosive
   - Flammable
   - Poisonous
   - Radioactive
   - Magical
   - Edible
-
-#### Material Hierarchy
-
-- Material (for rough compositional information)
-  - Liquid
-    - Water
-  - Solid
-    - Metal
-      - Iron
-      - Gold
-      - Silver
-      - Copper
-      - Fancy (Base for all other fancy metals if we want to add more)
-    - Organic
-      - Wood
-      - Bone
-      - Flesh
-      - Leather
-    - Stone
-    - Plastic
-  - Gas
+  - Normal
 
 ##### Creating materials
 
