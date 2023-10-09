@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4640287606635650018}
   - component: {fileID: 7456082108326635143}
   - component: {fileID: -564812186606822232}
+  - component: {fileID: 2960173470447145690}
   m_Layer: 0
   m_Name: Black Tourmaline
   m_TagString: Untagged
@@ -257,3 +258,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6263384874314098758, guid: 7f2664ddb275939459c1786bcd9dd332, type: 3}
+--- !u!114 &2960173470447145690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802734317925437442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: 
+  parts:
+  - Material: {fileID: 11400000, guid: aaf3fb1c5c955a349a25eebfab542122, type: 2}
+    Amount: 20
+  - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+    Amount: 30

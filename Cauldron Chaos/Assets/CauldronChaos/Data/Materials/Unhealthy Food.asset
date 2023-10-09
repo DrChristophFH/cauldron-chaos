@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
-  m_Name: Flesh
+  m_Name: Unhealthy Food
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
+  ParentMaterial: {fileID: 11400000, guid: a72e877048f29c847b60c9096da030f8, type: 2}

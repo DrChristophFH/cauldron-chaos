@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1021826422970944747}
   - component: {fileID: 4143762605213057870}
   - component: {fileID: 2190277101982414724}
-  - component: {fileID: 8266771365607519155}
   - component: {fileID: 5732029735427606705}
   - component: {fileID: -2533241564447015829}
   - component: {fileID: -4304595972632507381}
   - component: {fileID: 7363061929671345295}
+  - component: {fileID: -2194373135354127197}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -88,22 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8266771365607519155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388876489497171537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: Apple
-  parts:
-  - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
-    Amount: 10
 --- !u!54 &5732029735427606705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -259,3 +243,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &-2194373135354127197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388876489497171537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: 
+  parts:
+  - Material: {fileID: 11400000, guid: 9ad89b31f62d1af498505704678d46ec, type: 2}
+    Amount: 20
+  - Material: {fileID: 11400000, guid: b246e2be225b4cb458faca58898a70ea, type: 2}
+    Amount: 5

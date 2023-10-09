@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -356327614233792787}
   - component: {fileID: -366592106402417282}
   - component: {fileID: 8798992619896789443}
+  - component: {fileID: 8605958566107542750}
   m_Layer: 0
   m_Name: Highlighter pen blue
   m_TagString: Untagged
@@ -206,6 +207,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.040376186, y: 0.022189558, z: 0.14966008}
   m_Center: {x: -0.00024318695, y: -0.00002488494, z: 0.0073488206}
+--- !u!114 &8605958566107542750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070457540493082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: 
+  parts:
+  - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+    Amount: 20
+  - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+    Amount: 10
 --- !u!1 &1126581210216172
 GameObject:
   m_ObjectHideFlags: 0

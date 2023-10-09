@@ -234,7 +234,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: 
-  parts: []
+  parts:
+  - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+    Amount: 40
+  - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+    Amount: 10
+  - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
+    Amount: 10
 --- !u!64 &-6531175337385699820
 MeshCollider:
   m_ObjectHideFlags: 0
