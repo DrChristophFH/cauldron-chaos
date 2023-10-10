@@ -75,7 +75,7 @@ public class StateInitializer : EditorWindow {
     }
     CauldronContentConfig config = state.ContentConfig;
     config.BaseColor = Random.ColorHSV(0, 1, 0.5f, 1, 0.5f, 1);
-    config.TopColor = new Color(config.BaseColor.r * 0.8f, config.BaseColor.g * 0.8f, config.BaseColor.b * 0.8f);
+    config.TopColor = Random.ColorHSV(0, 1, 0.5f, 1, 0.5f, 1);
     config.Shades = (int)Random.Range(shadesMin, shadesMax);
     config.WaveStrength = Random.Range(waveStrengthMin, waveStrengthMax);
     config.WaveHeight = Random.Range(waveHeightMin, waveHeightMax);

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
+  m_Name: FortuneFindingMix
+  m_EditorClassIdentifier: 
+  transitions: []
+  smokeConfig: {fileID: 0}
+  contentConfig:
+    BaseColor: {r: 61, g: 108, b: 255, a: 1}
+    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    Shades: 3
+    WaveStrength: 5.8
+    WaveHeight: 2.5
+    WaveSpeed: 0.05
+    WaveRotation: 180
+    BubbleSpeed: 1
+    BubbleDensity: 3.7
+    BubbleSpacing: 0.45
+    BubbleStrength: 0.95
+    CircleSize: 0.94

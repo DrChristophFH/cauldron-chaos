@@ -88,10 +88,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Wave_Height: 0.5
+    - _Wave_Height: 0.52
     - _Wave_Rotation: 180
     - _Wave_Speed: 0.05
-    - _Wave_Strength: 5.81
+    - _Wave_Strength: 5.75
     - _ZWrite: 1
     m_Colors:
     - _Base_Color: {r: 0.10506439, g: 1, b: 0, a: 1}
