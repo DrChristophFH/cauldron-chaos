@@ -9,7 +9,7 @@ public class StateGraphParser : Editor {
   /// <summary>
   /// Parses a .dot file and extracts the states and transitions from it.
   /// </summary>
-  [MenuItem("Tools/Parse Dot File")]
+  [MenuItem("Tools/Cauldron State Dot File Parser")]
   public static void ParseDotFile() {
     string path = EditorUtility.OpenFilePanel("Open .dot File", "", "dot");
     if (string.IsNullOrEmpty(path))
