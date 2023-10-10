@@ -305,4 +305,42 @@ digraph state_graph {
   
   // Vile Vapors
   CondensingConcoction -> VileVapors [style = dotted; label = "";];
+  MinimizingMix -> VileVapors [style = dotted; label = "";];
+
+  VileVapors -> FloatingBubbles [style = dotted; label = "";];
+  VileVapors -> CondensingConcoction [style = teal; label = "";];
+
+  // Evil Elixer
+  WickedBrew -> EvilElixir [style = dotted; label = "";];
+  LethalLiquid -> EvilElixir [style = dotted; label = "";];
+  SleepingSyrup -> EvilElixir [style = dotted; label = "";];
+
+  EvilElixir -> SinisterSolution [color = black; label = "";];
+  EvilElixir -> BubblingBrew [color = red; label = "";];
+
+  // Bewitching Blend
+  TransformativeOoze -> BewitchingBlend[style = dotted; label = "";];
+  NearDeathNostrum -> BewitchingBlend[style = dotted; label = "";];
+  IdentifyingElixir -> BewitchingBlend[style = dotted; label = "";];
+  ExpandingExtract -> BewitchingBlend[style = dotted; label = "";];
+  BulkingBrew -> BewitchingBlend[style = dotted; label = "";];
+
+  BewitchingBlend -> MuscleMassMixture[style = dotted; label = "";];
+  BewitchingBlend -> MorphingMud[style = dotted; label = "";];
+  BewitchingBlend -> ComatoseConcoction[style = dotted; label = "";];
+
+  // Charmed Froth 
+  LightweightElixir -> CharmedFroth[style = dotted; label = "";];
+  GravityDefyingDraught -> CharmedFroth[style = dotted; label = "";];
+  BarelyVisibleBrew -> CharmedFroth[style = dotted; label = "";];
+  NearlyInvisiblePotion -> CharmedFroth[style = dotted; label = "";];
+  FourLeafFroth -> CharmedFroth[style = dotted; label = "";];
+  FortuneFindingMix -> CharmedFroth[style = dotted; label = "";];
+  GrowthAccelerant -> CharmedFroth[style = dotted; label = "";];
+
+  CharmedFroth -> BubblingBrew
+  CharmedFroth -> ChaoticCompound
+  CharmedFroth -> TranslucentTonic
+  CharmedFroth -> LiftingLiquid
+
 }
