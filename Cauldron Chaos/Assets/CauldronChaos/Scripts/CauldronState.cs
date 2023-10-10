@@ -26,4 +26,8 @@ public class CauldronState : ScriptableObject {
   public void AddTransition(CauldronTransition transition) {
     transitions.Add(transition);
   }
+
+  public void ClearTransitions() {
+    transitions.Clear();
+  }
 }
