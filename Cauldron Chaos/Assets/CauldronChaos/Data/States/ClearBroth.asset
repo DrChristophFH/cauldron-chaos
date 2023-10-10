@@ -12,18 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ClearBroth
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 5f77577a439798849a415d10f88e18c4, type: 2}
+    requiredMaterials: []
+  - destination: {fileID: 11400000, guid: 47829164b8c7d624ba8f56b2d81e454b, type: 2}
+    requiredMaterials: []
+  noOverwrite: 0
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
-    WaveRotation: 180
-    BubbleSpeed: 1
-    BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    BaseColor: {r: 0.34117648, g: 0.7378111, b: 0.945098, a: 1}
+    TopColor: {r: 0.6462264, g: 1, b: 0.99321073, a: 1}
+    Shades: 4
+    WaveStrength: 8.230825
+    WaveHeight: 0.20070773
+    WaveSpeed: 0.007143009
+    WaveRotation: 296.36758
+    BubbleSpeed: 0.9118874
+    BubbleDensity: 4.2582064
+    BubbleSpacing: 0.3356569
+    BubbleStrength: 2.07
     CircleSize: 0.94

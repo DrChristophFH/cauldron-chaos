@@ -12,18 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: BarelyVisibleBrew
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: fbc5a8a7a21e35e4e9c52e9bb19f88fb, type: 2}
+    requiredMaterials: []
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    TopColor: {r: 0.5047614, g: 0.51204467, b: 0.53773576, a: 1}
     Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
-    WaveRotation: 180
-    BubbleSpeed: 1
-    BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    WaveStrength: 14.06
+    WaveHeight: 0.29
+    WaveSpeed: 0.01
+    WaveRotation: 358.67966
+    BubbleSpeed: 0.2
+    BubbleDensity: 0.88
+    BubbleSpacing: 0.21673575
+    BubbleStrength: 1.57
     CircleSize: 0.94

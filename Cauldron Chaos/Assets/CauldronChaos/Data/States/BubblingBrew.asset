@@ -12,18 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: BubblingBrew
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 9035ff9651f89de4a90b6f958bb4000f, type: 2}
+    requiredMaterials: []
+  - destination: {fileID: 11400000, guid: 47829164b8c7d624ba8f56b2d81e454b, type: 2}
+    requiredMaterials: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.59284174, g: 0.06445384, b: 0.23614326, a: 1}
+    TopColor: {r: 0.3168986, g: 0.7086308, b: 0.3146736, a: 1}
     Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
-    WaveRotation: 180
-    BubbleSpeed: 1
-    BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    WaveStrength: 10.195803
+    WaveHeight: 0.5390123
+    WaveSpeed: 0.060595315
+    WaveRotation: 201.72844
+    BubbleSpeed: 0.60086054
+    BubbleDensity: 4.9939528
+    BubbleSpacing: 0.31693804
+    BubbleStrength: 0.8777198
     CircleSize: 0.94

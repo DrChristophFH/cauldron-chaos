@@ -12,18 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: BewitchingBlend
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 0f4b8fede2bcde342ae7b7a16fd64f39, type: 2}
+    requiredMaterials: []
+  - destination: {fileID: 11400000, guid: f46d4d22a1238ba429ef082bb3713022, type: 2}
+    requiredMaterials: []
+  - destination: {fileID: 11400000, guid: 3d0d4e5865083f04db14abf93895c45a, type: 2}
+    requiredMaterials: []
+  noOverwrite: 0
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.34292766, g: 0.78680384, b: 0.5573541, a: 1}
+    TopColor: {r: 0.6378277, g: 0.8289486, b: 0.12276879, a: 1}
     Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
-    WaveRotation: 180
-    BubbleSpeed: 1
-    BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    WaveStrength: 12.884688
+    WaveHeight: 0.7986747
+    WaveSpeed: 0.08497991
+    WaveRotation: 344.75342
+    BubbleSpeed: 1.7737212
+    BubbleDensity: 1.8343577
+    BubbleSpacing: 0.40481982
+    BubbleStrength: 1.2950728
     CircleSize: 0.94

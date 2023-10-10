@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: DraughtOfLivingDeath
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 0
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
-    WaveRotation: 180
-    BubbleSpeed: 1
-    BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    BaseColor: {r: 0.1252558, g: 0.16981128, b: 0.12095047, a: 1}
+    TopColor: {r: 0, g: 0, b: 0, a: 1}
+    Shades: 4
+    WaveStrength: 11.07
+    WaveHeight: 0.2
+    WaveSpeed: 0
+    WaveRotation: 0
+    BubbleSpeed: 0.2
+    BubbleDensity: 5.89
+    BubbleSpacing: -0
+    BubbleStrength: 0.57
     CircleSize: 0.94
