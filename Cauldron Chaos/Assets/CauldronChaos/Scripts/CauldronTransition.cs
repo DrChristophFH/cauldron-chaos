@@ -11,6 +11,11 @@ public class CauldronTransition {
   [SerializeField]
   private List<Part> requiredMaterials = new();
 
+  public CauldronTransition(CauldronState destination, List<Part> requiredMaterials) {
+    this.destination = destination;
+    this.requiredMaterials = requiredMaterials;
+  }
+
   public bool Check(Cauldron cauldron) {
     Dictionary<IngredientMaterial, int> materials = new(cauldron.Materials);
     

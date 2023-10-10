@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CauldronState", menuName = "Cauldron Chaos/State", order = 1)]
 public class CauldronState : ScriptableObject {
   [SerializeField]
-  private List<CauldronTransition>  transitions = new();
+  private List<CauldronTransition> transitions = new();
   [SerializeField]
   private CauldronSmokeConfig smokeConfig;
   [SerializeField]
@@ -21,5 +21,9 @@ public class CauldronState : ScriptableObject {
         return;
       }
     }
+  }
+
+  public void AddTransition(CauldronTransition transition) {
+    transitions.Add(transition);
   }
 }
