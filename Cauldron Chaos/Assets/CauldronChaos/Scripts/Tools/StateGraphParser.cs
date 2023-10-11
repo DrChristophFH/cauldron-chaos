@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
+using UnityEditor.VersionControl;
 
 public class StateGraphParser : Editor {
   /// <summary>
@@ -43,11 +44,41 @@ public class StateGraphParser : Editor {
   private static void ParseStates(string content, bool keepExistingTransitions) {
     // Regular expression to extract node definitions
     var matches = Regex.Matches(content, @"(?:\n *)(\w+)\s*\[.*?\];");
+
     Debug.Log("Found " + matches.Count + " states.");
+
+    List<string> stateNames = new List<string>();
+
     foreach (Match match in matches) {
       string stateName = match.Groups[1].Value;
       CauldronState state = CreateStateAsset(stateName);
-      state.ClearTransitions();
+      if (!keepExistingTransitions) {
+        state.ClearTransitions();
+      }
+      stateNames.Add(stateName);
+    }
+
+    CheckExistingStates(stateNames);
+  }
+
+  private static void CheckExistingStates(List<string> stateNames) {
+    List<string> statesNotInDotFile = new();
+    foreach (string state in AssetDatabase.FindAssets("t:CauldronState", new[] { "Assets/CauldronChaos/Data/States" })) {
+      string stateName = Path.GetFileNameWithoutExtension(AssetDatabase.GUIDToAssetPath(state));
+      if (!stateNames.Contains(stateName)) {
+        statesNotInDotFile.Add(stateName);
+      }
+    }
+
+    if (statesNotInDotFile.Count == 0) {
+      return;
+    }
+
+    bool deleteStates = EditorUtility.DisplayDialog("Delete States?", $"Do you want to delete the following states that are not in the .dot file?\n{string.Join("\n", statesNotInDotFile)}", "Yes", "No");
+    if (deleteStates) {
+      foreach (string stateName in statesNotInDotFile) {
+        AssetDatabase.DeleteAsset($"Assets/CauldronChaos/Data/States/{stateName}.asset");
+      }
     }
   }
 
