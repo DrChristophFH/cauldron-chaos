@@ -5,14 +5,14 @@ using Unity.VisualScripting;
 
 using UnityEngine;
 
-public class Cauldron : MonoBehaviour {
-  private readonly Dictionary<IngredientMaterial, int> materials = new();
+public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
 
   [SerializeField]
   private CauldronState state;
 
   [SerializeField]
   private ParticleSystem smokeParticles;
+
   [SerializeField]
   private Vector3 offset = new Vector3(0, 0.1f, 0);
 
@@ -24,6 +24,10 @@ public class Cauldron : MonoBehaviour {
 
   private Material liquid;
 
+  private readonly Dictionary<IngredientMaterial, int> materials = new();
+
+  private readonly List<IObserver<CauldronState>> observers = new List<IObserver<CauldronState>>();
+
   public Dictionary<IngredientMaterial, int> Materials => materials;
 
   private void Start() {
@@ -32,6 +36,16 @@ public class Cauldron : MonoBehaviour {
     smokeParticles = Instantiate(smokeParticles, transform.position + offset, Quaternion.identity);
     ApplySmokeConfig(state.SmokeConfig);
     ApplyContentConfig(state.ContentConfig);
+  }
+
+  IDisposable IObservable<CauldronState>.Subscribe(IObserver<CauldronState> observer) {
+    observers.Add(observer);
+  }
+
+  public void Notify() {
+    foreach (IObserver<CauldronState> observer in observers) {
+      observer.OnNext(state);
+    }
   }
 
   public void AddPart(Part part) {
@@ -55,6 +69,7 @@ public class Cauldron : MonoBehaviour {
     PlayTransitionPuff();
     ApplySmokeConfig(destination.SmokeConfig);
     ApplyContentConfig(destination.ContentConfig);
+    Notify();
   }
 
   private void PlayTransitionPuff() {
