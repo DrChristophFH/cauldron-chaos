@@ -129,8 +129,8 @@ internal class Unsubscriber : IDisposable {
   private readonly IObserver<CauldronState> _observer;
 
   public Unsubscriber(List<IObserver<CauldronState>> observers, IObserver<CauldronState> observer) {
-    this._observers = observers;
-    this._observer = observer;
+    _observers = observers;
+    _observer = observer;
   }
 
   public void Dispose() {
