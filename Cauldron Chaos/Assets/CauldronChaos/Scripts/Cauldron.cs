@@ -39,7 +39,10 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   }
 
   IDisposable IObservable<CauldronState>.Subscribe(IObserver<CauldronState> observer) {
-    observers.Add(observer);
+    if (!observers.Contains(observer)) {
+      observers.Add(observer);
+    }
+    return new Unsubscriber(observers, observer);
   }
 
   public void Notify() {
@@ -118,5 +121,20 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
     liquid.SetFloat("_Bubble_Spacing", config.BubbleSpacing);
     liquid.SetFloat("_Bubble_Strength", config.BubbleStrength);
     liquid.SetFloat("_Circle_Size", config.CircleSize);
+  }
+}
+
+internal class Unsubscriber : IDisposable {
+  private readonly List<IObserver<CauldronState>> _observers;
+  private readonly IObserver<CauldronState> _observer;
+
+  public Unsubscriber(List<IObserver<CauldronState>> observers, IObserver<CauldronState> observer) {
+    this._observers = observers;
+    this._observer = observer;
+  }
+
+  public void Dispose() {
+    if (_observer != null && _observers.Contains(_observer))
+      _observers.Remove(_observer);
   }
 }
