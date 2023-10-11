@@ -17,6 +17,9 @@ public class StateGraphParser : Editor {
 
     string content = File.ReadAllText(path);
 
+    //strip comments
+    content = Regex.Replace(content, @"//.*", "");
+
     bool keepExistingTransitions = EditorUtility.DisplayDialog("Keep Existing Transitions?", "Do you want to keep existing transitions in already known states?", "Yes", "No");
 
     ParseStates(content, keepExistingTransitions);
