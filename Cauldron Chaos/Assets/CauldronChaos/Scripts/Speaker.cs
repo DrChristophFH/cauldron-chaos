@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Speaker : MonoBehaviour {
@@ -8,7 +10,7 @@ public class Speaker : MonoBehaviour {
   [SerializeField]
   private float charDelay = 0.1f;
   [SerializeField]
-  private ParticleSystem particleSystem;
+  private ParticleSystem particles;
   [SerializeField]
   public List<NarrationPosition> narrationPositions;
 
@@ -21,23 +23,22 @@ public class Speaker : MonoBehaviour {
   }
 
   public void MoveTo(string positionName) {
-    var targetPosition = narrationPositions.FirstOrDefault(n => n.positionName == positionName);
+    var targetPosition = narrationPositions.Find(n => n.positionName == positionName);
     
     if (targetPosition != null) {
       transform.position = targetPosition.position;
       transform.rotation = targetPosition.rotation;
-      OnMoveComplete?.Invoke();
     } else {
       Debug.LogError($"Position {positionName} not found!");
     }
   }
 
-  private System.Collections.IEnumerator SpeakCoroutine() {
+  private IEnumerator SpeakCoroutine() {
     foreach (char c in text) {
       textMesh.text += c;
-      yield return new WaitForSeconds(textSpeed);
+      yield return new WaitForSeconds(charDelay);
     }
-    particleSystem.Play();
+    particles.Play();
     AudioSource.PlayClipAtPoint(newTextSound, transform.position);
   }
 }
