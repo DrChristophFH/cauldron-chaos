@@ -18,8 +18,6 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
 
     public int Score { get; private set; } = 0;
 
-    public Text questText;
-
     private void Start() {
         cauldron.Subscribe(this);
         GenerateNewRandomQuest();

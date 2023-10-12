@@ -19,48 +19,6 @@ This section describes the technical details of the game and how ingredients and
 
 Ingredients are primarily characterized by their properties. They describe the compositional information of the ingredient in units. 
 
-- Liquid
-  - Water
-- Solid
-  - Metal
-    - Iron
-    - Gold
-    - Silver
-    - Copper
-    - Fancy (Base for all other fancy metals if we want to add more)
-  - Organic
-    - Wood
-      - Paper
-    - Bone
-    - Flesh
-    - Leather
-  - Natural
-    - Stone
-    - Dirt
-    - Sand
-    - Clay
-    - Glass
-    - Gemstones
-    - Crystal
-  - Plastic
-- Gas
-- Magic
-  - Water Magic
-  - Fire Magic
-  - Earth Magic
-  - Wind Magic
-
-As well as a characteristic.
-
-- Characteristic
-  - Explosive
-  - Flammable
-  - Poisonous
-  - Radioactive
-  - Magical
-  - Edible
-  - Normal
-
 ##### Creating materials
 
 To define a material, `Create -> Cauldron Chaos -> Ingredient Material`. Place the material in the `Data` folder. You can select the parent of the material in the inspector. Children will be automatically added to the parent's properties.
