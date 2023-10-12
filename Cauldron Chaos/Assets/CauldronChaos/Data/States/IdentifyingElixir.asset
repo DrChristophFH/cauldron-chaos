@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: IdentifyingElixir
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
+    BaseColor: {r: 0.8962264, g: 0.82616585, b: 0.21560156, a: 1}
+    TopColor: {r: 0.63234246, g: 0.7516364, b: 0.9245283, a: 1}
+    Shades: 5
     WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveHeight: 1.7
+    WaveSpeed: 0.1
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20064,11 +20064,11 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Bubble_Density: 1.5748521
+    - _Bubble_Density: 0.88
     - _Bubble_Spaceing: 0.44
-    - _Bubble_Spacing: 0.49862108
-    - _Bubble_Speed: 0.79016334
-    - _Bubble_Strength: 1.2368176
+    - _Bubble_Spacing: 0.21673575
+    - _Bubble_Speed: 0.2
+    - _Bubble_Strength: 1.57
     - _BumpScale: 1
     - _Circle_Size: 0.94
     - _Cutoff: 0.5
@@ -20084,24 +20084,24 @@ Material:
     - _Ripple_Density: 0.09
     - _Ripple_Slimness: 0.83
     - _Ripple_Speed: 1
-    - _Shades: 6
+    - _Shades: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Wave_Height: 0.7516159
-    - _Wave_Rotation: 19.295683
-    - _Wave_Speed: 0.025478883
-    - _Wave_Strength: 9.864002
+    - _Wave_Height: 0.29
+    - _Wave_Rotation: 358.67966
+    - _Wave_Speed: 0.01
+    - _Wave_Strength: 14.06
     - _ZWrite: 1
     m_Colors:
-    - _Base_Color: {r: 0.7434312, g: 0.110274814, b: 0.56186193, a: 1}
+    - _Base_Color: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 0.4269313, g: 0.5699431, b: 0.735849, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Ripple_Color: {r: 1, g: 0.61149544, b: 0, a: 1}
     - _Stylize_Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Top_Color: {r: 0.20205565, g: 0.95758986, b: 0.01924099, a: 1}
+    - _Top_Color: {r: 0.5047614, g: 0.51204467, b: 0.53773576, a: 1}
     - _Wave_Direction: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!1001 &1672769117

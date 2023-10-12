@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: FizzyFoam
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.41429332, g: 0.9245283, b: 0.63517743, a: 1}
+    TopColor: {r: 0.12677994, g: 0.7264151, b: 0.6362768, a: 1}
     Shades: 3
-    WaveStrength: 5.8
+    WaveStrength: 6
     WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveSpeed: 0.3
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

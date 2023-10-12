@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: FloatingBubbles
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.9132977, g: 0.9150943, b: 0.82444817, a: 1}
+    TopColor: {r: 0.8410591, g: 0.9150943, b: 0.42733175, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.5
@@ -26,4 +27,4 @@ MonoBehaviour:
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

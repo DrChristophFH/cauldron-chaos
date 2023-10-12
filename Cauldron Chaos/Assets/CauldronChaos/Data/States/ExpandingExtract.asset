@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: ExpandingExtract
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
+    BaseColor: {r: 0.20898911, g: 0.44339618, b: 0.115032025, a: 1}
+    TopColor: {r: 0.7490196, g: 0.62973416, b: 0.18039212, a: 1}
+    Shades: 5
     WaveStrength: 5.8
     WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveSpeed: 0.15
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

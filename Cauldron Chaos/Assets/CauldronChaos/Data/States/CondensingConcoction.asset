@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: CondensingConcoction
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.69166076, g: 0.75014734, b: 0.9339623, a: 1}
+    TopColor: {r: 0.42613026, g: 0.48722696, b: 0.6792453, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveSpeed: 0.2
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.85

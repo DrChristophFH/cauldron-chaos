@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: ViscousBlend
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
+    BaseColor: {r: 0.5566037, g: 0.17082053, b: 0.11289603, a: 1}
+    TopColor: {r: 0.14150938, g: 0.12615693, b: 0.13015658, a: 1}
+    Shades: 7
     WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveHeight: 2.1
+    WaveSpeed: 0.1
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

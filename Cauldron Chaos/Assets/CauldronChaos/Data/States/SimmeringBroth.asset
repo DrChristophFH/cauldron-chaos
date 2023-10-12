@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: SimmeringBroth
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.4716981, g: 0.2370669, b: 0.028924897, a: 1}
+    TopColor: {r: 0.62264144, g: 0.02055893, b: 0.057014562, a: 1}
     Shades: 3
     WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveHeight: 1
+    WaveSpeed: 0.3
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

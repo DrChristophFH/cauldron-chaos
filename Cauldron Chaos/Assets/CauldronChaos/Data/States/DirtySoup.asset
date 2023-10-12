@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: DirtySoup
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
+    BaseColor: {r: 0.7117752, g: 0.7490196, b: 0.18039212, a: 1}
+    TopColor: {r: 0.7490196, g: 0.63214564, b: 0.18039212, a: 1}
     Shades: 3
     WaveStrength: 5.8
-    WaveHeight: 2.5
+    WaveHeight: 1
     WaveSpeed: 0.05
     WaveRotation: 180
     BubbleSpeed: 1

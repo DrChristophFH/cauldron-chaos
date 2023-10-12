@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: CharmedFroth
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
-    WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
+    BaseColor: {r: 0.6415094, g: 0.34798855, b: 0.46490186, a: 1}
+    TopColor: {r: 0.8962264, g: 0.5284354, b: 0.642093, a: 1}
+    Shades: 5
+    WaveStrength: 2
+    WaveHeight: 1.8
+    WaveSpeed: 0.03
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9

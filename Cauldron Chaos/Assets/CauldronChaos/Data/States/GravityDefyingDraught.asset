@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: GravityDefyingDraught
   m_EditorClassIdentifier: 
   transitions: []
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 61, g: 108, b: 255, a: 1}
-    TopColor: {r: 61, g: 108, b: 255, a: 1}
-    Shades: 3
+    BaseColor: {r: 0.766446, g: 0.43164825, b: 0.9433962, a: 1}
+    TopColor: {r: 0.5928072, g: 0.43173718, b: 0.9245283, a: 1}
+    Shades: 4
     WaveStrength: 5.8
-    WaveHeight: 2.5
-    WaveSpeed: 0.05
+    WaveHeight: 2
+    WaveSpeed: 0.08
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
     BubbleSpacing: 0.45
     BubbleStrength: 0.95
-    CircleSize: 0.94
+    CircleSize: 0.9
