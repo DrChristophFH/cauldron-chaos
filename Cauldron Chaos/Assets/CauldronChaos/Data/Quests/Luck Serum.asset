@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a3ab2e5cbfc0e448940f5879d53ca4, type: 3}
+  m_Name: Luck Serum
+  m_EditorClassIdentifier: 
+  QuestName: Brew the Luck Serum
+  Description: 
+  Difficulty: 1
+  RequiredCauldronState: {fileID: 11400000, guid: f68acef9dc4ffe841ac24e83bd2d5d8e, type: 2}
+  RewardPoints: 200
