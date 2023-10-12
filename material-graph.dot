@@ -1,0 +1,74 @@
+digraph material_graph {
+  graph [rankdir = LR; label = "Cauldron State Graph"; fontsize = 16; bgcolor = "#1F1F1F"; fontcolor = "#FFFFFF"; fontname = "Helvetica"; labelfontname = "Helvetica";];
+  node [shape = box; fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth = 2.0;];
+  edge [fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth = 2.0;];
+  
+  Base -> Solid;
+  Base -> Liquid;
+  Base -> Gas;
+  Base -> Characteristic;
+
+  Liquid -> Water;
+  Liquid -> Oil;
+  Liquid -> Acid;
+  Liquid -> Lava;
+  
+  Solid -> Metal;
+  Metal -> Iron;
+  Metal -> Gold;
+  Metal -> Silver;
+  Metal -> Copper;
+  Metal -> Fancy;
+  
+  Solid -> Organic;
+  Organic -> Wood;
+  Wood -> Paper;
+  Organic -> Bone;
+  Organic -> Meat;
+  Organic -> Leather;
+  Organic -> Plant;
+  Organic -> Fruit;
+  Organic -> Vegetable;
+
+  Plant -> Flower;
+  Plant -> Grass;
+  Plant -> Tree;
+  
+  Solid -> Natural;
+  Natural -> Stone;
+  Natural -> Dirt;
+  Natural -> Sand;
+  Natural -> Clay;
+  Natural -> Glass;
+  Natural -> Gemstone;
+
+  Solid -> Artificial;
+  Artificial -> Plastic;
+  Artificial -> Concrete;
+  
+  Gas -> Air;
+  Gas -> Oxygen;
+  Gas -> Helium;
+  Gas -> Toxic;
+  
+  Magical -> WaterMagic;
+  Magical -> FireMagic;
+  Magical -> EarthMagic;
+  Magical -> WindMagic;
+  Magical -> LightMagic;
+  Magical -> DarkMagic;
+  
+  Characteristic -> Explosive;
+  Characteristic -> Flammable;
+  Characteristic -> Poisonous;
+  Characteristic -> Radioactive;
+  Characteristic -> Magical;
+  Characteristic -> Edible;
+  Characteristic -> Normal;
+  Characteristic -> Frozen;
+  Characteristic -> Hot;
+  Characteristic -> Sticky;
+  Characteristic -> Slimy;
+  Characteristic -> Powdery;
+  Characteristic -> Crystalline;
+}

@@ -16,7 +16,7 @@ public class CauldronState : ScriptableObject {
 
   public CauldronSmokeConfig SmokeConfig => smokeConfig;
   public CauldronContentConfig ContentConfig => contentConfig;
-  public bool NoOverwrite { get => noOverwrite; set => noOverwrite = value;}
+  public bool NoOverwrite { get => noOverwrite; set => noOverwrite = value; }
 
   public void CheckTransitions(Cauldron cauldron) {
     foreach (CauldronTransition transition in transitions) {
