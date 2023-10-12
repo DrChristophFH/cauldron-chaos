@@ -4,68 +4,47 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
-using UnityEditor.VersionControl;
+using State = DotParser.State;
+using Transition = DotParser.Transition;
 
 public class StateGraphParser : Editor {
-  /// <summary>
-  /// Parses a .dot file and extracts the states and transitions from it.
-  /// </summary>
+
+  private static readonly DotParser parser = new DotParser();
+  private static readonly string STATES_PATH = "Assets/CauldronChaos/Data/States/";
+  private static readonly string MATERIALS_PATH = "Assets/CauldronChaos/Data/Materials/";
+
   [MenuItem("Tools/Cauldron State Dot File Parser")]
   public static void ParseDotFile() {
     string path = EditorUtility.OpenFilePanel("Open .dot File", "", "dot");
     if (string.IsNullOrEmpty(path))
       return;
 
-    string content = File.ReadAllText(path);
-
-    //strip comments
-    content = Regex.Replace(content, @"//.*", "");
+    DotParser.Graph graph = parser.Parse(path);
 
     bool keepExistingTransitions = EditorUtility.DisplayDialog("Keep Existing Transitions?", "Do you want to keep existing transitions in already known states?", "Yes", "No");
 
-    ParseStates(content, keepExistingTransitions);
-    ParseTransitions(content);
-    CleanUp();
+    HandleStates(graph.States, keepExistingTransitions);
+    CheckExistingStates(graph.States);
+    HandleTransitions(graph.Transitions);
   }
 
-  /// <summary>
-  /// Cleans up the project by removing the states "graph", "node" and "edge" that can be created by the .dot parser.
-  /// </summary>
-  private static void CleanUp() {
-    AssetDatabase.DeleteAsset("Assets/CauldronChaos/Data/States/graph.asset");
-    AssetDatabase.DeleteAsset("Assets/CauldronChaos/Data/States/node.asset");
-    AssetDatabase.DeleteAsset("Assets/CauldronChaos/Data/States/edge.asset");
-  }
+  private static void HandleStates(List<State> states, bool keepExistingTransitions) {
+    Debug.Log("Found " + states.Count + " states.");
 
-  /// <summary>
-  /// Parses .dot states from the given content using a regular expression and creates a CauldronState asset for each state found.
-  /// </summary>
-  /// <param name="content">The content to parse.</param>
-  private static void ParseStates(string content, bool keepExistingTransitions) {
-    // Regular expression to extract node definitions
-    var matches = Regex.Matches(content, @"(?:\n *)(\w+)\s*\[.*?\];");
-
-    Debug.Log("Found " + matches.Count + " states.");
-
-    List<string> stateNames = new List<string>();
-
-    foreach (Match match in matches) {
-      string stateName = match.Groups[1].Value;
-      CauldronState state = CreateStateAsset(stateName);
+    foreach (State state in states) {
+      CauldronState asset = TryGetStateAsset(state.Name);
       if (!keepExistingTransitions) {
-        state.ClearTransitions();
+        asset.ClearTransitions();
       }
-      stateNames.Add(stateName);
     }
-
-    CheckExistingStates(stateNames);
   }
 
-  private static void CheckExistingStates(List<string> stateNames) {
+  private static void CheckExistingStates(List<State> states) {
     List<string> statesNotInDotFile = new();
+
     foreach (string state in AssetDatabase.FindAssets("t:CauldronState", new[] { "Assets/CauldronChaos/Data/States" })) {
       string stateName = Path.GetFileNameWithoutExtension(AssetDatabase.GUIDToAssetPath(state));
-      if (!stateNames.Contains(stateName)) {
+      if (!states.Exists(s => s.Name == stateName)) {
         statesNotInDotFile.Add(stateName);
       }
     }
@@ -77,28 +56,19 @@ public class StateGraphParser : Editor {
     bool deleteStates = EditorUtility.DisplayDialog("Delete States?", $"Do you want to delete the following states that are not in the .dot file?\n{string.Join("\n", statesNotInDotFile)}", "Yes", "No");
     if (deleteStates) {
       foreach (string stateName in statesNotInDotFile) {
-        AssetDatabase.DeleteAsset($"Assets/CauldronChaos/Data/States/{stateName}.asset");
+        AssetDatabase.DeleteAsset($"{STATES_PATH}{stateName}.asset");
       }
     }
   }
 
-  /// <summary>
-  /// Parses .dot transitions from the given content, that have a label, and adds them to the corresponding states.
-  /// </summary>
-  /// <param name="content">The content to parse.</param>
-  private static void ParseTransitions(string content) {
-    // Regular expression to extract edge definitions
-    var matches = Regex.Matches(content, @"(\w+)\s*->\s*(\w+).*?label ?= ?""(.*?)"";");
-    Debug.Log("Found " + matches.Count + " transitions.");
-    foreach (Match match in matches) {
-      string fromStateName = match.Groups[1].Value;
-      string toStateName = match.Groups[2].Value;
-      string label = match.Groups[3].Value;
+  private static void HandleTransitions(List<Transition> transitions) {
+    Debug.Log("Found " + transitions.Count + " transitions.");
 
-      CauldronState fromState = AssetDatabase.LoadAssetAtPath<CauldronState>($"Assets/CauldronChaos/Data/States/{fromStateName}.asset");
-      CauldronState toState = AssetDatabase.LoadAssetAtPath<CauldronState>($"Assets/CauldronChaos/Data/States/{toStateName}.asset");
+    foreach (Transition transition in transitions) {
+      CauldronState fromState = AssetDatabase.LoadAssetAtPath<CauldronState>($"{STATES_PATH}{transition.Source}.asset");
+      CauldronState toState = AssetDatabase.LoadAssetAtPath<CauldronState>($"{STATES_PATH}{transition.Destination}.asset");
 
-      List<Part> parts = GetParts(label);
+      List<Part> parts = GetParts(transition.Properties["label"]);
 
       fromState.AddTransition(
         new CauldronTransition(toState, parts)
@@ -106,14 +76,6 @@ public class StateGraphParser : Editor {
     }
   }
 
-  /// <summary>
-  /// Retrieves a list of parts based on the given label.
-  /// </summary>
-  /// <remarks> 
-  /// Parts need to be formatted <c>[Amount] [Material]</c> and seperated by a new line.
-  /// </remarks>
-  /// <param name="label">The label text</param>
-  /// <returns>A list of parts.</returns>
   private static List<Part> GetParts(string label) {
     List<Part> parts = new List<Part>();
     string[] lines = label.Split('\n');
@@ -121,7 +83,7 @@ public class StateGraphParser : Editor {
       string[] chunk = line.Split(' ');
       try {
         int amount = int.Parse(chunk[0]);
-        IngredientMaterial material = AssetDatabase.LoadAssetAtPath<IngredientMaterial>($"Assets/CauldronChaos/Data/Materials/{parts[1]}.asset");
+        IngredientMaterial material = AssetDatabase.LoadAssetAtPath<IngredientMaterial>($"{MATERIALS_PATH}{parts[1]}.asset");
         parts.Add(new Part { Amount = amount, Material = material });
       } catch (Exception) {
         Debug.LogWarning($"Could not parse part from line {line}. Format should be <Number> <Material>");
@@ -130,21 +92,16 @@ public class StateGraphParser : Editor {
     return parts;
   }
 
-  /// <summary>
-  /// Creates a new instance of a CauldronState asset with the given state name and saves it to the project.
-  /// </summary>
-  /// <param name="stateName">The name of the state to create.</param>
-  /// <returns>The newly created CauldronState asset.</returns>
-  private static CauldronState CreateStateAsset(string stateName) {
+  private static CauldronState TryGetStateAsset(string stateName) {
     // try to load the asset first, if it exists, return it
-    CauldronState existingState = AssetDatabase.LoadAssetAtPath<CauldronState>($"Assets/CauldronChaos/Data/States/{stateName}.asset");
+    CauldronState existingState = AssetDatabase.LoadAssetAtPath<CauldronState>($"{STATES_PATH}{stateName}.asset");
     if (existingState != null) {
       Debug.Log($"State {stateName} already exists, skipping creation.");
       return existingState;
     }
 
     CauldronState state = CreateInstance<CauldronState>();
-    AssetDatabase.CreateAsset(state, $"Assets/CauldronChaos/Data/States/{stateName}.asset");
+    AssetDatabase.CreateAsset(state, $"{STATES_PATH}{stateName}.asset");
     return state;
   }
 }
