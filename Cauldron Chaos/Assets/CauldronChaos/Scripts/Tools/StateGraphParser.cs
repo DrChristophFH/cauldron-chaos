@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System;
 using State = DotParser.State;
 using Transition = DotParser.Transition;
+using UnityEditor.VersionControl;
 
 public class StateGraphParser : Editor {
 
@@ -33,10 +34,46 @@ public class StateGraphParser : Editor {
 
     foreach (State state in states) {
       CauldronState asset = TryGetStateAsset(state.Name);
+      ConfigureStateVisuals(asset, state.Properties);
       if (!keepExistingTransitions) {
         asset.ClearTransitions();
       }
     }
+  }
+
+  private static void ConfigureStateVisuals(CauldronState state, Dictionary<string, string> properties) {
+    CauldronContentConfig config = state.ContentConfig;
+    config.BaseColor = TryGetColor(properties["BaseColor"], out Color color) ? color : config.BaseColor;
+    config.TopColor = TryGetColor(properties["TopColor"], out color) ? color : config.TopColor;
+    config.Shades = int.Parse(properties["Shades"]);
+    config.WaveStrength = float.Parse(properties["WaveStrength"]);
+    config.WaveHeight = float.Parse(properties["WaveHeight"]);
+    config.WaveSpeed = float.Parse(properties["WaveSpeed"]);
+    config.WaveRotation = float.Parse(properties["WaveRotation"]);
+    config.BubbleSpeed = float.Parse(properties["BubbleSpeed"]);
+    config.BubbleDensity = float.Parse(properties["BubbleDensity"]);
+    config.BubbleSpacing = float.Parse(properties["BubbleSpacing"]);
+    config.BubbleStrength = float.Parse(properties["BubbleStrength"]);
+    state.NoOverwrite = true;
+  }
+
+  private static bool TryGetColor(string colorString, out Color color) {
+    string[] rgba = colorString.Split(',');
+    if (rgba.Length != 4) {
+      Debug.LogWarning($"Could not parse color from {colorString}. Format should be <R>,<G>,<B>");
+      color = Color.white;
+      return false;
+    }
+
+    try {
+      color = new Color(float.Parse(rgba[0]), float.Parse(rgba[1]), float.Parse(rgba[2]), float.Parse(rgba[3]));
+    } catch (Exception) {
+      Debug.LogWarning($"Could not parse color from {colorString}. Format should be <R>,<G>,<B>, <A>");
+      color = Color.white;
+      return false;
+    }
+
+    return true;
   }
 
   private static void CheckExistingStates(List<State> states) {
@@ -73,20 +110,23 @@ public class StateGraphParser : Editor {
       fromState.AddTransition(
         new CauldronTransition(toState, parts)
       );
+
+      EditorUtility.SetDirty(fromState);
     }
+    AssetDatabase.SaveAssets();
   }
 
   private static List<Part> GetParts(string label) {
     List<Part> parts = new List<Part>();
-    string[] lines = label.Split('\n');
+    string[] lines = label.Split("\\n"); // necessary because of the way the .dot file is parsed
     foreach (string line in lines) {
       string[] chunk = line.Split(' ');
       try {
         int amount = int.Parse(chunk[0]);
-        IngredientMaterial material = AssetDatabase.LoadAssetAtPath<IngredientMaterial>($"{MATERIALS_PATH}{parts[1]}.asset");
+        IngredientMaterial material = AssetDatabase.LoadAssetAtPath<IngredientMaterial>($"{MATERIALS_PATH}{chunk[1]}.asset");
         parts.Add(new Part { Amount = amount, Material = material });
-      } catch (Exception) {
-        Debug.LogWarning($"Could not parse part from line {line}. Format should be <Number> <Material>");
+      } catch (Exception e) {
+        Debug.LogWarning($"Could not parse part from line {line}. Format should be <Number> <Material>. Error: {e.Message}");
       }
     }
     return parts;
