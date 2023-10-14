@@ -15,7 +15,7 @@ MonoBehaviour:
   transitions:
   - destination: {fileID: 11400000, guid: 737b87898a969bb4cbcd4a545bf87ba8, type: 2}
     requiredMaterials:
-    - Material: {fileID: 0}
+    - Material: {fileID: 11400000, guid: b68bc1ffbdfb7d348b15fcfff8958510, type: 2}
       Amount: 70
     - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
       Amount: 30

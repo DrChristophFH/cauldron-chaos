@@ -111,11 +111,11 @@ digraph state_graph {
   // Invisibility Potion
   EmptyCauldron -> SimmeringBroth [color = purple; label = "30 Plant\n20 Glass";];
   SimmeringBroth -> ClearBroth [color = purple; label = "40 LightMagic\n30 Air\n10 Silver";];
-  ClearBroth -> TranslucentTonic [color = purple; label = "80 Glass\n20 Crystal";];
+  ClearBroth -> TranslucentTonic [color = purple; label = "80 Glass\n20 Crystalline";];
   TranslucentTonic -> FadingFluid [color = purple; label = "30 LightMagic\n10 Gemstone";];
   FadingFluid -> BarelyVisibleBrew [color = purple; label = "50 WindMagic\n40 Silver\n10 Crystalline";];
   BarelyVisibleBrew -> NearlyInvisiblePotion [color = purple; label = "60 LightMagic\n40 Glass";];
-  NearlyInvisiblePotion -> InvisibilityPotion [color = purple; label = "70 Crystal\n30 DarkMagic";];
+  NearlyInvisiblePotion -> InvisibilityPotion [color = purple; label = "70 Crystalline\n30 DarkMagic";];
   
   // Levitation Potion
   EmptyCauldron -> DandelionTea [color = gray; label = "50 Plant\n20 Flower";];
@@ -124,7 +124,7 @@ digraph state_graph {
   FizzyFoam -> LiftingLiquid [color = gray; label = "60 WindMagic\n20 Powdery";];
   LiftingLiquid -> LightweightElixir [color = gray; label = "70 Bone\n20 Silver\n10 Explosive";];
   LightweightElixir -> GravityDefyingDraught [color = gray; label = "80 LightMagic\n20 Clay";];
-  GravityDefyingDraught -> LevitationPotion [color = gray; label = "90 WindMagic\n10 Crystal";];
+  GravityDefyingDraught -> LevitationPotion [color = gray; label = "90 WindMagic\n10 Crystalline";];
   
   // Giant's Growth Formula
   EmptyCauldron -> VitaminExtract [color = green; label = "50 Plant\n30 Fruit\n20 Iron";];

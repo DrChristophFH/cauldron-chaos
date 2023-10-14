@@ -17,7 +17,7 @@ MonoBehaviour:
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
       Amount: 80
-    - Material: {fileID: 0}
+    - Material: {fileID: 11400000, guid: b68bc1ffbdfb7d348b15fcfff8958510, type: 2}
       Amount: 20
   - destination: {fileID: 11400000, guid: 47829164b8c7d624ba8f56b2d81e454b, type: 2}
     requiredMaterials:
