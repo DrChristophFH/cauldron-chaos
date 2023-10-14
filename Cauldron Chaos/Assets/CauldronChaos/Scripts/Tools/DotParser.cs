@@ -85,7 +85,11 @@ public class DotParser {
     MatchCollection matches = Regex.Matches(value, @"(\w+)\s*=\s*(.*?);");
 
     foreach (Match match in matches) {
-      properties.Add(match.Groups[1].Value, match.Groups[2].Value);
+      if (match.Groups[2].Value.StartsWith("\"") && match.Groups[2].Value.EndsWith("\"")) {
+        properties.Add(match.Groups[1].Value, match.Groups[2].Value[1..^1]);
+      } else {
+        properties.Add(match.Groups[1].Value, match.Groups[2].Value);
+      }
     }
 
     return properties;
