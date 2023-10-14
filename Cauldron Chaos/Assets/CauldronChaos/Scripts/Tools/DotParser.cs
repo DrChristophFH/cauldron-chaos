@@ -36,7 +36,7 @@ public class DotParser {
 
   private void ParseStates(string content, Graph graph) {
     // Regular expression to extract node definitions
-    MatchCollection matches = Regex.Matches(content, @"(\w+)\s*(?:\[(.*?)\])?;");
+    MatchCollection matches = Regex.Matches(content, @"(?:\n *)(\w+)\s*(?:\[(.*?)\])?;");
 
     foreach (Match match in matches) {
       State state = new() {
