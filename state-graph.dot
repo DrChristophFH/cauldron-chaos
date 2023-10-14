@@ -6,7 +6,7 @@ digraph state_graph {
   
   // -------------------- States --------------------
   // Start State
-  EmptyCauldron [style = filled;fillcolor = blue;BaseColor = "61, 108, 255, 1";TopColor = "61, 108, 255, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  EmptyCauldron [style = filled;fillcolor = blue;BaseColor = "0.556, 0.659, 0.990, 1";TopColor = "1, 1, 1, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "0.16";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
   
   FourLeafFroth [color = lightgreen;BaseColor = "0.645, 0.749, 0.180, 1";TopColor = "0.180, 0.749, 0.240, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "1.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   FortuneFindingMix [color = lightgreen;BaseColor = "0.066, 0.933, 0.127, 1";TopColor = "0.671, 0.933, 0.444, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1.8";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
