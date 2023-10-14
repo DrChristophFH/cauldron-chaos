@@ -6190,7 +6190,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6308,7 +6308,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.17
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -6625,7 +6625,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 50
+    maxNumParticles: 100
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -6772,7 +6772,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.73
       mode: 0
       spread: 0
       speed:
@@ -6891,7 +6891,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -7339,7 +7339,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 0.21960783, g: 0.7435537, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0}
         key2: {r: 0.1273585, g: 0.9267696, b: 1, a: 1}
         key3: {r: 0.65253925, g: 0, b: 1, a: 0}
         key4: {r: 0.65253925, g: 0, b: 1, a: 0}
@@ -7347,7 +7347,7 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 26600
+        ctime1: 65535
         ctime2: 65535
         ctime3: 65535
         ctime4: 65535
@@ -7363,8 +7363,8 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
-        m_NumColorKeys: 3
+        m_ColorSpace: 0
+        m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -7579,7 +7579,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.5
-      minScalar: 0.6
+      minScalar: 1.18
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8719,7 +8719,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.01
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -24885,11 +24885,11 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Bubble_Density: 0.88
+    - _Bubble_Density: 3.7
     - _Bubble_Spaceing: 0.44
-    - _Bubble_Spacing: 0.216
-    - _Bubble_Speed: 0.2
-    - _Bubble_Strength: 1.57
+    - _Bubble_Spacing: 0.45
+    - _Bubble_Speed: 1
+    - _Bubble_Strength: 0.95
     - _BumpScale: 1
     - _Circle_Size: 0.94
     - _Cutoff: 0.5
@@ -24910,19 +24910,19 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Wave_Height: 0.29
-    - _Wave_Rotation: 358.679
-    - _Wave_Speed: 0.01
-    - _Wave_Strength: 14.06
+    - _Wave_Height: 1
+    - _Wave_Rotation: 180
+    - _Wave_Speed: 0.001
+    - _Wave_Strength: 5.8
     - _ZWrite: 1
     m_Colors:
-    - _Base_Color: {r: 0.698, g: 0.698, b: 0.698, a: 1}
+    - _Base_Color: {r: 0.582, g: 0.729, b: 0.971, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 0.4269313, g: 0.5699431, b: 0.735849, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Ripple_Color: {r: 1, g: 0.61149544, b: 0, a: 1}
     - _Stylize_Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Top_Color: {r: 0.504, g: 0.512, b: 0.537, a: 1}
+    - _Top_Color: {r: 0.663, g: 0.749, b: 0.18, a: 1}
     - _Wave_Direction: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!1001 &1672769117

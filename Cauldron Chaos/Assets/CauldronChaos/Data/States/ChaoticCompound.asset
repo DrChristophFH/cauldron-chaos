@@ -38,13 +38,13 @@ MonoBehaviour:
   noOverwrite: 1
   smokeConfig:
     StartLifeTime: 4
-    StartSize: 0.3
+    StartSize: 0.12
     MaxParticles: 100
-    EmissionRate: 5
-    StartSpeed: 0.05
-    VelocityYMax: 0.6
-    VelocityYMin: 0.5
-    StartColor: {r: 61, g: 108, b: 255, a: 1}
+    EmissionRate: 2
+    StartSpeed: 1.242
+    VelocityYMax: 0.36
+    VelocityYMin: 1.24
+    StartColor: {r: 1.244, g: 0.42, b: 1, a: 1}
     ColorOverLifetime:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
@@ -75,20 +75,20 @@ MonoBehaviour:
       m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    TurblenceStrength: 0.01
-    TurblenceFrequency: 0.2
-    TurblenceSpeed: 0.2
+    TurblenceStrength: 0.02
+    TurblenceFrequency: 1.24
+    TurblenceSpeed: 1.24
     Mesh: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.185, g: 0.191, b: 0.235, a: 1}
+    BaseColor: {r: 0.182, g: 0.191, b: 1.2432, a: 1}
     TopColor: {r: 0.83, g: 0.802, b: 0.802, a: 1}
     Shades: 4
     WaveStrength: 4
-    WaveHeight: 1.5
-    WaveSpeed: 0.2
+    WaveHeight: 1.2
+    WaveSpeed: 1.24
     WaveRotation: 180
     BubbleSpeed: 1
     BubbleDensity: 3.7
-    BubbleSpacing: 0.45
-    BubbleStrength: 0.95
+    BubbleSpacing: 0.42
+    BubbleStrength: 0.92
     CircleSize: 0.94

@@ -54,6 +54,20 @@ public class StateGraphParser : Editor {
     config.BubbleDensity = float.Parse(properties["BubbleDensity"]);
     config.BubbleSpacing = float.Parse(properties["BubbleSpacing"]);
     config.BubbleStrength = float.Parse(properties["BubbleStrength"]);
+
+    CauldronSmokeConfig smokeConfig = state.SmokeConfig;
+    smokeConfig.StartLifeTime = float.Parse(properties["StartLifeTime"]);
+    smokeConfig.StartSize = float.Parse(properties["StartSize"]);
+    smokeConfig.MaxParticles = int.Parse(properties["MaxParticles"]);
+    smokeConfig.StartColor = TryGetColor(properties["StartColor"], out color) ? color : state.SmokeConfig.StartColor;
+    smokeConfig.StartSpeed = float.Parse(properties["StartSpeed"]);
+    smokeConfig.EmissionRate = float.Parse(properties["EmissionRate"]);
+    smokeConfig.VelocityYMin = float.Parse(properties["VelocityYMin"]);
+    smokeConfig.VelocityYMax = float.Parse(properties["VelocityYMax"]);
+    smokeConfig.TurblenceStrength = float.Parse(properties["TurblenceStrength"]);
+    smokeConfig.TurblenceFrequency = float.Parse(properties["TurblenceFrequency"]);
+    smokeConfig.TurblenceSpeed = float.Parse(properties["TurblenceSpeed"]);
+    
     state.NoOverwrite = true;
   }
 
