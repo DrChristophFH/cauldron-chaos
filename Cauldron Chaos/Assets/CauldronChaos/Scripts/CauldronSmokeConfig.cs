@@ -1,7 +1,9 @@
+using System;
+
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CauldronSmokeConfig", menuName = "Cauldron Chaos/Smoke Config", order = 1)]
-public class CauldronSmokeConfig : ScriptableObject {
+[Serializable]
+public class CauldronSmokeConfig {
   [Header("Main Config")]
   public float StartLifeTime = 4.0f;
   public float StartSize = 0.3f;

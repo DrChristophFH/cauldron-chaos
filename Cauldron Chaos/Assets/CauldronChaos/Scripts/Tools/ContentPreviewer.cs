@@ -29,16 +29,19 @@ public class ContentPreviewer : EditorWindow {
     GUILayout.Label("Select a CauldronState", EditorStyles.boldLabel);
 
     EditorGUILayout.BeginHorizontal();
-    EditorGUILayout.LabelField("CauldronState");
+    EditorGUILayout.LabelField("CauldronState", GUILayout.Width(100));
+
     if (GUILayout.Button("<-")) {
       stateIndex--;
       if (stateIndex < 0) {
         stateIndex = states.Length - 1;
       }
     }
+
     // dropdown menu for selecting a CauldronState
     stateIndex = EditorGUILayout.Popup(stateIndex, Array.ConvertAll(states, path => path.Substring(path.LastIndexOf('/') + 1)), GUILayout.Width(200));
     selectedState = AssetDatabase.LoadAssetAtPath<CauldronState>(states[stateIndex]);
+
     if (GUILayout.Button("->")) {
       stateIndex++;
       if (stateIndex >= states.Length) {

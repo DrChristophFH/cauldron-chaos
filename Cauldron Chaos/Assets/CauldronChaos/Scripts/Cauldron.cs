@@ -11,9 +11,6 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   private CauldronState state;
 
   [SerializeField]
-  private ParticleSystem smokeParticles;
-
-  [SerializeField]
   private Vector3 offset = new Vector3(0, 0.1f, 0);
 
   [SerializeField]
@@ -23,6 +20,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   private GameObject content;
 
   private Material liquid;
+  private ParticleSystem smokeParticles;
 
   private readonly Dictionary<IngredientMaterial, int> materials = new();
 
@@ -32,8 +30,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
 
   private void Start() {
     liquid = content.GetComponent<Renderer>().material;
-    // spawn in smoke particles
-    smokeParticles = Instantiate(smokeParticles, transform.position + offset, Quaternion.identity);
+    smokeParticles = GetComponent<ParticleSystem>();
     ApplySmokeConfig(state.SmokeConfig);
     ApplyContentConfig(state.ContentConfig);
   }
