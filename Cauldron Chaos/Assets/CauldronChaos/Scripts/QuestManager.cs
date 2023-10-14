@@ -12,10 +12,16 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
   private List<Quest> quests;
 
   [SerializeField]
-  private IObservable<CauldronState> cauldron;
+  private Cauldron cauldron;
+  private IObservable<CauldronState> cauldronState;
 
   [SerializeField]
   private Quest currentQuest;
+
+  [SerializeField]
+  private AudioClip successSound;
+  [SerializeField]
+  private AudioClip newQuestSound;
 
   [SerializeField]
   private Speaker speaker;
@@ -23,8 +29,10 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
   public int Score { get; private set; } = 0;
 
   private void Start() {
-    cauldron.Subscribe(this);
-    GenerateNewRandomQuest();
+    cauldronState = cauldron;
+    cauldronState.Subscribe(this);
+    // wait 5 seconds
+    Invoke("GenerateNewRandomQuest", 5f);
   }
 
   public void OnCompleted() { } // do nothing
@@ -33,13 +41,15 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
   public void OnNext(CauldronState newState) {
     if (currentQuest.RequiredCauldronState.Equals(newState)) {
       Score += currentQuest.RewardPoints;
-      GenerateNewRandomQuest();
-      speaker.Speak(currentQuest.Description);
+      AudioSource.PlayClipAtPoint(successSound, transform.position);
+      Invoke("GenerateNewRandomQuest", 5f);
     }
   }
 
   private void GenerateNewRandomQuest() {
     int randomIndex = UnityEngine.Random.Range(0, quests.Count);
     currentQuest = quests[randomIndex];
+    AudioSource.PlayClipAtPoint(newQuestSound, transform.position);
+    speaker.Speak(currentQuest.QuestName);
   }
 }
