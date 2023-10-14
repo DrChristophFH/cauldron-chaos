@@ -31,14 +31,14 @@ MonoBehaviour:
       Amount: 50
   noOverwrite: 1
   smokeConfig:
-    StartLifeTime: 4
-    StartSize: 0.19
+    StartLifeTime: 5.28
+    StartSize: 0.12
     MaxParticles: 100
-    EmissionRate: 7
+    EmissionRate: 22.51
     StartSpeed: 0.21
     VelocityYMax: 0.59
     VelocityYMin: 1.23
-    StartColor: {r: 0.24, g: 0.42, b: 1, a: 1}
+    StartColor: {r: 0, g: 0, b: 0, a: 1}
     ColorOverLifetime:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
@@ -69,7 +69,7 @@ MonoBehaviour:
       m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    TurblenceStrength: 0.01
+    TurblenceStrength: 0.03
     TurblenceFrequency: 0.2
     TurblenceSpeed: 0.2
     Mesh: {fileID: 0}
