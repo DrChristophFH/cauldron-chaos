@@ -1,6 +1,6 @@
 # Cauldron Chaos
 
-This is a small VR game made for the Virtual Reality course at the University of Applied Sciences Upper Austria by 
+This is a small VR game made for the Virtual Reality course at the University of Applied Sciences Upper Austria by
 
 - [Christoph Daxerer](https://github.com/DrChristophFH)
 - [Christopher Eberl]()
@@ -17,7 +17,7 @@ This section describes the technical details of the game and how ingredients and
 
 ### Property System
 
-Ingredients are primarily characterized by their properties. They describe the compositional information of the ingredient in units. 
+Ingredients are primarily characterized by their properties. They describe the compositional information of the ingredient in units.
 
 ##### Creating materials
 
@@ -25,7 +25,7 @@ To define a material, `Create -> Cauldron Chaos -> Ingredient Material`. Place t
 
 ### Ingredients
 
-Ingredients are defined by a set of properties and a name. 
+Ingredients are defined by a set of properties and a name.
 
 - **Apple**
   - Category: Fruit
@@ -39,7 +39,7 @@ To declare an object (or prefab) as an ingredient, add the `Ingredient` componen
 
 ### Recipes
 
-Recipes are based upon a graph like structure. 
+Recipes are based upon a graph like structure.
 
 The cauldron always has a state in which it is in. The state is the primary source of visual and audio feedback.
 
@@ -56,7 +56,7 @@ Each state has a set of transitions that will be taken once the cauldron has the
 - Example Transition
   - **From**: Water Base
   - **To**: Strange Liquid
-  - **Requires**: 
+  - **Requires**:
     - Temperature > 50°C
     - Material
       - Organic 10 (consumed)
@@ -64,30 +64,30 @@ Each state has a set of transitions that will be taken once the cauldron has the
     - Ingredient
       - 1x of "Magical" characteristic
 
-
 ## TODO
 
 --- Technical ---
-- [ ] Menu scene          CE
-  - [ ] Start Button      CE
+
 - [x] Create Cauldron State System
   - [x] Visual Feedback: Entry, During (Exit uniform?) CD
-  - [ ] Audio Feedback: Entry, During    CD
+  - [ ] Audio Feedback: Entry, During CD
   - [ ] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.) CD
 - [ ] Add sound effects (music, ingredient into cauldron) CD
 - [ ] Create small task system ??
 
 --- Gameplay ---
+
 - [ ] Populate Level with ingredients CD/CE
-- [x] Fully create all materials   CE
-  - [x] Hierarchy                  CE
-- [ ] Configure Ingredient stats   CD/CE
+- [x] Fully create all materials CE
+  - [x] Hierarchy CE
+- [ ] Configure Ingredient stats CD/CE
   - [ ] Balance
-- [x] Build States and Transitions 
+- [x] Build States and Transitions
 - [ ] Create Player 2 Book
 
 --- Polish ---
-- [ ] Add physics interactions to world objects 
+
+- [ ] Add physics interactions to world objects
   - [ ] doors (circular drive or joints)
   - [ ] drawers (linear drives)
   - [ ] potions from ceiling(joints?)

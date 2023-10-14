@@ -4,149 +4,88 @@ digraph state_graph {
   node [shape = note; fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth = 2.0;];
   edge [fontsize = 16; fontname = "Helvetica"; labelfontname = "Helvetica"; fontcolor = "#FFFFFF"; color = "#FFFFFF"; penwidth = 2.0;];
   
-  // -------------------- Materials --------------------
-  
-  /**
-   * Materials
-   * - Liquid
-   *   - Water
-   * - Solid
-   *   - Metal
-   *     - Iron
-   *     - lightgreen
-   *     - Silver
-   *     - Copper
-   *     - Fancy (Base for all other fancy metals if we want to add more)
-   *   - Organic
-   *     - Wood
-   *       - Paper
-   *     - Bone
-   *     - Flesh
-   *     - Leather
-   *   - Natural
-   *     - Stone
-   *     - Dirt
-   *     - Sand
-   *     - Clay
-   *     - Glass
-   *     - Gemstones
-   *     - Crystal
-   *   - Plastic
-   * - Gas
-   * - Magic Power
-   *   - Water Magic
-   *   - Fire Magic
-   *   - Earth Magic
-   *   - Wind Magic
-   */
-  
   // -------------------- States --------------------
   // Start State
-  EmptyCauldron [style = filled;fillcolor = blue;];
+  EmptyCauldron [style = filled;fillcolor = blue;BaseColor = "61, 108, 255, 1";TopColor = "61, 108, 255, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
   
-  // Intermediate States
-  // StimulatingSolution [color = red;];
-  // VibrantTonic [color = red;];
+  FourLeafFroth [color = lightgreen;BaseColor = "0.645, 0.749, 0.180, 1";TopColor = "0.180, 0.749, 0.240, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "1.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  FortuneFindingMix [color = lightgreen;BaseColor = "0.066, 0.933, 0.127, 1";TopColor = "0.671, 0.933, 0.444, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1.8";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  FourLeafFroth [color = lightgreen;];
-  FortuneFindingMix [color = lightgreen;];
+  CondensingConcoction [color = teal;BaseColor = "0.691, 0.750, 0.933, 1";TopColor = "0.426, 0.487, 0.679, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.85";];
+  MinimizingMix [color = teal;BaseColor = "0.903, 0.758, 0.962, 1";TopColor = "0.746, 0.646, 0.971, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.25";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  CondensingConcoction [color = teal;];
-  MinimizingMix [color = teal;];
+  SoothingSyrup [color = darkblue;BaseColor = "0.684, 0.749, 0.180, 1";TopColor = "0.180, 0.749, 0.328, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  DrowsyDraught [color = darkblue;BaseColor = "0.582, 0.729, 0.971, 1";TopColor = "0.663, 0.749, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.001";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
   
-  SoothingSyrup [color = darkblue;];
-  DrowsyDraught [color = darkblue;];
+  SimmeringBroth [color = purple;BaseColor = "0.471, 0.237, 0.028, 1";TopColor = "0.622, 0.020, 0.057, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.3";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ClearBroth [color = purple;BaseColor = "0.341, 0.737, 0.945, 1";TopColor = "0.646, 1, 0.993, 1";Shades = "4";WaveStrength = "8.230";WaveHeight = "0.200";WaveSpeed = "0.007";WaveRotation = "296.367";BubbleSpeed = "0.911";BubbleDensity = "4.258";BubbleSpacing = "0.335";BubbleStrength = "2.07";CircleSize = "0.94";];
+  TranslucentTonic [color = purple;BaseColor = "0.752, 0.798, 0.943, 1";TopColor = "0.962, 0.756, 0.730, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1.2";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  FadingFluid [color = purple;BaseColor = "0.729, 0.774, 0.915, 0.427";TopColor = "0.903, 0.910, 0.933, 0.447";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.002";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  BarelyVisibleBrew [color = purple;BaseColor = "0.698, 0.698, 0.698, 1";TopColor = "0.504, 0.512, 0.537, 1";Shades = "3";WaveStrength = "14.06";WaveHeight = "0.29";WaveSpeed = "0.01";WaveRotation = "358.679";BubbleSpeed = "0.2";BubbleDensity = "0.88";BubbleSpacing = "0.216";BubbleStrength = "1.57";CircleSize = "0.94";];
+  NearlyInvisiblePotion [color = purple;BaseColor = "0.783, 0.829, 0.971, 1";TopColor = "0.743, 0.924, 0.597, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "1.5";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  // ClarifyingCompound [color = blue;];
-  // HonestyElixir [color = blue;];
+  DandelionTea [color = grey;BaseColor = "0.180, 0.749, 0.347, 1";TopColor = "0.858, 0.952, 0.917, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.001";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  FloatingBubbles [color = grey;BaseColor = "0.913, 0.915, 0.824, 1";TopColor = "0.841, 0.915, 0.427, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  FizzyFoam [color = grey;BaseColor = "0.414, 0.924, 0.635, 1";TopColor = "0.126, 0.726, 0.636, 1";Shades = "3";WaveStrength = "6";WaveHeight = "2.5";WaveSpeed = "0.3";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  LiftingLiquid [color = grey;BaseColor = "0.506, 0.347, 0.537, 1";TopColor = "0.180, 0.600, 0.749, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  LightweightElixir [color = grey;BaseColor = "0.604, 0.641, 0.142, 1";TopColor = "1, 0.457, 0.639, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  GravityDefyingDraught [color = grey;BaseColor = "0.766, 0.431, 0.943, 1";TopColor = "0.592, 0.431, 0.924, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.08";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  SimmeringBroth [color = purple;];
-  ClearBroth [color = purple;];
-  TranslucentTonic [color = purple;];
-  FadingFluid [color = purple;];
-  BarelyVisibleBrew [color = purple;];
-  NearlyInvisiblePotion [color = purple;];
+  VitaminExtract [color = green;BaseColor = "0.108, 0.603, 0.037, 1";TopColor = "0.744, 0.952, 0.373, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1.4";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  MuscleMassMixture [color = green;BaseColor = "0.952, 0.453, 0.587, 1";TopColor = "0.647, 0.749, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.3";WaveSpeed = "0.08";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  BulkingBrew [color = green;BaseColor = "0.180, 0.749, 0.370, 1";TopColor = "0.503, 0.896, 0.789, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  EnlargingElixir [color = green;BaseColor = "0.749, 0.402, 0.180, 1";TopColor = "0.560, 0.749, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.4";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ExpandingExtract [color = green;BaseColor = "0.208, 0.443, 0.115, 1";TopColor = "0.749, 0.629, 0.180, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  GrowthAccelerant [color = green;BaseColor = "0.180, 0.749, 0.324, 1";TopColor = "0.749, 0.540, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.3";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  DandelionTea [color = grey;];
-  FloatingBubbles [color = grey;];
-  FizzyFoam [color = grey;];
-  LiftingLiquid [color = grey;];
-  LightweightElixir [color = grey;];
-  GravityDefyingDraught [color = grey;];
+  SimmeringBroth [color = red;BaseColor = "0.471, 0.237, 0.028, 1";TopColor = "0.622, 0.020, 0.057, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.3";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  StirringSolution [color = red;BaseColor = "0.844, 0.591, 0.943, 1";TopColor = "0.915, 0.701, 0.530, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  PlantExtractBase [color = red;BaseColor = "0.391, 0.749, 0.180, 1";TopColor = "0.809, 0.971, 0.710, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ThickeningMixture [color = red;BaseColor = "0.749, 0.668, 0.180, 1";TopColor = "0.749, 0.510, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  BubblingBrew [color = red;BaseColor = "0.592, 0.064, 0.236, 1";TopColor = "0.316, 0.708, 0.314, 1";Shades = "3";WaveStrength = "10.195";WaveHeight = "0.539";WaveSpeed = "0.060";WaveRotation = "201.728";BubbleSpeed = "0.600";BubbleDensity = "4.993";BubbleSpacing = "0.316";BubbleStrength = "0.877";CircleSize = "0.94";];
+  ViscousBlend [color = red;BaseColor = "0.556, 0.170, 0.112, 1";TopColor = "0.141, 0.126, 0.130, 1";Shades = "7";WaveStrength = "5.8";WaveHeight = "2.1";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  MorphingMud [color = red;BaseColor = "0.292, 0.157, 0.015, 1";TopColor = "0.650, 0.163, 0.027, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.01";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  TransformativeOoze [color = red;BaseColor = "0.496, 0.180, 0.749, 1";TopColor = "0.749, 0.345, 0.180, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "2.2";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ShapeShiftingSludge [color = red;BaseColor = "0.377, 0.177, 0.033, 1";TopColor = "0.462, 0.383, 0.150, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  IdentifyingElixir [color = red;BaseColor = "0.896, 0.826, 0.215, 1";TopColor = "0.632, 0.751, 0.924, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1.7";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  PersonalizingPotion [color = red;BaseColor = "0.537, 0.167, 0.119, 1";TopColor = "0.749, 0.180, 0.736, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1.4";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
-  // ShimmeringSolution [color = lightblue;];
-  // GlimmeringGlobs[color = lightblue;];
-  // VaporizingVapors[color = lightblue;];
-  // DisappearingDraught[color = lightblue;];
-  // PhazingPotion[color = lightblue;];
-  // CrossfadeConcoction[color = lightblue;];
-  
-  VitaminExtract [color = green;];
-  MuscleMassMixture [color = green;];
-  BulkingBrew [color = green;];
-  EnlargingElixir [color = green;];
-  ExpandingExtract [color = green;];
-  GrowthAccelerant [color = green;];
-  
-  // SimmeringBroth [color = orange;];
-  // BubblingBrimstone [color = orange;];
-  // SearingAcidSolution [color = orange;];
-  // FieryConcoction [color = orange;];
-  // SmolderingPotion [color = orange;];
-  // SmokeSpewingBrew [color = orange;];
-  
-  SimmeringBroth [color = red;];
-  StirringSolution [color = red;];
-  PlantExtractBase [color = red;];
-  ThickeningMixture [color = red;];
-  BubblingBrew [color = red;];
-  ViscousBlend [color = red;];
-  MorphingMud [color = red;];
-  TransformativeOoze [color = red;];
-  ShapeShiftingSludge [color = red;];
-  IdentifyingElixir [color = red;];
-  PersonalizingPotion [color = red;];
-  
-  NightshadeInfusion [color = black;];
-  ToxicBroth [color = black;];
-  SinisterSolution [color = black;];
-  WickedBrew [color = black;];
-  FatalBlend [color = black;];
-  LethalLiquid [color = black;];
-  SleepingSyrup [color = black;];
-  TranquilTonic [color = black;];
-  ComatoseConcoction [color = black;];
-  SuspendedAnimationSerum [color = black;];
-  NearDeathNostrum [color = black;];
+  NightshadeInfusion [color = black;BaseColor = "0.130, 0.163, 0.264, 1";TopColor = "0.478, 0.572, 0.867, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "2.1";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ToxicBroth [color = black;BaseColor = "0.749, 0.180, 0.551, 1";TopColor = "0.588, 0.180, 0.749, 1";Shades = "7";WaveStrength = "5.8";WaveHeight = "1.8";WaveSpeed = "0.09";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  SinisterSolution [color = black;BaseColor = "0.069, 0.044, 0.179, 1";TopColor = "0.169, 0.055, 0.075, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  WickedBrew [color = black;BaseColor = "0.622, 0.104, 0.044, 1";TopColor = "0.034, 0.092, 0.273, 1";Shades = "7";WaveStrength = "5.8";WaveHeight = "2.4";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  FatalBlend [color = black;BaseColor = "0.063, 0.028, 0.245, 1";TopColor = "0.471, 0.020, 0.028, 1";Shades = "4";WaveStrength = "4";WaveHeight = "1";WaveSpeed = "0.000";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  LethalLiquid [color = black;BaseColor = "0.424, 0.054, 0.302, 1";TopColor = "0.749, 0.192, 0.180, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "2.3";WaveSpeed = "0.25";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  SleepingSyrup [color = black;BaseColor = "0.749, 0.723, 0.180, 1";TopColor = "0.387, 0.943, 0.908, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.01";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  TranquilTonic [color = black;BaseColor = "0.830, 0.035, 0.752, 1";TopColor = "0.533, 0.623, 0.905, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  ComatoseConcoction [color = black;BaseColor = "0.147, 0.173, 0.254, 1";TopColor = "0.247, 0.417, 0.481, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1.2";WaveSpeed = "0.01";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  SuspendedAnimationSerum [color = black;BaseColor = "0.079, 0.238, 0.735, 1";TopColor = "0, 0, 0, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "0";WaveSpeed = "0";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  NearDeathNostrum [color = black;BaseColor = "0.103, 0.105, 0.113, 1";TopColor = "0.198, 0.034, 0.320, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "0.5";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
   
   // End State
-  // EnergyElixir [color = red;];
-  LuckSerum [color = lightgreen;];
-  ShrinkingPotion [color = teal;];
-  SleepingDraught [color = darkblue;];
-  // TruthSerum [color = blue;];
-  InvisibilityPotion [color = purple;];
-  LevitationPotion [color = grey;];
-  // TeleportationTincture [color = lightblue;];
-  GiantGrowthFormula [color = green;];
-  // DragonsBreathBrew [color = orange;];
-  PolyjuicePotion [color = red;];
-  DraughtOfLivingDeath [color = black;];
+  LuckSerum [color = lightgreen;BaseColor = "1, 0.976, 0.004, 1";TopColor = "0.867, 0.723, 0.004, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "1.3";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ShrinkingPotion [color = teal;BaseColor = "0.523, 0.749, 0.180, 1";TopColor = "0.511, 0.896, 0.888, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  SleepingDraught [color = darkblue;BaseColor = "0.552, 0.649, 0.952, 1";TopColor = "0.447, 0.811, 0.659, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.01";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  InvisibilityPotion [color = purple;BaseColor = "0.804, 0.952, 0.937, 1";TopColor = "0.837, 0.981, 0.917, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.000";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  LevitationPotion [color = grey;BaseColor = "0.947, 0.830, 0.962, 1";TopColor = "0.347, 0.725, 0.886, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  GiantGrowthFormula [color = green;BaseColor = "0.749, 0.448, 0.180, 1";TopColor = "0.069, 0.679, 0.035, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.8";WaveSpeed = "0.06";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  PolyjuicePotion [color = red;BaseColor = "0.917, 0.933, 0.823, 1";TopColor = "0.997, 0.788, 1, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  DraughtOfLivingDeath [color = black;BaseColor = "0.125, 0.169, 0.120, 1";TopColor = "0, 0, 0, 1";Shades = "4";WaveStrength = "11.07";WaveHeight = "0.2";WaveSpeed = "0";WaveRotation = "0";BubbleSpeed = "0.2";BubbleDensity = "5.89";BubbleSpacing = "0";BubbleStrength = "0.57";CircleSize = "0.94";];
   
   // Game Over
-  RuinedRecipe [style = filled;fillcolor = red;];
+  RuinedRecipe [style = filled;fillcolor = red;BaseColor = "0.037, 0.019, 0.016, 1";TopColor = "0.084, 0.069, 0.024, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
   // Inter Recipe States
-  DirtySoup [style = filled;fillcolor = darkmagenta;];
-  StrangeBrew [style = filled;fillcolor = darkmagenta;];
-  DarkMixture [style = filled;fillcolor = darkmagenta;];
-  CursedCompound [style = filled;fillcolor = darkmagenta;];
-  ChaoticCompound [style = filled;fillcolor = darkmagenta;];
-  HexedFoam [style = filled;fillcolor = darkmagenta;];
-  CharmedFroth [style = filled;fillcolor = darkmagenta;];
-  BewitchingBlend [style = filled;fillcolor = darkmagenta;];
-  EvilElixir [style = filled;fillcolor = darkmagenta;];
-  VileVapors [style = filled;fillcolor = darkmagenta;];
+  DirtySoup [style = filled;fillcolor = darkmagenta;BaseColor = "0.711, 0.749, 0.180, 1";TopColor = "0.749, 0.632, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  StrangeBrew [style = filled;fillcolor = darkmagenta;BaseColor = "0.613, 0.037, 0.534, 1";TopColor = "0.180, 0.749, 0.335, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "2.6";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  DarkMixture [style = filled;fillcolor = darkmagenta;BaseColor = "0.118, 0.153, 0.264, 1";TopColor = "0.090, 0.093, 0.103, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "1.8";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  CursedCompound [style = filled;fillcolor = darkmagenta;BaseColor = "0.509, 0.146, 0.177, 1";TopColor = "0.292, 0.045, 0.078, 1";Shades = "4";WaveStrength = "4";WaveHeight = "2.1";WaveSpeed = "0.05";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  ChaoticCompound [style = filled;fillcolor = darkmagenta;BaseColor = "0.185, 0.191, 0.235, 1";TopColor = "0.830, 0.802, 0.802, 1";Shades = "4";WaveStrength = "4";WaveHeight = "1.5";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.94";];
+  HexedFoam [style = filled;fillcolor = darkmagenta;BaseColor = "0.750, 0.952, 0.810, 1";TopColor = "0.896, 0.798, 0.855, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  CharmedFroth [style = filled;fillcolor = darkmagenta;BaseColor = "0.641, 0.347, 0.464, 1";TopColor = "0.896, 0.528, 0.642, 1";Shades = "5";WaveStrength = "2";WaveHeight = "1.8";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  BewitchingBlend [style = filled;fillcolor = darkmagenta;BaseColor = "0.342, 0.786, 0.557, 1";TopColor = "0.637, 0.828, 0.122, 1";Shades = "3";WaveStrength = "12.884";WaveHeight = "0.798";WaveSpeed = "0.084";WaveRotation = "344.753";BubbleSpeed = "1.773";BubbleDensity = "1.834";BubbleSpacing = "0.404";BubbleStrength = "1.295";CircleSize = "0.94";];
+  EvilElixir [style = filled;fillcolor = darkmagenta;BaseColor = "0.415, 0.116, 0.060, 1";TopColor = "0.052, 0.064, 0.103, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.25";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
+  VileVapors [style = filled;fillcolor = darkmagenta;BaseColor = "0.640, 0.098, 0.716, 1";TopColor = "0.943, 0.422, 0.746, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "2.2";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";];
   
   // -------------------- Potions --------------------
   // difficulty depends on the intended path length
@@ -154,192 +93,163 @@ digraph state_graph {
   // length = 3-5 -> medium
   // length = 5+ -> hard
   
-  // Energy Elixir
-  // EmptyCauldron -> StimulatingSolution [color = red; label=""];
-  // StimulatingSolution -> VibrantTonic [color = red; label=""];
-  // VibrantTonic -> EnergyElixir [color = red; label=""];
-  
   // Luck Serum
-  EmptyCauldron -> FourLeafFroth [color = lightgreen; label = "50 Plant\n10 Gold";];
-  FourLeafFroth -> FortuneFindingMix [color = lightgreen; label = "";];
-  FortuneFindingMix -> LuckSerum [color = lightgreen; label = "50 Gemstone";];
+  EmptyCauldron -> FourLeafFroth [color = lightgreen; label = "50 Plant\n15 Bone\n10 Gold";];
+  FourLeafFroth -> FortuneFindingMix [color = lightgreen; label = "20 LightMagic\n70 Fruit\n10 Glass";];
+  FortuneFindingMix -> LuckSerum [color = lightgreen; label = "70 Gemstone";];
   
   // Shrinking Potion
-  EmptyCauldron -> CondensingConcoction [color = teal; label = "";];
-  CondensingConcoction -> MinimizingMix [color = teal; label = "";];
-  MinimizingMix -> ShrinkingPotion [color = teal; label = "";];
+  EmptyCauldron -> CondensingConcoction [color = teal; label = "40 Air\n20 Plant\n15 Silver";];
+  CondensingConcoction -> MinimizingMix [color = teal; label = "50 EarthMagic\n30 Vegetable\n20 Glass";];
+  MinimizingMix -> ShrinkingPotion [color = teal; label = "30 Gemstone\n10 LightMagic";];
   
   // Sleeping Draught
-  EmptyCauldron -> SoothingSyrup [color = darkblue; label = "";];
-  SoothingSyrup -> DrowsyDraught [color = darkblue; label = "";];
-  DrowsyDraught -> SleepingDraught [color = darkblue; label = "";];
-  
-  // Truth Serum
-  // EmptyCauldron -> ClarifyingCompound [color = blue; label=""];
-  // ClarifyingCompound -> HonestyElixir [color = blue; label=""];
-  // HonestyElixir -> TruthSerum [color = blue; label=""];
+  EmptyCauldron -> SoothingSyrup [color = darkblue; label = "40 Sticky\n30 Plant\n20 Flower";];
+  SoothingSyrup -> DrowsyDraught [color = darkblue; label = "50 Stone\n30 Wood\n20 Fruit";];
+  DrowsyDraught -> SleepingDraught [color = darkblue; label = "10 DarkMagic\n80 Sand\n5 Gemstone";];
   
   // Invisibility Potion
-  EmptyCauldron -> SimmeringBroth [color = purple; label = "";];
-  SimmeringBroth -> ClearBroth [color = purple; label = "";];
-  ClearBroth -> TranslucentTonic [color = purple; label = "";];
-  TranslucentTonic -> FadingFluid [color = purple; label = "";];
-  FadingFluid -> BarelyVisibleBrew [color = purple; label = "";];
-  BarelyVisibleBrew -> NearlyInvisiblePotion [color = purple; label = "";];
-  NearlyInvisiblePotion -> InvisibilityPotion [color = purple; label = "";];
+  EmptyCauldron -> SimmeringBroth [color = purple; label = "30 Plant\n20 Glass";];
+  SimmeringBroth -> ClearBroth [color = purple; label = "40 LightMagic\n30 Air\n10 Silver";];
+  ClearBroth -> TranslucentTonic [color = purple; label = "80 Glass\n20 Crystal";];
+  TranslucentTonic -> FadingFluid [color = purple; label = "30 LightMagic\n10 Gemstone";];
+  FadingFluid -> BarelyVisibleBrew [color = purple; label = "50 WindMagic\n40 Silver\n10 Crystalline";];
+  BarelyVisibleBrew -> NearlyInvisiblePotion [color = purple; label = "60 LightMagic\n40 Glass";];
+  NearlyInvisiblePotion -> InvisibilityPotion [color = purple; label = "70 Crystal\n30 DarkMagic";];
   
   // Levitation Potion
-  EmptyCauldron -> DandelionTea [color = gray; label = "";];
-  DandelionTea -> FloatingBubbles [color = gray; label = "";];
-  FloatingBubbles -> FizzyFoam [color = gray; label = "";];
-  FizzyFoam -> LiftingLiquid [color = gray; label = "";];
-  LiftingLiquid -> LightweightElixir [color = gray; label = "";];
-  LightweightElixir -> GravityDefyingDraught [color = gray; label = "";];
-  GravityDefyingDraught -> LevitationPotion [color = gray; label = "";];
-  
-  // Teleportation Tincture
-  // EmptyCauldron -> ShimmeringSolution [color = lightblue; label=""];
-  // ShimmeringSolution -> GlimmeringGlobs [color = lightblue; label=""];
-  // GlimmeringGlobs -> VaporizingVapors [color = lightblue; label=""];
-  // VaporizingVapors -> DisappearingDraught [color = lightblue; label=""];
-  // DisappearingDraught -> PhazingPotion [color = lightblue; label=""];
-  // PhazingPotion -> CrossfadeConcoction [color = lightblue; label=""];
-  // CrossfadeConcoction -> TeleportationTincture [color = lightblue; label=""];
+  EmptyCauldron -> DandelionTea [color = gray; label = "50 Plant\n20 Flower";];
+  DandelionTea -> FloatingBubbles [color = gray; label = "70 Air\n20 Plant";];
+  FloatingBubbles -> FizzyFoam [color = gray; label = "70 Explosive\n40 Plastic\n10 Copper";];
+  FizzyFoam -> LiftingLiquid [color = gray; label = "60 WindMagic\n20 Powdery";];
+  LiftingLiquid -> LightweightElixir [color = gray; label = "70 Bone\n20 Silver\n10 Explosive";];
+  LightweightElixir -> GravityDefyingDraught [color = gray; label = "80 LightMagic\n20 Clay";];
+  GravityDefyingDraught -> LevitationPotion [color = gray; label = "90 WindMagic\n10 Crystal";];
   
   // Giant's Growth Formula
-  EmptyCauldron -> VitaminExtract [color = green; label = "";];
-  VitaminExtract -> MuscleMassMixture [color = green; label = "";];
-  MuscleMassMixture -> BulkingBrew [color = green; label = "";];
-  BulkingBrew -> EnlargingElixir [color = green; label = "";];
-  EnlargingElixir -> ExpandingExtract [color = green; label = "";];
-  ExpandingExtract -> GrowthAccelerant [color = green; label = "";];
-  GrowthAccelerant -> GiantGrowthFormula [color = green; label = "";];
-  
-  // Dragon's Breath Brew
-  // EmptyCauldron -> SimmeringBroth [color = orange; label=""];
-  // SimmeringBroth -> BubblingBrimstone [color = orange; label=""];
-  // BubblingBrimstone -> SearingAcidSolution [color = orange; label=""];
-  // SearingAcidSolution -> FieryConcoction [color = orange; label=""];
-  // FieryConcoction -> SmolderingPotion [color = orange; label=""];
-  // SmolderingPotion -> SmokeSpewingBrew [color = orange; label=""];
-  // SmokeSpewingBrew -> DragonsBreathBrew [color = orange; label=""];
+  EmptyCauldron -> VitaminExtract [color = green; label = "50 Plant\n30 Fruit\n20 Iron";];
+  VitaminExtract -> MuscleMassMixture [color = green; label = "40 Meat\n30 Bone\n30 EarthMagic";];
+  MuscleMassMixture -> BulkingBrew [color = green; label = "60 Sticky\n40 Concrete\n10 Organic";];
+  BulkingBrew -> EnlargingElixir [color = green; label = "70 EarthMagic\n100 Organic";];
+  EnlargingElixir -> ExpandingExtract [color = green; label = "80 Solid\n20 Explosive";];
+  ExpandingExtract -> GrowthAccelerant [color = green; label = "90 Plant\n10 Gold";];
+  GrowthAccelerant -> GiantGrowthFormula [color = green; label = "100 EarthMagic";];
   
   // Polyjuice Potion
-  EmptyCauldron -> SimmeringBroth [color = red; label = "";];
-  SimmeringBroth -> StirringSolution [color = red; label = "";];
-  StirringSolution -> PlantExtractBase [color = red; label = "";];
-  PlantExtractBase -> ThickeningMixture [color = red; label = "";];
-  ThickeningMixture -> BubblingBrew [color = red; label = "";];
-  BubblingBrew -> ViscousBlend [color = red; label = "";];
-  ViscousBlend -> MorphingMud [color = red; label = "";];
-  MorphingMud -> TransformativeOoze [color = red; label = "";];
-  TransformativeOoze -> ShapeShiftingSludge [color = red; label = "";];
-  ShapeShiftingSludge -> IdentifyingElixir [color = red; label = "";];
-  IdentifyingElixir -> PersonalizingPotion [color = red; label = "";];
-  PersonalizingPotion -> PolyjuicePotion [color = red; label = "";];
+  EmptyCauldron -> SimmeringBroth [color = red; label = "30 Plant\n20 Bone";];
+  SimmeringBroth -> StirringSolution [color = red; label = "40 WaterMagic\n30 Meat\n30 Silver";];
+  StirringSolution -> PlantExtractBase [color = red; label = "60 Plant\n40 Water";];
+  PlantExtractBase -> ThickeningMixture [color = red; label = "50 Bone\n30 WaterMagic\n20 Wood";];
+  ThickeningMixture -> BubblingBrew [color = red; label = "40 FireMagic\n40 Water\n20 Fruit";];
+  BubblingBrew -> ViscousBlend [color = red; label = "60 Wood\n30 WaterMagic\n10 Silver";];
+  ViscousBlend -> MorphingMud [color = red; label = "70 Earth\n20 Water\n10 Gold";];
+  MorphingMud -> TransformativeOoze [color = red; label = "80 EarthMagic\n20 Silver";];
+  TransformativeOoze -> ShapeShiftingSludge [color = red; label = "90 WaterMagic\n10 Wood";];
+  ShapeShiftingSludge -> IdentifyingElixir [color = red; label = "80 Plant\n20 Silver";];
+  IdentifyingElixir -> PersonalizingPotion [color = red; label = "100 WaterMagic";];
+  PersonalizingPotion -> PolyjuicePotion [color = red; label = "100 EarthMagic";];
   
   // Draught of Living Death
-  EmptyCauldron -> NightshadeInfusion [color = black; label = "";];
-  NightshadeInfusion -> ToxicBroth [color = black; label = "";];
-  ToxicBroth -> SinisterSolution [color = black; label = "";];
-  SinisterSolution -> WickedBrew [color = black; label = "";];
-  WickedBrew -> FatalBlend [color = black; label = "";];
-  FatalBlend -> LethalLiquid [color = black; label = "";];
-  LethalLiquid -> SleepingSyrup [color = black; label = "";];
-  SleepingSyrup -> TranquilTonic [color = black; label = "";];
-  TranquilTonic -> ComatoseConcoction [color = black; label = "";];
-  ComatoseConcoction -> SuspendedAnimationSerum [color = black; label = "";];
-  SuspendedAnimationSerum -> NearDeathNostrum [color = black; label = "";];
-  NearDeathNostrum -> DraughtOfLivingDeath [color = black; label = "";];
+  EmptyCauldron -> NightshadeInfusion [color = black; label = "50 Plant\n20 Poisonous";];
+  NightshadeInfusion -> ToxicBroth [color = black; label = "80 Plant\n10 DarkMagic";];
+  ToxicBroth -> SinisterSolution [color = black; label = "120 Bone\n40 Artificial";];
+  SinisterSolution -> WickedBrew [color = black; label = "100 Radioactive\n30 Meat";];
+  WickedBrew -> FatalBlend [color = black; label = "70 Fancy\n10 Leather\n50 Flower";];
+  FatalBlend -> LethalLiquid [color = black; label = "80 DarkMagic\n20 Poisonous";];
+  LethalLiquid -> SleepingSyrup [color = black; label = "90 Sticky\n10 Bone";];
+  SleepingSyrup -> TranquilTonic [color = black; label = "80 Plant\n20 Poisonous";];
+  TranquilTonic -> ComatoseConcoction [color = black; label = "100 Sand\n30 Helium";];
+  ComatoseConcoction -> SuspendedAnimationSerum [color = black; label = "90 Earth\n40 Concrete";];
+  SuspendedAnimationSerum -> NearDeathNostrum [color = black; label = "80 Poisonous\n20 DarkMagic";];
+  NearDeathNostrum -> DraughtOfLivingDeath [color = black; label = "100 DarkMagic";];
   
   // -------------------- Cross Recipe Connections --------------------
   
-  SleepingDraught -> SleepingSyrup [color = black; label = "";];
-  // has to be a big transition
-  StirringSolution -> SinisterSolution [color = black; label = "";];
-  TranslucentTonic -> MorphingMud [color = red; label = "";];
-  SoothingSyrup -> VitaminExtract [color = green; label = "";];
-  SoothingSyrup -> DandelionTea [color = gray; label = "";];
-  DrowsyDraught -> StrangeBrew [style = dotted; label = "";];
-  TranquilTonic -> SoothingSyrup [color = darkblue; label = "";];
-  CondensingConcoction -> StirringSolution [color = red; label = "";];
-  MinimizingMix -> LiftingLiquid [color = gray; label = "";];
+  SleepingDraught -> SleepingSyrup [color = black; label = "130 Sticky\n40 Dirt";];
+  StirringSolution -> SinisterSolution [color = black; label = "40 Clay\n30 Plant\n10 Artificial";];
+  TranslucentTonic -> MorphingMud [color = red; label = "115 Dirt\n20 Oil";];
+  SoothingSyrup -> VitaminExtract [color = green; label = "60 Fruit\n60 Vegetable\n20 Plant";];
+  SoothingSyrup -> DandelionTea [color = gray; label = "60 Plant\n10 Acid";];
+  DrowsyDraught -> StrangeBrew [style = dotted; label = "40 Sticky\n30 Oxygen";];
+  TranquilTonic -> SoothingSyrup [color = darkblue; label = "50 Sticky\n20 Sand";];
+  CondensingConcoction -> StirringSolution [color = red; label = "30 Flammable\n20 Water";];
+  MinimizingMix -> LiftingLiquid [color = gray; label = "80 Air\n10 WindMagic";];
   
   
   // -------------------- Inter Recipe States --------------------
   // Dirty Soup
-  ClearBroth -> DirtySoup [style = dotted; label = "";];
-  BubblingBrew -> DirtySoup [style = dotted; label = "";];
-  DirtySoup -> SimmeringBroth [color = red; label = "";];
-  DirtySoup -> BulkingBrew [color = green; label = "";];
+  ClearBroth -> DirtySoup [style = dotted; label = "30 Dirt\n20 EarthMagic\n15 Clay";];
+  BubblingBrew -> DirtySoup [style = dotted; label = "20 Dirt\n20 WindMagic\n10 EarthMagic";];
+  DirtySoup -> SimmeringBroth [color = red; label = "30 FireMagic\n20 Oil\n10 Lava";];
+  DirtySoup -> BulkingBrew [color = green; label = "50 Clay\n10 Dirt\n15 Grass\n10 Tree";];
   
   // Strange Brew
-  FizzyFoam -> StrangeBrew [style = dotted; label = "";];
-  FatalBlend -> StrangeBrew [style = dotted; label = "";];
-  MorphingMud -> StrangeBrew [style = dotted; label = "";];
-  StrangeBrew -> CondensingConcoction [color = darkslategrey; label = "";];
-  StrangeBrew -> ClearBroth [color = purple; label = "";];
+  FizzyFoam -> StrangeBrew [style = dotted; label = "15 WindMagic\n20 Bone\n25 Copper\n50 Tree";];
+  FatalBlend -> StrangeBrew [style = dotted; label = "50 Toxic\n30 Helium\n50 Leather";];
+  MorphingMud -> StrangeBrew [style = dotted; label = "80 WaterMagic\n20 Meat\n80 Stone";];
+  StrangeBrew -> CondensingConcoction [color = darkslategrey; label = "50 EarthMagic\n100 Stone\n20 Concrete\n30 Iron";];
+  StrangeBrew -> ClearBroth [color = purple; label = "100 Water\n50 Oxygen\n30 WaterMagic\n50 LightMagic";];
   
   // Dark Mixture
-  ToxicBroth -> DarkMixture [style = dotted; label = "";];
-  ThickeningMixture -> DarkMixture [style = dotted; label = "";];
-  DarkMixture -> FourLeafFroth [color = lightgreen; label = "";];
-  DarkMixture -> ClearBroth [color = purple; label = "";];
+  ToxicBroth -> DarkMixture [style = dotted; label = "100 DarkMagic\n50 Plactic\n20 Meat\n10 Bone\n20 Copper";];
+  ThickeningMixture -> DarkMixture [style = dotted; label = "80 DarkMagic\n50 EarthMagic\n70 Air";];
+  DarkMixture -> FourLeafFroth [color = lightgreen; label = "100 WindMagic\n100 Air\n50 Grass\n30 Flower";];
+  DarkMixture -> ClearBroth [color = purple; label = "150 LightMagic\n50 Helium\n30 Gold\n50 Water";];
   
   // CursedCompound
-  DarkMixture -> CursedCompound [style = dotted; label = "";];
-  CursedCompound -> FourLeafFroth [color = lightgreen; label = "";];
+  DarkMixture -> CursedCompound [style = dotted; label = "100 DarkMagic\n30 Silver\n50 Meat\n20 Bone";];
+  CursedCompound -> FourLeafFroth [color = lightgreen; label = "130 LightMagic\n80 Grass\n20 Gemstone";];
   
   // ChaoticCompound
-  VitaminExtract -> ChaoticCompound [style = dotted; label = "";];
-  FloatingBubbles -> ChaoticCompound [style = dotted; label = "";];
-  ChaoticCompound -> FourLeafFroth [color = lightgreen; label = "";];
-  ChaoticCompound -> EnlargingElixir [color = green; label = "";];
+  VitaminExtract -> ChaoticCompound [style = dotted; label = "30 FireMagic\n80 Glass\n50 Fruit\n20 Oil";];
+  FloatingBubbles -> ChaoticCompound [style = dotted; label = "80 Concrete\n20 Gold\n80 Stone\nWindMagic";];
+  ChaoticCompound -> FourLeafFroth [color = lightgreen; label = "100 Grass\nn50 Gemstone\n30 Flower\n10 Tree";];
+  ChaoticCompound -> EnlargingElixir [color = green; label = "200 Meat\n100 Silver\n80 Oil\n50 Fruit\n70 Tree";];
   
   // Hexed Foam
-  FizzyFoam -> HexedFoam [style = dotted; label = "";];
-  PlantExtractBase -> HexedFoam [style = dotted; label = "";];
-  LethalLiquid -> HexedFoam [style = dotted; label = "";];
-  DrowsyDraught -> HexedFoam [style = dotted; label = "";];
-  HexedFoam -> SinisterSolution [color = black; label = "";];
+  FizzyFoam -> HexedFoam [style = dotted; label = "100 DarkMagic\n50 Toxic\n30 Silver";];
+  PlantExtractBase -> HexedFoam [style = dotted; label = "80 DarkMagic\n50 Helium\n30 Air\n40 Oxygen";];
+  LethalLiquid -> HexedFoam [style = dotted; label = "90 DarkMagic\n80 Helium\n70 WindMagic";];
+  DrowsyDraught -> HexedFoam [style = dotted; label = "50 Toxic\n50 Meat\n80 Helium\n50 WindMagic";];
+  HexedFoam -> SinisterSolution [color = black; label = "60 DarkMagic\n30 Clay\n50 Bone";];
   
   // Vile Vapors
-  CondensingConcoction -> VileVapors [style = dotted; label = "";];
-  MinimizingMix -> VileVapors [style = dotted; label = "";];
+  CondensingConcoction -> VileVapors [style = dotted; label = "80 Oil\n100 Meat\n10 Plastic\n50 Meat";];
+  MinimizingMix -> VileVapors [style = dotted; label = "50 Stone\n30 Clay\n80 Meat\n20 WindMagic";];
   
-  VileVapors -> FloatingBubbles [style = dotted; label = "";];
-  VileVapors -> CondensingConcoction [style = teal; label = "";];
+  VileVapors -> FloatingBubbles [style = dotted; label = "100 LightMagic\n80 Helium\n100 Air";];
+  VileVapors -> CondensingConcoction [style = teal; label = "150 Concrete\n100 Stone\n30 Clay\n100 EarthMagic";];
   
   // Evil Elixer
-  WickedBrew -> EvilElixir [style = dotted; label = "";];
-  LethalLiquid -> EvilElixir [style = dotted; label = "";];
-  SleepingSyrup -> EvilElixir [style = dotted; label = "";];
+  WickedBrew -> EvilElixir [style = dotted; label = "50 Toxic\n100 DarkMagic\n30 Plastic";];
+  LethalLiquid -> EvilElixir [style = dotted; label = "120 DarkMagic\n50 Oil\n100 Bone";];
+  SleepingSyrup -> EvilElixir [style = dotted; label = "50 Fruit\n50 Oxygen\n100 Copper\n50 DarkMagic";];
   
-  EvilElixir -> SinisterSolution [color = black; label = "";];
-  EvilElixir -> BubblingBrew [color = red; label = "";];
+  EvilElixir -> SinisterSolution [color = black; label = "40 Oil\n50 Toxic\n80 Gold";];
+  EvilElixir -> BubblingBrew [color = red; label = "50 WindMagic\n100 Air\n150 Oxygen\n 100 FireMagic";];
   
   // Bewitching Blend
-  TransformativeOoze -> BewitchingBlend [style = dotted; label = "";];
-  NearDeathNostrum -> BewitchingBlend [style = dotted; label = "";];
-  IdentifyingElixir -> BewitchingBlend [style = dotted; label = "";];
-  ExpandingExtract -> BewitchingBlend [style = dotted; label = "";];
-  BulkingBrew -> BewitchingBlend [style = dotted; label = "";];
+  TransformativeOoze -> BewitchingBlend [style = dotted; label = "40 Paper\n80 Toxic";];
+  NearDeathNostrum -> BewitchingBlend [style = dotted; label = "20 Gemstone\n50 Lava\n30 Clay";];
+  IdentifyingElixir -> BewitchingBlend [style = dotted; label = "50 DarkMagic\n30 Oxygen\n50 Bone";];
+  ExpandingExtract -> BewitchingBlend [style = dotted; label = "50 Stone\n30 Clay\n100 EarthMagic\n20 DarkMagic";];
+  BulkingBrew -> BewitchingBlend [style = dotted; label = "60 Fruit\n40 Leather\n30 DarkMagic\n40 WaterMagic";];
   
-  BewitchingBlend -> MuscleMassMixture [style = dotted; label = "";];
-  BewitchingBlend -> MorphingMud [style = dotted; label = "";];
-  BewitchingBlend -> ComatoseConcoction [style = dotted; label = "";];
+  BewitchingBlend -> MuscleMassMixture [style = dotted; label = "150 Meat\n100 Bone\n50 LightMagic\n80 Fruit";];
+  BewitchingBlend -> MorphingMud [style = dotted; label = "50 Grass\n80 Flower\n50 Dirt\n30 Tree";];
+  BewitchingBlend -> ComatoseConcoction [style = dotted; label = "80 Toxic\n50 Plastic\n30 Oil";];
   
   // Charmed Froth
-  LightweightElixir -> CharmedFroth [style = dotted; label = "";];
-  GravityDefyingDraught -> CharmedFroth [style = dotted; label = "";];
-  BarelyVisibleBrew -> CharmedFroth [style = dotted; label = "";];
-  NearlyInvisiblePotion -> CharmedFroth [style = dotted; label = "";];
-  FourLeafFroth -> CharmedFroth [style = dotted; label = "";];
-  FortuneFindingMix -> CharmedFroth [style = dotted; label = "";];
-  GrowthAccelerant -> CharmedFroth [style = dotted; label = "";];
+  LightweightElixir -> CharmedFroth [style = dotted; label = "80 Gemstone\n50 Concrete\n30 LightMagic";];
+  GravityDefyingDraught -> CharmedFroth [style = dotted; label = "90 Gemstone\n150 Stone\n100 CLay";];
+  BarelyVisibleBrew -> CharmedFroth [style = dotted; label = "70 Gemstone\n50 Lava\n20 Gold\n50 Tree";];
+  NearlyInvisiblePotion -> CharmedFroth [style = dotted; label = "60 Gemstone\n80 LightMagic\n100 Dirt\n80 Silver";];
+  FourLeafFroth -> CharmedFroth [style = dotted; label = "80 Gemstone\n50 LightMgic\n60 WaterMagic";];
+  FortuneFindingMix -> CharmedFroth [style = dotted; label = "50 Gemstone\n30 Glass";];
+  GrowthAccelerant -> CharmedFroth [style = dotted; label = "100 Gemstone\n80 Grass\n20 Copper";];
   
-  CharmedFroth -> BubblingBrew [style = dotted;];
-  CharmedFroth -> ChaoticCompound [style = dotted;];
-  CharmedFroth -> TranslucentTonic [style = dotted;];
-  CharmedFroth -> LiftingLiquid [style = dotted;];
+  CharmedFroth -> BubblingBrew [style = dotted; label = "50 Lava\n80 FireMagic\n60 Sand";];
+  CharmedFroth -> ChaoticCompound [style = dotted; label = "50 Plastic\n30 Fruit\n40 Meat\n20 Glass\n40 Silver";];
+  CharmedFroth -> TranslucentTonic [style = dotted; label = "150 Air\n100 LightMagic\n40 Gemstone";];
+  CharmedFroth -> LiftingLiquid [style = dotted; label = "80 Helium\n100 WindMagic\n150 Air\n20 Tree";];
 }
