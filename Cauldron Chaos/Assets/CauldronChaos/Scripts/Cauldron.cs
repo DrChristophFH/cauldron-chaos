@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-using Unity.VisualScripting;
-
 using UnityEngine;
 
 public class Cauldron : MonoBehaviour, IObservable<CauldronState> {

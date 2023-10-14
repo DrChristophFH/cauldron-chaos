@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   ParentMaterial: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
+  Children: []

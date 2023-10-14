@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: Magical
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 0}
+  ParentMaterial: {fileID: 11400000, guid: 7265ad9d479cd4d4e9d761c8acc87291, type: 2}
+  Children:
+  - {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+  - {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
+  - {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+  - {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+  - {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+  - {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}

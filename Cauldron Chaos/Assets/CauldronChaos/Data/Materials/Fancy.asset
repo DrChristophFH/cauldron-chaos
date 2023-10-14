@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: Fancy
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 0}
+  ParentMaterial: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
+  Children: []

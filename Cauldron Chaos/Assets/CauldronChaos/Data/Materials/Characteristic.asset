@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: Characteristic
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 0}
+  ParentMaterial: {fileID: 11400000, guid: fd4f5820c7d73964f8f4469227b8aed8, type: 2}
+  Children:
+  - {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
+  - {fileID: 11400000, guid: 3c56c112e004bb54eadc52ee32d92e26, type: 2}
+  - {fileID: 11400000, guid: 09879dac395442b408aaf40dd8b21e73, type: 2}
+  - {fileID: 11400000, guid: 5d8638eaf063b194fa96bd44e2a5dd9a, type: 2}
+  - {fileID: 11400000, guid: 2503a29acb48ef94eb70c2a2d17aadd9, type: 2}
+  - {fileID: 11400000, guid: c4a3add54b794b54ca9e4f265b51eac6, type: 2}
+  - {fileID: 11400000, guid: 597ad014665f2a84291c2405fecb3977, type: 2}
+  - {fileID: 11400000, guid: d0e112a4d4f7b694cbd71247f6317bf8, type: 2}
+  - {fileID: 11400000, guid: c600ad16cc52b2e4bb96a45f7a2b0a58, type: 2}
+  - {fileID: 11400000, guid: 09b501223e872fa469662308b493ea64, type: 2}
+  - {fileID: 11400000, guid: ab8b217639912684897998a500a300cc, type: 2}
+  - {fileID: 11400000, guid: 6312118c458ac8f4cabc7df35dea1103, type: 2}
+  - {fileID: 11400000, guid: b68bc1ffbdfb7d348b15fcfff8958510, type: 2}

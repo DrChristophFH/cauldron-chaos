@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: Base
   m_EditorClassIdentifier: 
   ParentMaterial: {fileID: 0}
+  Children:
+  - {fileID: 11400000, guid: 09a94b5a3335d4349b765597beae387b, type: 2}
+  - {fileID: 11400000, guid: 3cc10bc5af8d9d5448ac23e1f588bee0, type: 2}
+  - {fileID: 11400000, guid: cba0dfb54ade232429cbd16b1e257935, type: 2}
+  - {fileID: 11400000, guid: 7265ad9d479cd4d4e9d761c8acc87291, type: 2}

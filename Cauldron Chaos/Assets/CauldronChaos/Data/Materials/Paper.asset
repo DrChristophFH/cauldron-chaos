@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Paper
   m_EditorClassIdentifier: 
   ParentMaterial: {fileID: 11400000, guid: b246e2be225b4cb458faca58898a70ea, type: 2}
+  Children: []

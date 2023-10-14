@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: Gas
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 0}
+  ParentMaterial: {fileID: 11400000, guid: fd4f5820c7d73964f8f4469227b8aed8, type: 2}
+  Children:
+  - {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+  - {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+  - {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+  - {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}

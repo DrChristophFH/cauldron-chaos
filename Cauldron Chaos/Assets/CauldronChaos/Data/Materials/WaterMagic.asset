@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: WaterMagic
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 11400000, guid: 8eefea6cf31ab134384e9a71c6aacfe8, type: 2}
+  ParentMaterial: {fileID: 11400000, guid: 2503a29acb48ef94eb70c2a2d17aadd9, type: 2}
+  Children: []

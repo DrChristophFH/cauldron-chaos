@@ -13,3 +13,11 @@ MonoBehaviour:
   m_Name: Organic
   m_EditorClassIdentifier: 
   ParentMaterial: {fileID: 11400000, guid: 09a94b5a3335d4349b765597beae387b, type: 2}
+  Children:
+  - {fileID: 11400000, guid: b246e2be225b4cb458faca58898a70ea, type: 2}
+  - {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+  - {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+  - {fileID: 11400000, guid: afd31cdaab7c6b74eb796397b9c435b2, type: 2}
+  - {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+  - {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+  - {fileID: 11400000, guid: bd58f67857fe08b4b9908be2ebf50acf, type: 2}

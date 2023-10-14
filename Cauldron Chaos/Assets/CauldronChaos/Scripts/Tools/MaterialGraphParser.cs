@@ -40,7 +40,11 @@ public class MaterialGraphParser : Editor {
       IngredientMaterial toState = AssetDatabase.LoadAssetAtPath<IngredientMaterial>($"{MATERIALS_PATH}{transition.Destination}.asset");
 
       fromState.AddChild(toState);
+      EditorUtility.SetDirty(fromState);
+      EditorUtility.SetDirty(toState);
     }
+
+    AssetDatabase.SaveAssets();
   }
 
   private static IngredientMaterial TryGetStateAsset(string materialName) {

@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed7762ece64ce042b11d51aa6f70854, type: 3}
   m_Name: Solid
   m_EditorClassIdentifier: 
-  ParentMaterial: {fileID: 0}
+  ParentMaterial: {fileID: 11400000, guid: fd4f5820c7d73964f8f4469227b8aed8, type: 2}
+  Children:
+  - {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
+  - {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
+  - {fileID: 11400000, guid: 680bae0e21281204b8c20108f1eec750, type: 2}
+  - {fileID: 11400000, guid: 85f22eed517858f4c926ffa536aae398, type: 2}

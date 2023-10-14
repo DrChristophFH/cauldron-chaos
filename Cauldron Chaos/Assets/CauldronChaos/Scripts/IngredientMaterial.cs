@@ -9,7 +9,7 @@ using UnityEngine;
 public class IngredientMaterial : ScriptableObject {
   public IngredientMaterial ParentMaterial;
   
-  public readonly List<IngredientMaterial> Children = new();
+  public List<IngredientMaterial> Children = new();
 
   public List<IngredientMaterial> Affected() {
     List<IngredientMaterial> affected = new() {
