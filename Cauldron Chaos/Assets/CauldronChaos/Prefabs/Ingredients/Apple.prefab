@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6032441823500720320}
   - component: {fileID: -7914402579030250110}
   - component: {fileID: 5989939159962902138}
+  - component: {fileID: -628940329782934559}
   - component: {fileID: 4598637516210985964}
   m_Layer: 0
   m_Name: Apple
@@ -220,6 +221,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!64 &-628940329782934559
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388876489497171537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -472147775963580301, guid: 12bf7c0de8c3b5b4bb67f4f585d5a093, type: 3}
 --- !u!114 &4598637516210985964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,5 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts:
-  - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
-    Amount: 10
+  - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+    Amount: 30
+  - Material: {fileID: 11400000, guid: c4a3add54b794b54ca9e4f265b51eac6, type: 2}
+    Amount: 25

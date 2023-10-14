@@ -265,7 +265,7 @@ MonoBehaviour:
     Amount: 10
   - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
     Amount: 10
-  - Material: {fileID: 11400000, guid: dc1b11fa8cab44d4faf98d9c5755363d, type: 2}
+  - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
     Amount: 10
-  - Material: {fileID: 0}
-    Amount: 0
+  - Material: {fileID: 11400000, guid: 5d8638eaf063b194fa96bd44e2a5dd9a, type: 2}
+    Amount: 5

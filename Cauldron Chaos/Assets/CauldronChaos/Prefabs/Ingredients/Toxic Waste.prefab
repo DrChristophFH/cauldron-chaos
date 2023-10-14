@@ -258,9 +258,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts:
-  - Material: {fileID: 11400000, guid: dc1b11fa8cab44d4faf98d9c5755363d, type: 2}
-    Amount: 20
-  - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
+  - Material: {fileID: 11400000, guid: 5d8638eaf063b194fa96bd44e2a5dd9a, type: 2}
+    Amount: 45
+  - Material: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
     Amount: 20
   - Material: {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
     Amount: 20
+  - Material: {fileID: 11400000, guid: 09879dac395442b408aaf40dd8b21e73, type: 2}
+    Amount: 55
+  - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+    Amount: 40

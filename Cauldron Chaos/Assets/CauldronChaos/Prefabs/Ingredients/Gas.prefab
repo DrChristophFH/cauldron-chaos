@@ -259,6 +259,12 @@ MonoBehaviour:
   ingredientName: 
   parts:
   - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
-    Amount: 20
+    Amount: 45
   - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
-    Amount: 20
+    Amount: 60
+  - Material: {fileID: 11400000, guid: cba0dfb54ade232429cbd16b1e257935, type: 2}
+    Amount: 60
+  - Material: {fileID: 11400000, guid: 3c56c112e004bb54eadc52ee32d92e26, type: 2}
+    Amount: 60
+  - Material: {fileID: 11400000, guid: 66dd6f3b3640ec04aa69cfdb74c04a21, type: 2}
+    Amount: 15

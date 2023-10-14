@@ -281,7 +281,9 @@ MonoBehaviour:
   parts:
   - Material: {fileID: 11400000, guid: afd31cdaab7c6b74eb796397b9c435b2, type: 2}
     Amount: 20
-  - Material: {fileID: 11400000, guid: aaf3fb1c5c955a349a25eebfab542122, type: 2}
+  - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+    Amount: 20
+  - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
     Amount: 20
 --- !u!1001 &3317324663388438065
 PrefabInstance:

@@ -279,10 +279,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   parts:
-  - Material: {fileID: 11400000, guid: 43bb5e05c9cbaa44ebe604fa8fb59248, type: 2}
+  - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+    Amount: 40
+  - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
     Amount: 20
-  - Material: {fileID: 11400000, guid: dc1b11fa8cab44d4faf98d9c5755363d, type: 2}
-    Amount: 20
+  - Material: {fileID: 11400000, guid: 5d8638eaf063b194fa96bd44e2a5dd9a, type: 2}
+    Amount: 5
 --- !u!1001 &8044364671835834080
 PrefabInstance:
   m_ObjectHideFlags: 0

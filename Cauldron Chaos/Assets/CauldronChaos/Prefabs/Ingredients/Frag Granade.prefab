@@ -236,11 +236,15 @@ MonoBehaviour:
   ingredientName: 
   parts:
   - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
-    Amount: 30
+    Amount: 50
   - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
     Amount: 10
   - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
     Amount: 20
+  - Material: {fileID: 11400000, guid: 85f22eed517858f4c926ffa536aae398, type: 2}
+    Amount: 25
+  - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+    Amount: 30
 --- !u!64 &1803977275905162589
 MeshCollider:
   m_ObjectHideFlags: 0
