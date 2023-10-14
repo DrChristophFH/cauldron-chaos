@@ -72,13 +72,13 @@ MonoBehaviour:
   noOverwrite: 1
   smokeConfig:
     StartLifeTime: 3
-    StartSize: 0.75
+    StartSize: 0.2
     MaxParticles: 100
     EmissionRate: 3
     StartSpeed: 0.06
     VelocityYMax: 0.41
     VelocityYMin: 0.75
-    StartColor: {r: 0.753, g: 0.1, b: 0.9, a: 1}
+    StartColor: {r: 0.75538445, g: 0.9150943, b: 0.9011891, a: 1}
     ColorOverLifetime:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}

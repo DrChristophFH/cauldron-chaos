@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class Speaker : MonoBehaviour {
   [SerializeField]
-  private AudioClip newTextSound;
-  [SerializeField]
   private TextMeshPro textMesh;
   [SerializeField]
   private float charDelay = 0.1f;
@@ -38,7 +36,6 @@ public class Speaker : MonoBehaviour {
 
   private IEnumerator SpeakCoroutine() {
     particles.Play();
-    AudioSource.PlayClipAtPoint(newTextSound, transform.position);
     foreach (char c in text) {
       textMesh.text += c;
       yield return new WaitForSeconds(charDelay);
