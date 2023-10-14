@@ -12,12 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: DrowsyDraught
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 69301618a1912584f979dd08f1a4a367, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 10
+    - Material: {fileID: 11400000, guid: b75fc6d2391eb0545839b15c15a053b4, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 5
+  - destination: {fileID: 11400000, guid: 528446b8ebb852346a277418f893837a, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 09b501223e872fa469662308b493ea64, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+      Amount: 30
+  - destination: {fileID: 11400000, guid: a0e8cf20f82e7ce40986daac321eb9b6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 50
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.5821022, g: 0.7293125, b: 0.9716981, a: 1}
-    TopColor: {r: 0.66315204, g: 0.7490196, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.582, g: 0.729, b: 0.971, a: 1}
+    TopColor: {r: 0.663, g: 0.749, b: 0.18, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

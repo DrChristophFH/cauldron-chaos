@@ -12,12 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: MorphingMud
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: b6b80786e5993584695091177c04e3ac, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: 528446b8ebb852346a277418f893837a, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 80
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.29245278, g: 0.15708426, b: 0.01517444, a: 1}
-    TopColor: {r: 0.6509434, g: 0.1633488, b: 0.027634379, a: 1}
+    BaseColor: {r: 0.292, g: 0.157, b: 0.015, a: 1}
+    TopColor: {r: 0.65, g: 0.163, b: 0.027, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.5

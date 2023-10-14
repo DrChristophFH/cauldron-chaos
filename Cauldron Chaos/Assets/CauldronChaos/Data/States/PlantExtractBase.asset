@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: PlantExtractBase
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: e416a30a67a6d6147a6b61649c571358, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: b246e2be225b4cb458faca58898a70ea, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: a0e8cf20f82e7ce40986daac321eb9b6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+      Amount: 40
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.3911144, g: 0.7490196, b: 0.18039212, a: 1}
-    TopColor: {r: 0.8093622, g: 0.9716981, b: 0.7104397, a: 1}
+    BaseColor: {r: 0.391, g: 0.749, b: 0.18, a: 1}
+    TopColor: {r: 0.809, g: 0.971, b: 0.71, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

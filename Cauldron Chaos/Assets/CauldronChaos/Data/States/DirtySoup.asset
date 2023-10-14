@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: DirtySoup
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 3eefd5fcd69a76e44b7e44dd68b15a2d, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 2e6223d1c21d89b408c7d8eedc12a05e, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: 2cffdfa1442543740ba1df40ed234547, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
+      Amount: 10
+    - Material: {fileID: 11400000, guid: d446cf6897695f54b97767cef722a91d, type: 2}
+      Amount: 15
+    - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7117752, g: 0.7490196, b: 0.18039212, a: 1}
-    TopColor: {r: 0.7490196, g: 0.63214564, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.711, g: 0.749, b: 0.18, a: 1}
+    TopColor: {r: 0.749, g: 0.632, b: 0.18, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: SleepingSyrup
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: d6484a0aea4cf0945a96b11817301519, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 09879dac395442b408aaf40dd8b21e73, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: ea8fbca1013166e47bc5ee7258832b79, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 50
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7490196, g: 0.7234096, b: 0.18039212, a: 1}
-    TopColor: {r: 0.38714844, g: 0.9433962, b: 0.90898997, a: 1}
+    BaseColor: {r: 0.749, g: 0.723, b: 0.18, a: 1}
+    TopColor: {r: 0.387, g: 0.943, b: 0.908, a: 1}
     Shades: 5
     WaveStrength: 5.8
     WaveHeight: 1

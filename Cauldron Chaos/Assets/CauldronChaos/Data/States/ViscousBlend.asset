@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ViscousBlend
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: f46d4d22a1238ba429ef082bb3713022, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 0}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: b4819f6f16d60ab40a8c494345a4ba88, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.5566037, g: 0.17082053, b: 0.11289603, a: 1}
-    TopColor: {r: 0.14150938, g: 0.12615693, b: 0.13015658, a: 1}
+    BaseColor: {r: 0.556, g: 0.17, b: 0.112, a: 1}
+    TopColor: {r: 0.141, g: 0.126, b: 0.13, a: 1}
     Shades: 7
     WaveStrength: 5.8
     WaveHeight: 2.1

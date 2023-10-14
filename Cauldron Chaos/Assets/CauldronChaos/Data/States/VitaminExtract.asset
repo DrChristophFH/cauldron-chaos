@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: VitaminExtract
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 0f4b8fede2bcde342ae7b7a16fd64f39, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 30
+  - destination: {fileID: 11400000, guid: 23c6e26845e00b54ca673df28751d441, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.1081601, g: 0.6037736, b: 0.03702387, a: 1}
-    TopColor: {r: 0.7442647, g: 0.95283014, b: 0.37304196, a: 1}
+    BaseColor: {r: 0.108, g: 0.603, b: 0.037, a: 1}
+    TopColor: {r: 0.744, g: 0.952, b: 0.373, a: 1}
     Shades: 5
     WaveStrength: 5.8
     WaveHeight: 1.4

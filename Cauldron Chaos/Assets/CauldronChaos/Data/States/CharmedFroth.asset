@@ -12,12 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: CharmedFroth
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 50d82c1f0a031e04b85c2cf303666bb5, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 2e6223d1c21d89b408c7d8eedc12a05e, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: b75fc6d2391eb0545839b15c15a053b4, type: 2}
+      Amount: 60
+  - destination: {fileID: 11400000, guid: 23c6e26845e00b54ca673df28751d441, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 40
+  - destination: {fileID: 11400000, guid: 5f77577a439798849a415d10f88e18c4, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 40
+  - destination: {fileID: 11400000, guid: e6513e130a356664b944cacc2455fd91, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.6415094, g: 0.34798855, b: 0.46490186, a: 1}
-    TopColor: {r: 0.8962264, g: 0.5284354, b: 0.642093, a: 1}
+    BaseColor: {r: 0.641, g: 0.347, b: 0.464, a: 1}
+    TopColor: {r: 0.896, g: 0.528, b: 0.642, a: 1}
     Shades: 5
     WaveStrength: 2
     WaveHeight: 1.8

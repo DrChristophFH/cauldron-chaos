@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: FloatingBubbles
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: b9a4ffad021a7ea47bbeacbd037bbbbf, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: 23c6e26845e00b54ca673df28751d441, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.9132977, g: 0.9150943, b: 0.82444817, a: 1}
-    TopColor: {r: 0.8410591, g: 0.9150943, b: 0.42733175, a: 1}
+    BaseColor: {r: 0.913, g: 0.915, b: 0.824, a: 1}
+    TopColor: {r: 0.841, g: 0.915, b: 0.427, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.5

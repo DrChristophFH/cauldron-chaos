@@ -12,12 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: GravityDefyingDraught
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: eff7d7c987dea024bb8aa0b4b68456a1, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 90
+    - Material: {fileID: 0}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 100
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.766446, g: 0.43164825, b: 0.9433962, a: 1}
-    TopColor: {r: 0.5928072, g: 0.43173718, b: 0.9245283, a: 1}
+    BaseColor: {r: 0.766, g: 0.431, b: 0.943, a: 1}
+    TopColor: {r: 0.592, g: 0.431, b: 0.924, a: 1}
     Shades: 4
     WaveStrength: 5.8
     WaveHeight: 2

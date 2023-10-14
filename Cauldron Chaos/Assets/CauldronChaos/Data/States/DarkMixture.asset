@@ -12,12 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: DarkMixture
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: e4858fc38713729499391958dc6d202b, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: d446cf6897695f54b97767cef722a91d, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 6b38c24fffdb86d4096401024426c1ec, type: 2}
+      Amount: 30
+  - destination: {fileID: 11400000, guid: 40a4e369231c24141823b1929f55f2d6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: b4819f6f16d60ab40a8c494345a4ba88, type: 2}
+      Amount: 50
+  - destination: {fileID: 11400000, guid: 68c920ddb0a094441998ce089b44656d, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.11836948, g: 0.15355808, b: 0.2641509, a: 1}
-    TopColor: {r: 0.090557106, g: 0.093747295, b: 0.10377359, a: 1}
+    BaseColor: {r: 0.118, g: 0.153, b: 0.264, a: 1}
+    TopColor: {r: 0.09, g: 0.093, b: 0.103, a: 1}
     Shades: 4
     WaveStrength: 5.8
     WaveHeight: 1.8

@@ -12,12 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: LethalLiquid
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 7420c6e7ef876374ea8e1c460920b64f, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 09b501223e872fa469662308b493ea64, type: 2}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: a0e8cf20f82e7ce40986daac321eb9b6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 70
+  - destination: {fileID: 11400000, guid: ea8fbca1013166e47bc5ee7258832b79, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 120
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 100
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.42452827, g: 0.05406726, b: 0.30281547, a: 1}
-    TopColor: {r: 0.7490196, g: 0.19225994, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.424, g: 0.054, b: 0.302, a: 1}
+    TopColor: {r: 0.749, g: 0.192, b: 0.18, a: 1}
     Shades: 4
     WaveStrength: 5.8
     WaveHeight: 2.3

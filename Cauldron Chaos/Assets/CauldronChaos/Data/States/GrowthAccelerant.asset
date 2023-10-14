@@ -12,12 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: GrowthAccelerant
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 3b3bf6c0cfcdd6044a86f10366c7b5bf, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 100
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: d446cf6897695f54b97767cef722a91d, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.18039212, g: 0.7490196, b: 0.32450935, a: 1}
-    TopColor: {r: 0.7490196, g: 0.54096854, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.18, g: 0.749, b: 0.324, a: 1}
+    TopColor: {r: 0.749, g: 0.54, b: 0.18, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.5

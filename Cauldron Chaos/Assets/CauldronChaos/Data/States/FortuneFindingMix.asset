@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: FortuneFindingMix
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: f68acef9dc4ffe841ac24e83bd2d5d8e, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 70
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
+      Amount: 30
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.066082194, g: 0.9339623, b: 0.12776902, a: 1}
-    TopColor: {r: 0.6718922, g: 0.9339623, b: 0.4449537, a: 1}
+    BaseColor: {r: 0.066, g: 0.933, b: 0.127, a: 1}
+    TopColor: {r: 0.671, g: 0.933, b: 0.444, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1.8

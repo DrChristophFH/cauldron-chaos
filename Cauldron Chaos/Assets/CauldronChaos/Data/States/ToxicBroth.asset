@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ToxicBroth
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: bf2bd164c3108404eaf6b3eb6b266504, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 120
+    - Material: {fileID: 11400000, guid: 85f22eed517858f4c926ffa536aae398, type: 2}
+      Amount: 40
+  - destination: {fileID: 11400000, guid: fa99168e01c8d6f488ef90eee5b0348d, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 100
+    - Material: {fileID: 0}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 10
+    - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7490196, g: 0.18039212, b: 0.55102146, a: 1}
-    TopColor: {r: 0.5889836, g: 0.18039212, b: 0.7490196, a: 1}
+    BaseColor: {r: 0.749, g: 0.18, b: 0.551, a: 1}
+    TopColor: {r: 0.588, g: 0.18, b: 0.749, a: 1}
     Shades: 7
     WaveStrength: 5.8
     WaveHeight: 1.8

@@ -12,12 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: StrangeBrew
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 90989853ac8b9b74b94ba8518a19a4e6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
+      Amount: 30
+  - destination: {fileID: 11400000, guid: 40a4e369231c24141823b1929f55f2d6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: b4819f6f16d60ab40a8c494345a4ba88, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 50
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.6132076, g: 0.03760237, b: 0.5340194, a: 1}
-    TopColor: {r: 0.18039212, g: 0.7490196, b: 0.33597746, a: 1}
+    BaseColor: {r: 0.613, g: 0.037, b: 0.534, a: 1}
+    TopColor: {r: 0.18, g: 0.749, b: 0.335, a: 1}
     Shades: 6
     WaveStrength: 5.8
     WaveHeight: 2.6

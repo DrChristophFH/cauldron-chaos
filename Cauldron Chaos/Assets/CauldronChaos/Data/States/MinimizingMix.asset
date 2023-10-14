@@ -12,12 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: MinimizingMix
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: cdc279a60c9a533429ec12970213c546, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: e6513e130a356664b944cacc2455fd91, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: c109de2a48cd78c43bba300e74f6d420, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.90381956, g: 0.7580099, b: 0.9622641, a: 1}
-    TopColor: {r: 0.7466003, g: 0.64627093, b: 0.9716981, a: 1}
+    BaseColor: {r: 0.903, g: 0.758, b: 0.962, a: 1}
+    TopColor: {r: 0.746, g: 0.646, b: 0.971, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

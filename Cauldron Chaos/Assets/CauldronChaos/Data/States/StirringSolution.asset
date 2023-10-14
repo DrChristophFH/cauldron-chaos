@@ -12,12 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: StirringSolution
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: f7af238364e88e34c9e80b4b59c9b11d, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: b4819f6f16d60ab40a8c494345a4ba88, type: 2}
+      Amount: 40
+  - destination: {fileID: 11400000, guid: bf2bd164c3108404eaf6b3eb6b266504, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 85f22eed517858f4c926ffa536aae398, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.8449075, g: 0.5918476, b: 0.9433962, a: 1}
-    TopColor: {r: 0.9150943, g: 0.7018552, b: 0.53092736, a: 1}
+    BaseColor: {r: 0.844, g: 0.591, b: 0.943, a: 1}
+    TopColor: {r: 0.915, g: 0.701, b: 0.53, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2

@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: FourLeafFroth
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: cf169866ad98b1a4b8d7c5b6f523189f, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 80
+    - Material: {fileID: 0}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+      Amount: 60
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.6454588, g: 0.7490196, b: 0.18039212, a: 1}
-    TopColor: {r: 0.18039212, g: 0.7490196, b: 0.24009624, a: 1}
+    BaseColor: {r: 0.645, g: 0.749, b: 0.18, a: 1}
+    TopColor: {r: 0.18, g: 0.749, b: 0.24, a: 1}
     Shades: 6
     WaveStrength: 5.8
     WaveHeight: 1.5

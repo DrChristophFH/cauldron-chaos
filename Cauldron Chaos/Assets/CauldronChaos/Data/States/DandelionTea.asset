@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: DandelionTea
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: ba0bb96bcbc7b7949bb2cf00ed692818, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.18039212, g: 0.7490196, b: 0.34765193, a: 1}
-    TopColor: {r: 0.85844606, g: 0.95283014, b: 0.91785043, a: 1}
+    BaseColor: {r: 0.18, g: 0.749, b: 0.347, a: 1}
+    TopColor: {r: 0.858, g: 0.952, b: 0.917, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

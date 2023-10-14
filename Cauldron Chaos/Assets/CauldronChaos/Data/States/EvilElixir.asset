@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: EvilElixir
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: bf2bd164c3108404eaf6b3eb6b266504, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 80
+  - destination: {fileID: 11400000, guid: 50d82c1f0a031e04b85c2cf303666bb5, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: d1d9ea44b78326d42b1a816082bc2664, type: 2}
+      Amount: 100
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.4150943, g: 0.116284706, b: 0.060697727, a: 1}
-    TopColor: {r: 0.05237627, g: 0.06478251, b: 0.10377359, a: 1}
+    BaseColor: {r: 0.415, g: 0.116, b: 0.06, a: 1}
+    TopColor: {r: 0.052, g: 0.064, b: 0.103, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2

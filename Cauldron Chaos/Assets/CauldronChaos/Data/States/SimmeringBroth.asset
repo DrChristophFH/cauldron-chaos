@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: SimmeringBroth
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 40a4e369231c24141823b1929f55f2d6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: 42b9d008d7963fa449946238605cf26e, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: c36216d999eee6a4e80d2ea49f6bd9b0, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 30
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.4716981, g: 0.2370669, b: 0.028924897, a: 1}
-    TopColor: {r: 0.62264144, g: 0.02055893, b: 0.057014562, a: 1}
+    BaseColor: {r: 0.471, g: 0.237, b: 0.028, a: 1}
+    TopColor: {r: 0.622, g: 0.02, b: 0.057, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

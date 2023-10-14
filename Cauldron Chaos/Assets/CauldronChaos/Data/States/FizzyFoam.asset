@@ -12,12 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: FizzyFoam
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: e6513e130a356664b944cacc2455fd91, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: 6312118c458ac8f4cabc7df35dea1103, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: 528446b8ebb852346a277418f893837a, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 15
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+      Amount: 25
+    - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
+      Amount: 50
+  - destination: {fileID: 11400000, guid: a0e8cf20f82e7ce40986daac321eb9b6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 30
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.41429332, g: 0.9245283, b: 0.63517743, a: 1}
-    TopColor: {r: 0.12677994, g: 0.7264151, b: 0.6362768, a: 1}
+    BaseColor: {r: 0.414, g: 0.924, b: 0.635, a: 1}
+    TopColor: {r: 0.126, g: 0.726, b: 0.636, a: 1}
     Shades: 3
     WaveStrength: 6
     WaveHeight: 2.5

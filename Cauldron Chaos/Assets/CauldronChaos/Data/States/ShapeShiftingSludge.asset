@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ShapeShiftingSludge
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 546181b1c769f3b4684314cb08a164d9, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.37735847, g: 0.1775704, b: 0.033819854, a: 1}
-    TopColor: {r: 0.46226412, g: 0.38322088, b: 0.15045387, a: 1}
+    BaseColor: {r: 0.377, g: 0.177, b: 0.033, a: 1}
+    TopColor: {r: 0.462, g: 0.383, b: 0.15, a: 1}
     Shades: 6
     WaveStrength: 5.8
     WaveHeight: 2.5

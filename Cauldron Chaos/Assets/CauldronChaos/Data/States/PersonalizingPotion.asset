@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: PersonalizingPotion
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: eca5c7a2a937e194c9d27a9fa2053b50, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 100
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.53773576, g: 0.16703191, b: 0.11921499, a: 1}
-    TopColor: {r: 0.7490196, g: 0.18039212, b: 0.73631716, a: 1}
+    BaseColor: {r: 0.537, g: 0.167, b: 0.119, a: 1}
+    TopColor: {r: 0.749, g: 0.18, b: 0.736, a: 1}
     Shades: 5
     WaveStrength: 5.8
     WaveHeight: 1.4

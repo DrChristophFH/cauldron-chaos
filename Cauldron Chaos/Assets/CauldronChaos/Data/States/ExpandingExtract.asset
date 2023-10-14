@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ExpandingExtract
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 6bd78748a0f4c8749b0f787d960b420f, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: 0f860fc1b4f008d45bdd87cf68762b53, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.20898911, g: 0.44339618, b: 0.115032025, a: 1}
-    TopColor: {r: 0.7490196, g: 0.62973416, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.208, g: 0.443, b: 0.115, a: 1}
+    TopColor: {r: 0.749, g: 0.629, b: 0.18, a: 1}
     Shades: 5
     WaveStrength: 5.8
     WaveHeight: 2.5

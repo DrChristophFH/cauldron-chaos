@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: WickedBrew
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 49e1fb3657d9d704cbec31cd96f6ea86, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 201ccee85904d8648ab80e8fbd3b913c, type: 2}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: afd31cdaab7c6b74eb796397b9c435b2, type: 2}
+      Amount: 10
+    - Material: {fileID: 11400000, guid: 6b38c24fffdb86d4096401024426c1ec, type: 2}
+      Amount: 50
+  - destination: {fileID: 11400000, guid: ea8fbca1013166e47bc5ee7258832b79, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+      Amount: 30
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.62264144, g: 0.104889356, b: 0.04405479, a: 1}
-    TopColor: {r: 0.034843363, g: 0.09247061, b: 0.27358484, a: 1}
+    BaseColor: {r: 0.622, g: 0.104, b: 0.044, a: 1}
+    TopColor: {r: 0.034, g: 0.092, b: 0.273, a: 1}
     Shades: 7
     WaveStrength: 5.8
     WaveHeight: 2.4

@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: FadingFluid
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: c1db2a4c39b8139469b3ff9e80e69888, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: b68bc1ffbdfb7d348b15fcfff8958510, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7294856, g: 0.77428764, b: 0.9150943, a: 0.42745098}
-    TopColor: {r: 0.9031239, g: 0.91056764, b: 0.9339623, a: 0.44705883}
+    BaseColor: {r: 0.729, g: 0.774, b: 0.915, a: 0.427}
+    TopColor: {r: 0.903, g: 0.91, b: 0.933, a: 0.447}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2

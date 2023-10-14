@@ -12,12 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: VileVapors
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: ba0bb96bcbc7b7949bb2cf00ed692818, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: c566b33355837534eae3a8f224447a2f, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 876b51a9bfcd1d44aa0fd7bebc79560d, type: 2}
+      Amount: 100
+  - destination: {fileID: 11400000, guid: 90989853ac8b9b74b94ba8518a19a4e6, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+      Amount: 100
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.6408548, g: 0.0980776, b: 0.7169812, a: 1}
-    TopColor: {r: 0.9433962, g: 0.42274827, b: 0.7462587, a: 1}
+    BaseColor: {r: 0.64, g: 0.098, b: 0.716, a: 1}
+    TopColor: {r: 0.943, g: 0.422, b: 0.746, a: 1}
     Shades: 5
     WaveStrength: 5.8
     WaveHeight: 2.2

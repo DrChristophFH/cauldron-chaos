@@ -12,12 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: TranslucentTonic
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 81f2355e4aded714ebed2b7047e847ff, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 10
+  - destination: {fileID: 11400000, guid: f46d4d22a1238ba429ef082bb3713022, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
+      Amount: 115
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.752047, g: 0.7982347, b: 0.9433962, a: 1}
-    TopColor: {r: 0.9622641, g: 0.7563919, b: 0.7307761, a: 1}
+    BaseColor: {r: 0.752, g: 0.798, b: 0.943, a: 1}
+    TopColor: {r: 0.962, g: 0.756, b: 0.73, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1.2

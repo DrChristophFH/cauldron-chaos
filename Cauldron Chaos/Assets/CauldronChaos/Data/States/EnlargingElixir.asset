@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: EnlargingElixir
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 6005dad8d1722ec4b85905203bc08d16, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 09a94b5a3335d4349b765597beae387b, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7490196, g: 0.4020168, b: 0.18039212, a: 1}
-    TopColor: {r: 0.56005216, g: 0.7490196, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.749, g: 0.402, b: 0.18, a: 1}
+    TopColor: {r: 0.56, g: 0.749, b: 0.18, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.4

@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: SinisterSolution
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: dd433379c6e684f45b9c771fd1d25f92, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 5d8638eaf063b194fa96bd44e2a5dd9a, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 30
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.06967991, g: 0.0448113, b: 0.17924526, a: 1}
-    TopColor: {r: 0.16981128, g: 0.055268742, b: 0.075439446, a: 1}
+    BaseColor: {r: 0.069, g: 0.044, b: 0.179, a: 1}
+    TopColor: {r: 0.169, g: 0.055, b: 0.075, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2

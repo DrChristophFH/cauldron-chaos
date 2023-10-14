@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: MuscleMassMixture
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 2cffdfa1442543740ba1df40ed234547, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 09b501223e872fa469662308b493ea64, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
+      Amount: 40
+    - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.95283014, g: 0.4539426, b: 0.58722043, a: 1}
-    TopColor: {r: 0.647016, g: 0.7490196, b: 0.18039212, a: 1}
+    BaseColor: {r: 0.952, g: 0.453, b: 0.587, a: 1}
+    TopColor: {r: 0.647, g: 0.749, b: 0.18, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 2.3

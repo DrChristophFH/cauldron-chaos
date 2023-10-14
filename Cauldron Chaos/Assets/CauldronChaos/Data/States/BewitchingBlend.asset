@@ -14,23 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitions:
   - destination: {fileID: 11400000, guid: 0f4b8fede2bcde342ae7b7a16fd64f39, type: 2}
-    requiredMaterials: []
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 97b8d69b894be02419430e0c3da09cc7, type: 2}
+      Amount: 150
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 80
   - destination: {fileID: 11400000, guid: f46d4d22a1238ba429ef082bb3713022, type: 2}
-    requiredMaterials: []
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: d446cf6897695f54b97767cef722a91d, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 6b38c24fffdb86d4096401024426c1ec, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
+      Amount: 30
   - destination: {fileID: 11400000, guid: 3d0d4e5865083f04db14abf93895c45a, type: 2}
-    requiredMaterials: []
-  noOverwrite: 0
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 17c2ab5eb55612b4c849eb611e3b79a7, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 1288c6e9908260f4a80d8a94b0234a52, type: 2}
+      Amount: 30
+  noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.34292766, g: 0.78680384, b: 0.5573541, a: 1}
-    TopColor: {r: 0.6378277, g: 0.8289486, b: 0.12276879, a: 1}
+    BaseColor: {r: 0.342, g: 0.786, b: 0.557, a: 1}
+    TopColor: {r: 0.637, g: 0.828, b: 0.122, a: 1}
     Shades: 3
-    WaveStrength: 12.884688
-    WaveHeight: 0.7986747
-    WaveSpeed: 0.08497991
-    WaveRotation: 344.75342
-    BubbleSpeed: 1.7737212
-    BubbleDensity: 1.8343577
-    BubbleSpacing: 0.40481982
-    BubbleStrength: 1.2950728
+    WaveStrength: 12.884
+    WaveHeight: 0.798
+    WaveSpeed: 0.084
+    WaveRotation: 344.753
+    BubbleSpeed: 1.773
+    BubbleDensity: 1.834
+    BubbleSpacing: 0.404
+    BubbleStrength: 1.295
     CircleSize: 0.94

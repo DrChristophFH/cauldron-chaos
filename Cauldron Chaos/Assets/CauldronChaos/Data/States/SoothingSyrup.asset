@@ -12,12 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: SoothingSyrup
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 80133e93ca96b434d90486dc635e466e, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: b246e2be225b4cb458faca58898a70ea, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: abf9ec3c4599db949a3dcd8535d73e8f, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f08d168e3a918d843b4783b2a359e268, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: bd58f67857fe08b4b9908be2ebf50acf, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 20
+  - destination: {fileID: 11400000, guid: 592d620287687af46bbef865a24335cd, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: 0826c0b67c8f8a449850c271b4eb7f23, type: 2}
+      Amount: 10
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.68494725, g: 0.7490196, b: 0.18039212, a: 1}
-    TopColor: {r: 0.18039212, g: 0.7490196, b: 0.32847252, a: 1}
+    BaseColor: {r: 0.684, g: 0.749, b: 0.18, a: 1}
+    TopColor: {r: 0.18, g: 0.749, b: 0.328, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1

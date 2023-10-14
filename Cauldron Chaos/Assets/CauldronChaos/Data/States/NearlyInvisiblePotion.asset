@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: NearlyInvisiblePotion
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: 737b87898a969bb4cbcd4a545bf87ba8, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 0}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 30
+  - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+      Amount: 80
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.7837753, g: 0.829136, b: 0.9716981, a: 1}
-    TopColor: {r: 0.74377704, g: 0.9245283, b: 0.59745455, a: 1}
+    BaseColor: {r: 0.783, g: 0.829, b: 0.971, a: 1}
+    TopColor: {r: 0.743, g: 0.924, b: 0.597, a: 1}
     Shades: 4
     WaveStrength: 5.8
     WaveHeight: 1.5

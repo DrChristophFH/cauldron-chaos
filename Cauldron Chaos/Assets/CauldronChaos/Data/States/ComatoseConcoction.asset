@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: ComatoseConcoction
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: aa8ddd831deb1e04f85db878075f0104, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 0}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
+      Amount: 40
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.14778388, g: 0.17359531, b: 0.25471696, a: 1}
-    TopColor: {r: 0.24737448, g: 0.41763264, b: 0.4811321, a: 1}
+    BaseColor: {r: 0.147, g: 0.173, b: 0.254, a: 1}
+    TopColor: {r: 0.247, g: 0.417, b: 0.481, a: 1}
     Shades: 3
     WaveStrength: 5.8
     WaveHeight: 1.2

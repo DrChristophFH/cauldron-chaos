@@ -14,21 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitions:
   - destination: {fileID: 11400000, guid: fbc5a8a7a21e35e4e9c52e9bb19f88fb, type: 2}
-    requiredMaterials: []
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
+      Amount: 40
   - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
-    requiredMaterials: []
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 70
+    - Material: {fileID: 11400000, guid: 2e6223d1c21d89b408c7d8eedc12a05e, type: 2}
+      Amount: 50
+    - Material: {fileID: 11400000, guid: 105f1348de5a9f347a72738409f3ecc5, type: 2}
+      Amount: 20
+    - Material: {fileID: 11400000, guid: 66e691317a9f39f499bef4f366028af2, type: 2}
+      Amount: 50
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-    TopColor: {r: 0.5047614, g: 0.51204467, b: 0.53773576, a: 1}
+    BaseColor: {r: 0.698, g: 0.698, b: 0.698, a: 1}
+    TopColor: {r: 0.504, g: 0.512, b: 0.537, a: 1}
     Shades: 3
     WaveStrength: 14.06
     WaveHeight: 0.29
     WaveSpeed: 0.01
-    WaveRotation: 358.67966
+    WaveRotation: 358.679
     BubbleSpeed: 0.2
     BubbleDensity: 0.88
-    BubbleSpacing: 0.21673575
+    BubbleSpacing: 0.216
     BubbleStrength: 1.57
     CircleSize: 0.94

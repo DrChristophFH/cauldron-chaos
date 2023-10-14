@@ -202,8 +202,8 @@ digraph state_graph {
   
   // ChaoticCompound
   VitaminExtract -> ChaoticCompound [style = dotted; label = "30 FireMagic\n80 Glass\n50 Fruit\n20 Oil";];
-  FloatingBubbles -> ChaoticCompound [style = dotted; label = "80 Concrete\n20 Gold\n80 Stone\nWindMagic";];
-  ChaoticCompound -> FourLeafFroth [color = lightgreen; label = "100 Grass\nn50 Gemstone\n30 Flower\n10 Tree";];
+  FloatingBubbles -> ChaoticCompound [style = dotted; label = "80 Concrete\n20 Gold\n80 Stone\n10 WindMagic";];
+  ChaoticCompound -> FourLeafFroth [color = lightgreen; label = "100 Grass\n50 Gemstone\n30 Flower\n10 Tree";];
   ChaoticCompound -> EnlargingElixir [color = green; label = "200 Meat\n100 Silver\n80 Oil\n50 Fruit\n70 Tree";];
   
   // Hexed Foam
@@ -226,7 +226,7 @@ digraph state_graph {
   SleepingSyrup -> EvilElixir [style = dotted; label = "50 Fruit\n50 Oxygen\n100 Copper\n50 DarkMagic";];
   
   EvilElixir -> SinisterSolution [color = black; label = "40 Oil\n50 Toxic\n80 Gold";];
-  EvilElixir -> BubblingBrew [color = red; label = "50 WindMagic\n100 Air\n150 Oxygen\n 100 FireMagic";];
+  EvilElixir -> BubblingBrew [color = red; label = "50 WindMagic\n100 Air\n150 Oxygen\n100 FireMagic";];
   
   // Bewitching Blend
   TransformativeOoze -> BewitchingBlend [style = dotted; label = "40 Paper\n80 Toxic";];

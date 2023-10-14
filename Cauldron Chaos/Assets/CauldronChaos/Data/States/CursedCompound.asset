@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab35ba37911410744a249f75da0fca4e, type: 3}
   m_Name: CursedCompound
   m_EditorClassIdentifier: 
-  transitions: []
+  transitions:
+  - destination: {fileID: 11400000, guid: e4858fc38713729499391958dc6d202b, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 848ded3bb74f51f4b8fa366416eb8c9f, type: 2}
+      Amount: 130
+    - Material: {fileID: 11400000, guid: d446cf6897695f54b97767cef722a91d, type: 2}
+      Amount: 80
+    - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
+      Amount: 20
   noOverwrite: 1
   smokeConfig: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.509434, g: 0.14658237, b: 0.1775296, a: 1}
-    TopColor: {r: 0.29245278, g: 0.0455233, b: 0.07848475, a: 1}
+    BaseColor: {r: 0.509, g: 0.146, b: 0.177, a: 1}
+    TopColor: {r: 0.292, g: 0.045, b: 0.078, a: 1}
     Shades: 4
     WaveStrength: 4
     WaveHeight: 2.1
