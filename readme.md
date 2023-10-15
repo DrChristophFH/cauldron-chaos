@@ -99,3 +99,14 @@ mehr silber
 mehr flower (flower pack)
 mehr transitions
 mehr sticky
+mehr materialien
+success reset
+quest difficulty
+spalsh sound
+game over state
+overflow condition
+game over text
+reset knopf
+jimmy im käfig
+
+
