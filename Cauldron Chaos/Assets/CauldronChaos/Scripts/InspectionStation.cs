@@ -1,12 +1,15 @@
+using CartoonFX;
+
 using Unity.VisualScripting;
 
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class InspectionStation : MonoBehaviour {
   [SerializeField]
   private Speaker speaker;
   [SerializeField]
-  private ParticleSystem inspectParticles;
+  private GameObject inspectParticles;
 
   [SerializeField]
   private string inspectionText = "Inspecting...";
@@ -19,7 +22,7 @@ public class InspectionStation : MonoBehaviour {
   private bool isInspecting = false;
 
   private void Start() {
-    inspectParticles.Stop();
+    inspectParticles.SetActive(false);
   }
 
   private async void OnTriggerEnter(Collider other) {
@@ -28,10 +31,10 @@ public class InspectionStation : MonoBehaviour {
     }
     if (other.gameObject.TryGetComponent(out Ingredient ingredient)) {
       isInspecting = true;
-      inspectParticles.Play();
       AudioSource.PlayClipAtPoint(inspectSound, transform.position);
+      inspectParticles.SetActive(true);
       await speaker.Speak(inspectionText, 0.4f);
-      inspectParticles.Stop();
+      inspectParticles.SetActive(false);
       AudioSource.PlayClipAtPoint(inspectSuccessSound, transform.position);
       await speaker.Speak(ingredient.GetDescription());
       isInspecting = false;

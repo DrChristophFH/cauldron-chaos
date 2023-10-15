@@ -23503,7 +23503,6 @@ Transform:
   - {fileID: 683025225}
   - {fileID: 1177688848}
   - {fileID: 2112028432}
-  - {fileID: 8451317965751472038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &879581939 stripped
@@ -33900,7 +33899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speaker: {fileID: 1249713987}
-  inspectParticles: {fileID: 1868186814}
+  inspectParticles: {fileID: 2052766534}
   inspectionText: Inspecting...
   inspectSound: {fileID: 8300000, guid: 76354ccad8c616f43be1fddfb0e416d3, type: 3}
   inspectSuccessSound: {fileID: 8300000, guid: 3e90eb6087c73354a8e9b8e236406311, type: 3}
@@ -40717,6 +40716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CFXR3 Magic Aura A (Runic)
       objectReference: {fileID: 0}
+    - target: {fileID: 3280519133390621041, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
+      propertyPath: clearBehavior
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3280519133390621042, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.39896
@@ -40775,14 +40778,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3280519133430969737, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
       propertyPath: m_Intensity
-      value: 3.1272583
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7893921968227561089, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3280519133390621041, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -43036,11 +43038,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47481fb42c43e343b45e16aa1dbca9f, type: 3}
---- !u!198 &1868186814 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3280519133390621004, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
-  m_PrefabInstance: {fileID: 1738199466}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1868186816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3280519133390621042, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
@@ -47010,6 +47007,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce1ffe199877d042beba412608c26b5, type: 3}
+--- !u!1 &2052766534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3280519133390621005, guid: a71be3e7990efb040a07565c43cbb198, type: 3}
+  m_PrefabInstance: {fileID: 1738199466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2055390209
 GameObject:
   m_ObjectHideFlags: 0
@@ -47771,6 +47773,7 @@ Transform:
   - {fileID: 1450638317}
   - {fileID: 1968716673}
   - {fileID: 1249713986}
+  - {fileID: 8451317965751472038}
   m_Father: {fileID: 879457901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2112834318
@@ -59424,12 +59427,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7046791, z: -0, w: 0.7095263}
   m_LocalPosition: {x: -0.947, y: 1.132, z: 0.639}
-  m_LocalScale: {x: 1.4596443, y: 1.4596441, z: 1.4596443}
+  m_LocalScale: {x: 1.4596444, y: 1.4596441, z: 1.4596444}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 407774848}
   - {fileID: 948281333}
-  m_Father: {fileID: 879457901}
+  m_Father: {fileID: 2112028432}
   m_LocalEulerAnglesHint: {x: 0, y: -89.607, z: 0}
 --- !u!23 &8463875073138306590
 MeshRenderer:

@@ -94,12 +94,13 @@ Each state has a set of transitions that will be taken once the cauldron has the
 
 
 table hanging potion fix
-verdeckte schublade theke
+
 mehr silber
 mehr flower (flower pack)
 mehr transitions
 mehr sticky
 mehr materialien
+
 success reset
 quest difficulty
 spalsh sound
@@ -107,6 +108,8 @@ game over state
 overflow condition
 game over text
 reset knopf
-jimmy im käfig
 
+--- Needs Fix ---
 
+- [ ] Inspect station registers ingredient on pick up again
+- [ ] verdeckte schublade theke
