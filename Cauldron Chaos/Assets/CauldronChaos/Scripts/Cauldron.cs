@@ -18,6 +18,9 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   private GameObject content;
 
   [SerializeField]
+  private IngredientMaterial baseMaterial;
+
+  [SerializeField]
   private CauldronState overflowState;
   [SerializeField]
   private int overflowThreshold = 800;
@@ -56,8 +59,8 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
       Materials.TryGetValue(material, out int current);
       Materials[material] = current + part.Amount;
     }
-    
-    if (Materials[IngredientMaterial.GetMaterial("Base")] > overflowThreshold) {
+
+    if (Materials[baseMaterial] > overflowThreshold) {
       TransitionTo(overflowState);
       return;
     }

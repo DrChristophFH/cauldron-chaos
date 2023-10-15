@@ -36,10 +36,6 @@ public class IngredientMaterial : ScriptableObject {
     Children.Clear();
   }
 
-  public static IngredientMaterial GetMaterial(string name) {
-    return Resources.Load<IngredientMaterial>($"CauldronChaos/Data/Materials/{name}");
-  }
-
   public override string ToString() {
     return name;
   }

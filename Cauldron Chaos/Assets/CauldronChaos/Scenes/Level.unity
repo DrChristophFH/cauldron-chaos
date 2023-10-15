@@ -12713,6 +12713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cauldron: {fileID: 683025231}
   dropParticles: {fileID: 8205706795460263314, guid: 501e88a802eb72843a9e523b04a8d2ef, type: 3}
+  dropSound: {fileID: 8300000, guid: b839adebe420fb0449ae9c982f392c73, type: 3}
 --- !u!1001 &521923212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15178,7 +15179,8 @@ MonoBehaviour:
   offset: {x: 0, y: 0.1, z: 0}
   transitionParticles: {fileID: 957358958818814532, guid: 793d7761781f3dd419078de8064b5b45, type: 3}
   content: {fileID: 1386045151}
-  overflowState: {fileID: 0}
+  baseMaterial: {fileID: 11400000, guid: fd4f5820c7d73964f8f4469227b8aed8, type: 2}
+  overflowState: {fileID: 11400000, guid: a110695d2417fa5499b34a1065797eeb, type: 2}
   overflowThreshold: 800
 --- !u!198 &683025232
 ParticleSystem:
