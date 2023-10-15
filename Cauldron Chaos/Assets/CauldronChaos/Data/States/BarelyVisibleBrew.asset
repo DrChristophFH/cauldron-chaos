@@ -74,15 +74,15 @@ MonoBehaviour:
     TurblenceSpeed: 0.2
     Mesh: {fileID: 0}
   contentConfig:
-    BaseColor: {r: 0.9898, g: 0.9898, b: 0.9898, a: 1}
-    TopColor: {r: 0.9804, g: 0.9812, b: 0.9837, a: 1}
+    BaseColor: {r: 0.75471693, g: 0.75471693, b: 0.75471693, a: 1}
+    TopColor: {r: 0.9804, g: 0.9811999, b: 0.9837, a: 1}
     Shades: 3
-    WaveStrength: 14.06
+    WaveStrength: 15.93
     WaveHeight: 0.29
     WaveSpeed: 0.08
     WaveRotation: 368.679
     BubbleSpeed: 0.2
-    BubbleDensity: 0.88
+    BubbleDensity: 5.74
     BubbleSpacing: 0.216
-    BubbleStrength: 1.67
+    BubbleStrength: 1.5
     CircleSize: 0.94

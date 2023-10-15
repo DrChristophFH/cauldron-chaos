@@ -16,12 +16,19 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
   private IObservable<CauldronState> cauldronState;
 
   [SerializeField]
+  private CauldronState gameOverState;
+  [SerializeField]
+  private GameObject gameOverPanel;
+
+  [SerializeField]
   private Quest currentQuest;
 
   [SerializeField]
   private AudioClip successSound;
   [SerializeField]
   private AudioClip newQuestSound;
+  [SerializeField] 
+  private AudioClip gameOverSound;
 
   [SerializeField]
   private Speaker speaker;
@@ -31,25 +38,45 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
   private void Start() {
     cauldronState = cauldron;
     cauldronState.Subscribe(this);
-    // wait 5 seconds
+    Vector3 panelPosition = gameOverPanel.transform.position;
+    panelPosition.y -= 5;
+    gameOverPanel.transform.position = panelPosition;
+    gameOverPanel.SetActive(false);
     Invoke("GenerateNewRandomQuest", 5f);
   }
 
   public void OnCompleted() { } // do nothing
   public void OnError(Exception error) { } // do nothing
-  
+
   public void OnNext(CauldronState newState) {
     if (currentQuest.RequiredCauldronState.Equals(newState)) {
       Score += currentQuest.RewardPoints;
-      AudioSource.PlayClipAtPoint(successSound, transform.position);
+      AudioHelper.PlayClipAtPointWithSettings(successSound, transform.position);
       Invoke("GenerateNewRandomQuest", 5f);
+    } else if (gameOverState.Equals(newState)) {
+      gameOverPanel.SetActive(true);
+      AudioHelper.PlayClipAtPointWithSettings(gameOverSound, transform.position);
+      speaker.Speak($"Game Over: {Score} points", 0.2f);
+      StartCoroutine(FlyInGameOverPanel());
+    }
+  }
+
+  private IEnumerator FlyInGameOverPanel() {
+    var transform = gameOverPanel.GetComponent<Transform>();
+    Vector3 originalPosition = gameOverPanel.GetComponent<Transform>().position;
+    var targetPosition = new Vector3(originalPosition.x, originalPosition.y + 5, originalPosition.z);
+    var t = 0f;
+    while (t < 1f) {
+      t += Time.deltaTime;
+      transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
+      yield return null;
     }
   }
 
   private void GenerateNewRandomQuest() {
     int randomIndex = UnityEngine.Random.Range(0, quests.Count);
     currentQuest = quests[randomIndex];
-    AudioSource.PlayClipAtPoint(newQuestSound, transform.position);
+    AudioHelper.PlayClipAtPointWithSettings(newQuestSound, transform.position);
     speaker.Speak(currentQuest.QuestName);
   }
 }

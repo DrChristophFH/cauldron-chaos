@@ -31,11 +31,11 @@ public class InspectionStation : MonoBehaviour {
     }
     if (other.gameObject.TryGetComponent(out Ingredient ingredient)) {
       isInspecting = true;
-      AudioSource.PlayClipAtPoint(inspectSound, transform.position);
+      AudioHelper.PlayClipAtPointWithSettings(inspectSound, transform.position);
       inspectParticles.SetActive(true);
       await speaker.Speak(inspectionText, 0.4f);
       inspectParticles.SetActive(false);
-      AudioSource.PlayClipAtPoint(inspectSuccessSound, transform.position);
+      AudioHelper.PlayClipAtPointWithSettings(inspectSuccessSound, transform.position);
       await speaker.Speak(ingredient.GetDescription());
       isInspecting = false;
     }
