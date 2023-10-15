@@ -246,6 +246,8 @@ MonoBehaviour:
     Amount: 35
   - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
     Amount: 10
+  - Material: {fileID: 11400000, guid: 57f9178835b6cf24a9695f6ee1514e72, type: 2}
+    Amount: 10
 --- !u!64 &4610439207568546198
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -10,34 +10,40 @@ digraph state_graph {
   
   FourLeafFroth [color = lightgreen;BaseColor = "0.5248, 0.749, 0.180, 1";TopColor = "0.180, 0.749, 0.240, 1";Shades = "6";WaveStrength = "8.8";WaveHeight = "1.8";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.22";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.29";VelocityYMax = "0.52";VelocityYMin = "1.06";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.0";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   FortuneFindingMix [color = lightgreen;BaseColor = "0.066, 0.933, 0.127, 1";TopColor = "1.11171, 0.933, 0.444, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1.8";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.2";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.28";VelocityYMax = "1.111";VelocityYMin = "1.11";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.05";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  LuckSerum [color = lightgreen;BaseColor = "1, 0.976, 0.004, 1";TopColor = "0.867, 0.723, 0.004, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "1.3";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   CondensingConcoction [color = teal;BaseColor = "0.791, 0.760, 0.933, 1";TopColor = "0.426, 0.487, 0.779, 1";Shades = "3";WaveStrength = "6.8";WaveHeight = "2.6";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.86";StartLifeTime = "4";StartSize = "0.13";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.16";VelocityYMax = "0.7";VelocityYMin = "0.7";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   MinimizingMix [color = teal;BaseColor = "0.903, 0.768, 0.962, 1";TopColor = "0.746, 1.1546, 0.971, 1";Shades = "3";WaveStrength = "6.8";WaveHeight = "1";WaveSpeed = "0.26";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.24";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.17";VelocityYMax = "1.15";VelocityYMin = "1.15";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  ShrinkingPotion [color = teal;BaseColor = "0.523, 0.749, 0.180, 1";TopColor = "0.511, 0.896, 0.888, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   SoothingSyrup [color = darkblue;BaseColor = "0.3584, 0.749, 0.180, 1";TopColor = "0.180, 0.749, 0.2428, 1";Shades = "3";WaveStrength = "4.8";WaveHeight = "1";WaveSpeed = "0.24";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.694";BubbleStrength = "0.94";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.24";MaxParticles = "100";EmissionRate = "4";StartSpeed = "0.24";VelocityYMax = "0.35";VelocityYMin = "0.69";StartColor = "0.24, 0.692, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   DrowsyDraught [color = darkblue;BaseColor = "1.0882, 0.729, 0.971, 1";TopColor = "0.5263, 0.749, 0.180, 1";Shades = "3";WaveStrength = "4.8";WaveHeight = "1";WaveSpeed = "0.001";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "1.084";BubbleStrength = "0.94";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.17";MaxParticles = "100";EmissionRate = "4";StartSpeed = "0.22";VelocityYMax = "0.52";VelocityYMin = "1.08";StartColor = "0.24, 1.082, 1, 1";TurblenceStrength = "0.02";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  SleepingDraught [color = darkblue;BaseColor = "1.0472, 0.3149, 0.972, 1";TopColor = "0.447, 0.811, 0.3179, 1";Shades = "7";WaveStrength = "7.8";WaveHeight = "1";WaveSpeed = "0.04";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   SimmeringBroth [color = purple;BaseColor = "0.471, 0.237, 0.028, 1";TopColor = "0.3522, 0.020, 0.297, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.13";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.13";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.29";VelocityYMax = "0.35";VelocityYMin = "1.14";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.09";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   ClearBroth [color = purple;BaseColor = "0.2341, 0.737, 0.944, 1";TopColor = "0.3946, 1, 0.993, 1";Shades = "4";WaveStrength = "8.230";WaveHeight = "0.200";WaveSpeed = "0.007";WaveRotation = "296.367";BubbleSpeed = "0.911";BubbleDensity = "4.248";BubbleSpacing = "0.2334";BubbleStrength = "2.07";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "4";StartSpeed = "0.06";VelocityYMax = "0.39";VelocityYMin = "0.97";StartColor = "0.24, 0.972, 1, 1";TurblenceStrength = "0.02";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   TranslucentTonic [color = purple;BaseColor = "0.8672, 0.8698, 0.943, 1";TopColor = "0.962, 0.8676, 0.8630, 1";Shades = "3";WaveStrength = "7.8";WaveHeight = "1.2";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.11";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.06";VelocityYMax = "0.49";VelocityYMin = "0.86";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.02";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   FadingFluid [color = purple;BaseColor = "0.729, 0.774, 0.914, 0.727";TopColor = "0.903, 0.910, 0.933, 0.747";Shades = "3";WaveStrength = "4.8";WaveHeight = "2";WaveSpeed = "0.002";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.74";BubbleStrength = "0.94";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "4";StartSpeed = "0.26";VelocityYMax = "0.37";VelocityYMin = "0.7";StartColor = "0.24, 0.72, 1, 1";TurblenceStrength = "0.08";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   BarelyVisibleBrew [color = purple;BaseColor = "0.9898, 0.9898, 0.9898, 1";TopColor = "0.9804, 0.9812, 0.9837, 1";Shades = "3";WaveStrength = "14.06";WaveHeight = "0.29";WaveSpeed = "0.08";WaveRotation = "368.679";BubbleSpeed = "0.2";BubbleDensity = "0.88";BubbleSpacing = "0.216";BubbleStrength = "1.67";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.07";VelocityYMax = "0.98";VelocityYMin = "0.98";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.08";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   NearlyInvisiblePotion [color = purple;BaseColor = "0.783, 0.829, 0.971, 1";TopColor = "0.743, 0.924, 0.7997, 1";Shades = "4";WaveStrength = "6.8";WaveHeight = "1.6";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.1";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.23";VelocityYMax = "0.79";VelocityYMin = "0.79";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  InvisibilityPotion [color = purple;BaseColor = "0.804, 0.952, 0.937, 1";TopColor = "0.837, 0.981, 0.917, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.000";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   DandelionTea [color = grey;BaseColor = "0.180, 0.749, 0.1547, 1";TopColor = "0.6188, 0.982, 0.917, 1";Shades = "3";WaveStrength = "8.8";WaveHeight = "1";WaveSpeed = "0.001";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.15";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.17";VelocityYMax = "0.5";VelocityYMin = "0.61";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.09";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   FloatingBubbles [color = grey;BaseColor = "0.913, 0.917, 0.824, 1";TopColor = "0.841, 0.917, 0.427, 1";Shades = "3";WaveStrength = "7.8";WaveHeight = "2.7";WaveSpeed = "0.28";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.21";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.28";VelocityYMax = "0.34";VelocityYMin = "0.95";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.03";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   FizzyFoam [color = grey;BaseColor = "0.414, 0.924, 0.636, 1";TopColor = "0.126, 0.726, 0.636, 1";Shades = "3";WaveStrength = "6";WaveHeight = "2.6";WaveSpeed = "0.18";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.18";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.29";VelocityYMax = "0.6";VelocityYMin = "0.6";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.05";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   LiftingLiquid [color = grey;BaseColor = "0.7106, 0.2347, 0.7137, 1";TopColor = "0.180, 0.3600, 0.749, 1";Shades = "4";WaveStrength = "8.8";WaveHeight = "2.8";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.22";VelocityYMax = "0.36";VelocityYMin = "0.71";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.03";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   LightweightElixir [color = grey;BaseColor = "0.86404, 0.86441, 0.142, 1";TopColor = "1, 0.457, 0.86439, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.06";VelocityYMax = "0.864";VelocityYMin = "0.86";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.09";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   GravityDefyingDraught [color = grey;BaseColor = "0.766, 0.431, 0.943, 1";TopColor = "0.9492, 0.431, 0.924, 1";Shades = "4";WaveStrength = "6.8";WaveHeight = "2";WaveSpeed = "0.08";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.16";VelocityYMax = "0.94";VelocityYMin = "0.94";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  LevitationPotion [color = grey;BaseColor = "0.947, 0.830, 0.962, 1";TopColor = "0.347, 0.725, 0.886, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   VitaminExtract [color = green;BaseColor = "0.108, 0.3603, 0.037, 1";TopColor = "0.744, 0.982, 0.1373, 1";Shades = "8";WaveStrength = "8.8";WaveHeight = "1.4";WaveSpeed = "0.18";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.13";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.13";VelocityYMax = "0.36";VelocityYMin = "1.13";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   MuscleMassMixture [color = green;BaseColor = "0.972, 0.473, 1.0987, 1";TopColor = "0.4447, 1.0949, 0.180, 1";Shades = "3";WaveStrength = "7.8";WaveHeight = "2.3";WaveSpeed = "0.08";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.18";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.13";VelocityYMax = "0.44";VelocityYMin = "1.09";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   BulkingBrew [color = green;BaseColor = "0.180, 0.9649, 0.2570, 1";TopColor = "0.9603, 0.896, 0.9689, 1";Shades = "4";WaveStrength = "7.8";WaveHeight = "2";WaveSpeed = "0.14";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.14";VelocityYMax = "0.38";VelocityYMin = "0.96";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.08";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   EnlargingElixir [color = green;BaseColor = "0.749, 0.402, 0.180, 1";TopColor = "1.2160, 0.749, 0.180, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.4";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.25";VelocityYMax = "1.21";VelocityYMin = "1.21";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.02";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   ExpandingExtract [color = green;BaseColor = "0.208, 0.443, 0.117, 1";TopColor = "0.9649, 0.3729, 0.180, 1";Shades = "7";WaveStrength = "7.8";WaveHeight = "2.7";WaveSpeed = "0.17";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.24";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.27";VelocityYMax = "0.37";VelocityYMin = "0.96";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.0";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   GrowthAccelerant [color = green;BaseColor = "0.180, 0.749, 0.1324, 1";TopColor = "0.749, 0.6840, 0.180, 1";Shades = "3";WaveStrength = "4.8";WaveHeight = "2.4";WaveSpeed = "0.13";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.684";BubbleStrength = "0.94";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.13";MaxParticles = "100";EmissionRate = "4";StartSpeed = "0.3";VelocityYMax = "0.33";VelocityYMin = "0.68";StartColor = "0.24, 0.682, 1, 1";TurblenceStrength = "0.0";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  GiantGrowthFormula [color = green;BaseColor = "0.749, 0.448, 0.180, 1";TopColor = "0.069, 0.679, 0.035, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.8";WaveSpeed = "0.06";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   SimmeringBroth [color = red;BaseColor = "0.471, 0.237, 0.028, 1";TopColor = "0.5722, 0.020, 0.217, 1";Shades = "3";WaveStrength = "8.8";WaveHeight = "1";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.2";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.21";VelocityYMax = "0.57";VelocityYMin = "0.84";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   StirringSolution [color = red;BaseColor = "0.844, 1.2191, 0.943, 1";TopColor = "0.915, 0.701, 1.2130, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.21";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.16";VelocityYMax = "0.45";VelocityYMin = "1.21";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.09";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   PlantExtractBase [color = red;BaseColor = "0.1991, 0.8449, 0.180, 1";TopColor = "0.809, 0.971, 0.8410, 1";Shades = "3";WaveStrength = "7.8";WaveHeight = "1";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.19";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.15";VelocityYMax = "0.55";VelocityYMin = "0.84";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
@@ -49,7 +55,8 @@ digraph state_graph {
   ShapeShiftingSludge [color = red;BaseColor = "0.2577, 0.177, 0.033, 1";TopColor = "0.462, 0.2583, 0.150, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.06";VelocityYMax = "0.6";VelocityYMin = "1.07";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.08";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   IdentifyingElixir [color = red;BaseColor = "0.896, 0.826, 0.213, 1";TopColor = "0.5432, 0.731, 0.924, 1";Shades = "3";WaveStrength = "3.8";WaveHeight = "1.7";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.43";BubbleStrength = "0.93";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.72";MaxParticles = "100";EmissionRate = "3";StartSpeed = "0.12";VelocityYMax = "0.54";VelocityYMin = "0.72";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   PersonalizingPotion [color = red;BaseColor = "0.7637, 0.167, 0.119, 1";TopColor = "0.749, 0.180, 0.736, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "1.4";WaveSpeed = "0.1";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.11";MaxParticles = "100";EmissionRate = "5";StartSpeed = "0.2";VelocityYMax = "0.37";VelocityYMin = "0.76";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.02";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+  PolyjuicePotion [color = red;BaseColor = "0.917, 0.933, 0.823, 1";TopColor = "0.997, 0.788, 1, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
+
   NightshadeInfusion [color = black;BaseColor = "0.130, 0.163, 0.264, 1";TopColor = "0.478, 1.2272, 0.867, 1";Shades = "6";WaveStrength = "6.8";WaveHeight = "2.1";WaveSpeed = "0.16";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.46";BubbleStrength = "0.96";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "6";StartSpeed = "0.14";VelocityYMax = "1.22";VelocityYMin = "1.22";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.06";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   ToxicBroth [color = black;BaseColor = "0.749, 0.180, 1.0231, 1";TopColor = "1.0288, 0.180, 0.749, 1";Shades = "7";WaveStrength = "3.8";WaveHeight = "1.8";WaveSpeed = "0.09";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.43";BubbleStrength = "0.93";CircleSize = "0.94";StartLifeTime = "4";StartSize = "1.02";MaxParticles = "100";EmissionRate = "3";StartSpeed = "0.11";VelocityYMax = "0.53";VelocityYMin = "1.02";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   SinisterSolution [color = black;BaseColor = "0.069, 0.044, 0.179, 1";TopColor = "0.169, 0.12, 0.072, 1";Shades = "3";WaveStrength = "2.8";WaveHeight = "2";WaveSpeed = "0.91";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.42";BubbleStrength = "0.92";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.915";MaxParticles = "100";EmissionRate = "2";StartSpeed = "0.1";VelocityYMax = "0.31";VelocityYMin = "0.91";StartColor = "0.914, 0.42, 1, 1";TurblenceStrength = "0.01";TurblenceFrequency = "0.91";TurblenceSpeed = "0.91";];
@@ -61,17 +68,8 @@ digraph state_graph {
   ComatoseConcoction [color = black;BaseColor = "0.147, 0.173, 0.284, 1";TopColor = "0.247, 0.417, 0.481, 1";Shades = "3";WaveStrength = "8.8";WaveHeight = "1.2";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.48";BubbleStrength = "0.98";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.26";MaxParticles = "100";EmissionRate = "8";StartSpeed = "0.21";VelocityYMax = "0.58";VelocityYMin = "1.17";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.03";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   SuspendedAnimationSerum [color = black;BaseColor = "0.079, 0.238, 0.733, 1";TopColor = "0, 0, 0, 1";Shades = "3";WaveStrength = "3.8";WaveHeight = "0";WaveSpeed = "0";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.43";BubbleStrength = "0.93";CircleSize = "0.94";StartLifeTime = "4";StartSize = "1.16";MaxParticles = "100";EmissionRate = "3";StartSpeed = "0.27";VelocityYMax = "0.56";VelocityYMin = "1.16";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.09";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   NearDeathNostrum [color = black;BaseColor = "0.103, 0.107, 0.113, 1";TopColor = "0.198, 0.034, 0.2520, 1";Shades = "3";WaveStrength = "7.8";WaveHeight = "1.12";WaveSpeed = "0.03";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.25";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.07";VelocityYMax = "0.54";VelocityYMin = "1.12";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.06";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
-  // End State
-  LuckSerum [color = lightgreen;BaseColor = "1, 0.976, 0.004, 1";TopColor = "0.867, 0.723, 0.004, 1";Shades = "6";WaveStrength = "5.8";WaveHeight = "1.3";WaveSpeed = "0.2";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  ShrinkingPotion [color = teal;BaseColor = "0.523, 0.749, 0.180, 1";TopColor = "0.511, 0.896, 0.888, 1";Shades = "4";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.15";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  SleepingDraught [color = darkblue;BaseColor = "1.0472, 0.3149, 0.972, 1";TopColor = "0.447, 0.811, 0.3179, 1";Shades = "7";WaveStrength = "7.8";WaveHeight = "1";WaveSpeed = "0.04";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.47";BubbleStrength = "0.97";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  InvisibilityPotion [color = purple;BaseColor = "0.804, 0.952, 0.937, 1";TopColor = "0.837, 0.981, 0.917, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.000";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  LevitationPotion [color = grey;BaseColor = "0.947, 0.830, 0.962, 1";TopColor = "0.347, 0.725, 0.886, 1";Shades = "5";WaveStrength = "5.8";WaveHeight = "2.5";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  GiantGrowthFormula [color = green;BaseColor = "0.749, 0.448, 0.180, 1";TopColor = "0.069, 0.679, 0.035, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "2.8";WaveSpeed = "0.06";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  PolyjuicePotion [color = red;BaseColor = "0.917, 0.933, 0.823, 1";TopColor = "0.997, 0.788, 1, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.005";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   DraughtOfLivingDeath [color = black;BaseColor = "0.125, 0.169, 0.120, 1";TopColor = "0, 0, 0, 1";Shades = "4";WaveStrength = "11.07";WaveHeight = "0.2";WaveSpeed = "0";WaveRotation = "0";BubbleSpeed = "0.2";BubbleDensity = "5.89";BubbleSpacing = "0";BubbleStrength = "0.57";CircleSize = "0.94";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
-  
+
   // Game Over
   RuinedRecipe [style = filled;fillcolor = red;BaseColor = "0.037, 0.019, 0.016, 1";TopColor = "0.084, 0.069, 0.024, 1";Shades = "3";WaveStrength = "5.8";WaveHeight = "1";WaveSpeed = "0.02";WaveRotation = "180";BubbleSpeed = "1";BubbleDensity = "3.7";BubbleSpacing = "0.45";BubbleStrength = "0.95";CircleSize = "0.9";StartLifeTime = "4";StartSize = "0.23";MaxParticles = "100";EmissionRate = "7";StartSpeed = "0.29";VelocityYMax = "0.31";VelocityYMin = "1.04";StartColor = "0.24, 0.42, 1, 1";TurblenceStrength = "0.04";TurblenceFrequency = "0.2";TurblenceSpeed = "0.2";];
   
@@ -100,7 +98,7 @@ digraph state_graph {
   
   // Shrinking Potion
   EmptyCauldron -> CondensingConcoction [color = teal; label = "40 Air\n20 Plant\n15 Silver";];
-  CondensingConcoction -> MinimizingMix [color = teal; label = "50 EarthMagic\n30 Vegetable\n20 Glass";];
+  CondensingConcoction -> MinimizingMix [color = teal; label = "50 Paper\n30 Vegetable\n20 Glass";];
   MinimizingMix -> ShrinkingPotion [color = teal; label = "30 Gemstone\n10 LightMagic";];
   
   // Sleeping Draught
@@ -110,16 +108,16 @@ digraph state_graph {
   
   // Invisibility Potion
   EmptyCauldron -> SimmeringBroth [color = purple; label = "30 Plant\n20 Glass";];
-  SimmeringBroth -> ClearBroth [color = purple; label = "40 LightMagic\n30 Air\n10 Silver";];
+  SimmeringBroth -> ClearBroth [color = purple; label = "40 Paper\n30 Air\n10 Silver";];
   ClearBroth -> TranslucentTonic [color = purple; label = "80 Glass\n20 Crystalline";];
-  TranslucentTonic -> FadingFluid [color = purple; label = "30 LightMagic\n10 Gemstone";];
+  TranslucentTonic -> FadingFluid [color = purple; label = "30 LightMagic\n10 Gemstone\n40 Paper";];
   FadingFluid -> BarelyVisibleBrew [color = purple; label = "50 WindMagic\n40 Silver\n10 Crystalline";];
   BarelyVisibleBrew -> NearlyInvisiblePotion [color = purple; label = "60 LightMagic\n40 Glass";];
   NearlyInvisiblePotion -> InvisibilityPotion [color = purple; label = "70 Crystalline\n30 DarkMagic";];
   
   // Levitation Potion
   EmptyCauldron -> DandelionTea [color = gray; label = "50 Plant\n20 Flower";];
-  DandelionTea -> FloatingBubbles [color = gray; label = "70 Air\n20 Plant";];
+  DandelionTea -> FloatingBubbles [color = gray; label = "70 Air\n20 Plant\n40 Paper";];
   FloatingBubbles -> FizzyFoam [color = gray; label = "70 Explosive\n40 Plastic\n10 Copper";];
   FizzyFoam -> LiftingLiquid [color = gray; label = "60 WindMagic\n20 Powdery";];
   LiftingLiquid -> LightweightElixir [color = gray; label = "70 Bone\n20 Silver\n10 Explosive";];
@@ -131,9 +129,9 @@ digraph state_graph {
   VitaminExtract -> MuscleMassMixture [color = green; label = "40 Meat\n30 Bone\n30 EarthMagic";];
   MuscleMassMixture -> BulkingBrew [color = green; label = "60 Sticky\n40 Concrete\n10 Organic";];
   BulkingBrew -> EnlargingElixir [color = green; label = "70 EarthMagic\n100 Organic";];
-  EnlargingElixir -> ExpandingExtract [color = green; label = "80 Solid\n20 Explosive";];
+  EnlargingElixir -> ExpandingExtract [color = green; label = "180 Solid\n20 Explosive";];
   ExpandingExtract -> GrowthAccelerant [color = green; label = "90 Plant\n10 Gold";];
-  GrowthAccelerant -> GiantGrowthFormula [color = green; label = "100 EarthMagic";];
+  GrowthAccelerant -> GiantGrowthFormula [color = green; label = "100 EarthMagic\n100 Solid\n30 Paper";];
   
   // Polyjuice Potion
   EmptyCauldron -> SimmeringBroth [color = red; label = "30 Plant\n20 Bone";];
@@ -142,39 +140,139 @@ digraph state_graph {
   PlantExtractBase -> ThickeningMixture [color = red; label = "50 Bone\n30 WaterMagic\n20 Wood";];
   ThickeningMixture -> BubblingBrew [color = red; label = "40 FireMagic\n40 Water\n20 Fruit";];
   BubblingBrew -> ViscousBlend [color = red; label = "60 Wood\n30 WaterMagic\n10 Silver";];
-  ViscousBlend -> MorphingMud [color = red; label = "70 Earth\n20 Water\n10 Gold";];
+  ViscousBlend -> MorphingMud [color = red; label = "70 Earth\n40 Paper\n10 Gold";];
   MorphingMud -> TransformativeOoze [color = red; label = "80 EarthMagic\n20 Silver";];
   TransformativeOoze -> ShapeShiftingSludge [color = red; label = "90 WaterMagic\n10 Wood";];
   ShapeShiftingSludge -> IdentifyingElixir [color = red; label = "80 Plant\n20 Silver";];
-  IdentifyingElixir -> PersonalizingPotion [color = red; label = "100 WaterMagic";];
+  IdentifyingElixir -> PersonalizingPotion [color = red; label = "100 WaterMagic\n40 Paper\n50 Organic";];
   PersonalizingPotion -> PolyjuicePotion [color = red; label = "100 EarthMagic";];
   
   // Draught of Living Death
   EmptyCauldron -> NightshadeInfusion [color = black; label = "50 Plant\n20 Poisonous";];
   NightshadeInfusion -> ToxicBroth [color = black; label = "80 Plant\n10 DarkMagic";];
   ToxicBroth -> SinisterSolution [color = black; label = "120 Bone\n40 Artificial";];
-  SinisterSolution -> WickedBrew [color = black; label = "100 Radioactive\n30 Meat";];
+  SinisterSolution -> WickedBrew [color = black; label = "100 Radioactive\n30 Meat\n45 Paper";];
   WickedBrew -> FatalBlend [color = black; label = "70 Fancy\n10 Leather\n50 Flower";];
   FatalBlend -> LethalLiquid [color = black; label = "80 DarkMagic\n20 Poisonous";];
-  LethalLiquid -> SleepingSyrup [color = black; label = "90 Sticky\n10 Bone";];
+  LethalLiquid -> SleepingSyrup [color = black; label = "90 Sticky\n10 Bone\n45 Paper";];
   SleepingSyrup -> TranquilTonic [color = black; label = "80 Plant\n20 Poisonous";];
-  TranquilTonic -> ComatoseConcoction [color = black; label = "100 Sand\n30 Helium";];
-  ComatoseConcoction -> SuspendedAnimationSerum [color = black; label = "90 Earth\n40 Concrete";];
+  TranquilTonic -> ComatoseConcoction [color = black; label = "100 Sand\n30 Gas";];
+  ComatoseConcoction -> SuspendedAnimationSerum [color = black; label = "90 Earth\n40 Concrete\n45 Paper";];
   SuspendedAnimationSerum -> NearDeathNostrum [color = black; label = "80 Poisonous\n20 DarkMagic";];
-  NearDeathNostrum -> DraughtOfLivingDeath [color = black; label = "100 DarkMagic";];
+  NearDeathNostrum -> DraughtOfLivingDeath [color = black; label = "100 DarkMagic\n45 Liquid";];
   
   // -------------------- Cross Recipe Connections --------------------
   
-  SleepingDraught -> SleepingSyrup [color = black; label = "130 Sticky\n40 Dirt";];
-  StirringSolution -> SinisterSolution [color = black; label = "40 Clay\n30 Plant\n10 Artificial";];
-  TranslucentTonic -> MorphingMud [color = red; label = "115 Dirt\n20 Oil";];
+  FourLeafFroth -> TranslucentTonic [color = purple; label = "75 Natural\n70 Metal";];
+  FourLeafFroth -> WickedBrew [color = black; label = "150 Natural\n50 Organic";];
+  FortuneFindingMix -> LightweightElixir [color = grey; label = "90 Plastic\n50 Plant";];
+  FortuneFindingMix -> MuscleMassMixture [color = green; label = "100 Paper\n30 Organic";];
+
+  CondensingConcoction -> SinisterSolution [color = black; label = "60 DarkMagic\n30 Clay\n50 Bone";];
+  CondensingConcoction -> StirringSolution [color = red; label = "30 Flammable\n20 Water";];
+  MinimizingMix -> LiftingLiquid [color = gray; label = "80 Air\n10 WindMagic";];
+  MinimizingMix -> BubblingBrew [color = red; label = "30 Artificial\n10 Gas\n80 Paper";];
+
   SoothingSyrup -> VitaminExtract [color = green; label = "60 Fruit\n60 Vegetable\n20 Plant";];
   SoothingSyrup -> DandelionTea [color = gray; label = "60 Plant\n10 Acid";];
   DrowsyDraught -> StrangeBrew [style = dotted; label = "40 Sticky\n30 Oxygen";];
+  DrowsyDraught -> 
+  SleepingDraught -> SleepingSyrup [color = black; label = "130 Sticky\n40 Dirt";];
+
+  SimmeringBroth -> 
+  SimmeringBroth ->
+  ClearBroth -> 
+  ClearBroth -> 
+  TranslucentTonic ->
+  TranslucentTonic -> MorphingMud [color = red; label = "115 Dirt\n20 Oil";];
+  FadingFluid ->
+  FadingFluid ->
+  BarelyVisibleBrew ->
+  BarelyVisibleBrew ->
+  NearlyInvisiblePotion ->
+  NearlyInvisiblePotion ->
+  InvisibilityPotion ->
+  InvisibilityPotion ->
+
+  DandelionTea ->
+  DandelionTea ->
+  FloatingBubbles ->
+  FloatingBubbles ->
+  FizzyFoam ->
+  FizzyFoam ->
+  LiftingLiquid ->
+  LiftingLiquid ->
+  LightweightElixir ->
+  LightweightElixir ->
+  GravityDefyingDraught ->
+  GravityDefyingDraught ->
+  LevitationPotion ->
+  LevitationPotion ->
+
+  VitaminExtract ->
+  VitaminExtract ->
+  MuscleMassMixture ->
+  MuscleMassMixture ->
+  BulkingBrew ->
+  BulkingBrew ->
+  EnlargingElixir ->
+  EnlargingElixir ->
+  ExpandingExtract ->
+  ExpandingExtract ->
+  GrowthAccelerant ->
+  GrowthAccelerant ->
+  GiantGrowthFormula ->
+  GiantGrowthFormula ->
+
+  SimmeringBroth ->
+  SimmeringBroth ->
+  StirringSolution ->
+  StirringSolution -> SinisterSolution [color = black; label = "40 Clay\n30 Plant\n10 Artificial";];
+  PlantExtractBase ->
+  PlantExtractBase ->
+  ThickeningMixture ->
+  ThickeningMixture ->
+  BubblingBrew ->
+  BubblingBrew ->
+  ViscousBlend ->
+  ViscousBlend ->
+  MorphingMud ->
+  MorphingMud ->
+  TransformativeOoze ->
+  TransformativeOoze ->
+  ShapeShiftingSludge ->
+  ShapeShiftingSludge ->
+  IdentifyingElixir ->
+  IdentifyingElixir ->
+  PersonalizingPotion ->
+  PersonalizingPotion ->
+  PolyjuicePotion ->
+  PolyjuicePotion ->
+
+  NightshadeInfusion ->
+  NightshadeInfusion ->
+  ToxicBroth ->
+  ToxicBroth ->
+  SinisterSolution ->
+  SinisterSolution ->
+  WickedBrew ->
+  WickedBrew ->
+  FatalBlend ->
+  FatalBlend ->
+  LethalLiquid ->
+  LethalLiquid ->
+  SleepingSyrup ->
+  SleepingSyrup ->
+  TranquilTonic ->
   TranquilTonic -> SoothingSyrup [color = darkblue; label = "50 Sticky\n20 Sand";];
-  CondensingConcoction -> StirringSolution [color = red; label = "30 Flammable\n20 Water";];
-  MinimizingMix -> LiftingLiquid [color = gray; label = "80 Air\n10 WindMagic";];
-  
+  ComatoseConcoction ->
+  ComatoseConcoction ->
+  SuspendedAnimationSerum ->
+  SuspendedAnimationSerum ->
+  NearDeathNostrum ->
+  NearDeathNostrum ->
+  DraughtOfLivingDeath ->
+  DraughtOfLivingDeath ->
   
   // -------------------- Inter Recipe States --------------------
   // Dirty Soup
@@ -185,7 +283,7 @@ digraph state_graph {
   
   // Strange Brew
   FizzyFoam -> StrangeBrew [style = dotted; label = "15 WindMagic\n20 Bone\n25 Copper\n50 Tree";];
-  FatalBlend -> StrangeBrew [style = dotted; label = "50 Toxic\n30 Helium\n50 Leather";];
+  FatalBlend -> StrangeBrew [style = dotted; label = "50 Toxic\n30 Gas\n50 Leather";];
   MorphingMud -> StrangeBrew [style = dotted; label = "80 WaterMagic\n20 Meat\n80 Stone";];
   StrangeBrew -> CondensingConcoction [color = darkslategrey; label = "50 EarthMagic\n100 Stone\n20 Concrete\n30 Iron";];
   StrangeBrew -> ClearBroth [color = purple; label = "100 Water\n50 Oxygen\n30 WaterMagic\n50 LightMagic";];
@@ -194,7 +292,7 @@ digraph state_graph {
   ToxicBroth -> DarkMixture [style = dotted; label = "100 DarkMagic\n50 Plactic\n20 Meat\n10 Bone\n20 Copper";];
   ThickeningMixture -> DarkMixture [style = dotted; label = "80 DarkMagic\n50 EarthMagic\n70 Air";];
   DarkMixture -> FourLeafFroth [color = lightgreen; label = "100 WindMagic\n100 Air\n50 Grass\n30 Flower";];
-  DarkMixture -> ClearBroth [color = purple; label = "150 LightMagic\n50 Helium\n30 Gold\n50 Water";];
+  DarkMixture -> ClearBroth [color = purple; label = "150 LightMagic\n50 Gas\n30 Gold\n50 Water";];
   
   // CursedCompound
   DarkMixture -> CursedCompound [style = dotted; label = "100 DarkMagic\n30 Silver\n50 Meat\n20 Bone";];
@@ -208,16 +306,16 @@ digraph state_graph {
   
   // Hexed Foam
   FizzyFoam -> HexedFoam [style = dotted; label = "100 DarkMagic\n50 Toxic\n30 Silver";];
-  PlantExtractBase -> HexedFoam [style = dotted; label = "80 DarkMagic\n50 Helium\n30 Air\n40 Oxygen";];
-  LethalLiquid -> HexedFoam [style = dotted; label = "90 DarkMagic\n80 Helium\n70 WindMagic";];
-  DrowsyDraught -> HexedFoam [style = dotted; label = "50 Toxic\n50 Meat\n80 Helium\n50 WindMagic";];
+  PlantExtractBase -> HexedFoam [style = dotted; label = "80 DarkMagic\n50 Gas\n30 Air\n40 Oxygen";];
+  LethalLiquid -> HexedFoam [style = dotted; label = "90 DarkMagic\n80 Gas\n70 WindMagic";];
+  DrowsyDraught -> HexedFoam [style = dotted; label = "50 Toxic\n50 Meat\n80 Gas\n50 WindMagic";];
   HexedFoam -> SinisterSolution [color = black; label = "60 DarkMagic\n30 Clay\n50 Bone";];
   
   // Vile Vapors
   CondensingConcoction -> VileVapors [style = dotted; label = "80 Oil\n100 Meat\n10 Plastic\n50 Meat";];
   MinimizingMix -> VileVapors [style = dotted; label = "50 Stone\n30 Clay\n80 Meat\n20 WindMagic";];
   
-  VileVapors -> FloatingBubbles [style = dotted; label = "100 LightMagic\n80 Helium\n100 Air";];
+  VileVapors -> FloatingBubbles [style = dotted; label = "100 LightMagic\n80 Gas\n100 Air";];
   VileVapors -> CondensingConcoction [style = teal; label = "150 Concrete\n100 Stone\n30 Clay\n100 EarthMagic";];
   
   // Evil Elixer
@@ -251,5 +349,5 @@ digraph state_graph {
   CharmedFroth -> BubblingBrew [style = dotted; label = "50 Lava\n80 FireMagic\n60 Sand";];
   CharmedFroth -> ChaoticCompound [style = dotted; label = "50 Plastic\n30 Fruit\n40 Meat\n20 Glass\n40 Silver";];
   CharmedFroth -> TranslucentTonic [style = dotted; label = "150 Air\n100 LightMagic\n40 Gemstone";];
-  CharmedFroth -> LiftingLiquid [style = dotted; label = "80 Helium\n100 WindMagic\n150 Air\n20 Tree";];
+  CharmedFroth -> LiftingLiquid [style = dotted; label = "80 Gas\n100 WindMagic\n150 Air\n20 Tree";];
 }

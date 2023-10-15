@@ -95,11 +95,8 @@ Each state has a set of transitions that will be taken once the cauldron has the
 
 table hanging potion fix
 
-mehr silber
 mehr flower (flower pack)
 mehr transitions
-mehr sticky
-mehr materialien
 
 quest difficulty
 
