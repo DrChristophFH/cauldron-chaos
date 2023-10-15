@@ -101,13 +101,7 @@ mehr transitions
 mehr sticky
 mehr materialien
 
-success reset
 quest difficulty
-spalsh sound
-game over state
-overflow condition
-game over text
-reset knopf
 
 --- Needs Fix ---
 

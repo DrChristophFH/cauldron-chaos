@@ -75,6 +75,7 @@ public class QuestManager : MonoBehaviour, IObserver<CauldronState> {
 
   private void GenerateNewRandomQuest() {
     int randomIndex = UnityEngine.Random.Range(0, quests.Count);
+    cauldron.Reset();
     currentQuest = quests[randomIndex];
     AudioHelper.PlayClipAtPointWithSettings(newQuestSound, transform.position);
     speaker.Speak(currentQuest.QuestName);

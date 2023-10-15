@@ -7,6 +7,9 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
 
   [SerializeField]
   private CauldronState state;
+  [SerializeField]
+  private CauldronState initialState;
+  public CauldronState InitialState => initialState;
 
   [SerializeField]
   private Vector3 offset = new Vector3(0, 0.1f, 0);
@@ -37,8 +40,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   private void Start() {
     liquid = content.GetComponent<Renderer>().material;
     smokeParticles = GetComponent<ParticleSystem>();
-    ApplySmokeConfig(state.SmokeConfig);
-    ApplyContentConfig(state.ContentConfig);
+    Reset();
   }
 
   IDisposable IObservable<CauldronState>.Subscribe(IObserver<CauldronState> observer) {
@@ -80,6 +82,14 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
     PlayTransitionPuff();
     ApplySmokeConfig(destination.SmokeConfig);
     ApplyContentConfig(destination.ContentConfig);
+    Notify();
+  }
+
+  public void Reset() {
+    state = initialState;
+    ApplySmokeConfig(state.SmokeConfig);
+    ApplyContentConfig(state.ContentConfig);
+    materials.Clear();
     Notify();
   }
 
