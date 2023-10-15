@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 699071417224756429}
   - component: {fileID: 6610311388222102346}
   m_Layer: 0
-  m_Name: Iron Bar
+  m_Name: Silver Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8563c4b8839d28f42ae20df91e65222f, type: 2}
+  - {fileID: 2100000, guid: fd7bea05d0963ad4188a7e0c7ab54ea0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -233,12 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Iron Bar
+  ingredientName: Silver Bar
   parts:
-  - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
-    Amount: 45
-  - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
-    Amount: 5
+  - Material: {fileID: 11400000, guid: 9becdc13c693c124fb7232aea8459ec4, type: 2}
+    Amount: 50
 --- !u!64 &6610311388222102346
 MeshCollider:
   m_ObjectHideFlags: 0

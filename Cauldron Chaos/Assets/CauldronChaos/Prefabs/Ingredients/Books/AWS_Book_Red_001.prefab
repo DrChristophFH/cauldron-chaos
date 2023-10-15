@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5108403651076460236
+--- !u!1 &842231776819953982
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,28 +8,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5597801312000988278}
-  - component: {fileID: 8791230121773620179}
-  - component: {fileID: 6765618843979558681}
-  - component: {fileID: 10574114849289236}
-  - component: {fileID: 7166391117343826719}
-  - component: {fileID: -3484003838852744917}
-  - component: {fileID: 699071417224756429}
-  - component: {fileID: 6610311388222102346}
+  - component: {fileID: 70903081752468356}
+  - component: {fileID: 3986880218460132385}
+  - component: {fileID: 1202682267790074091}
+  - component: {fileID: 6443192961506200882}
+  - component: {fileID: -8358781341536524296}
+  - component: {fileID: -6650550091065559279}
+  - component: {fileID: 2854729520842102956}
+  - component: {fileID: -7696736982527290239}
   m_Layer: 0
-  m_Name: Iron Bar
+  m_Name: AWS_Book_Red_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5597801312000988278
+--- !u!4 &70903081752468356
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
@@ -38,21 +38,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8791230121773620179
+--- !u!33 &3986880218460132385
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
-  m_Mesh: {fileID: -5999150836873101527, guid: 0948094890e6c8446a54d0cd3312fc33, type: 3}
---- !u!23 &6765618843979558681
+  m_GameObject: {fileID: 842231776819953982}
+  m_Mesh: {fileID: -3994983862685059074, guid: 397cd9dc35572214db5ce8c22648c883, type: 3}
+--- !u!23 &1202682267790074091
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8563c4b8839d28f42ae20df91e65222f, type: 2}
+  - {fileID: 2100000, guid: 7a63a71a0424f6b47bfa7203f359dece, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,13 +88,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &10574114849289236
+--- !u!65 &6443192961506200882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842231776819953982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18460526, y: 0.24700806, z: 0.06744431}
+  m_Center: {x: 0, y: 0.12350404, z: 0}
+--- !u!114 &-8358781341536524296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
@@ -140,13 +161,13 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!54 &7166391117343826719
+--- !u!54 &-6650550091065559279
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -167,13 +188,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-3484003838852744917
+--- !u!114 &2854729520842102956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
@@ -221,43 +242,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
---- !u!114 &699071417224756429
+--- !u!114 &-7696736982527290239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
+  m_GameObject: {fileID: 842231776819953982}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Iron Bar
+  ingredientName: Book
   parts:
-  - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
-    Amount: 45
-  - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
-    Amount: 5
---- !u!64 &6610311388222102346
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108403651076460236}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5999150836873101527, guid: 0948094890e6c8446a54d0cd3312fc33, type: 3}
+  - Material: {fileID: 11400000, guid: afd31cdaab7c6b74eb796397b9c435b2, type: 2}
+    Amount: 15
+  - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
+    Amount: 20

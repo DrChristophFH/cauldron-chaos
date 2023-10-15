@@ -10,6 +10,10 @@ public class InspectionStation : MonoBehaviour {
   private Speaker speaker;
   [SerializeField]
   private GameObject inspectParticles;
+  [SerializeField] 
+  private GameObject hintMarker;
+  [SerializeField]
+  private float hintMarkerRotationSpeed = 0.1f;
 
   [SerializeField]
   private string inspectionText = "Inspecting...";
@@ -25,11 +29,18 @@ public class InspectionStation : MonoBehaviour {
     inspectParticles.SetActive(false);
   }
 
+  private void Update() {
+    if (hintMarker.activeSelf) {
+      hintMarker.transform.Rotate(Vector3.up, hintMarkerRotationSpeed * Time.deltaTime);
+    }
+  }
+
   private async void OnTriggerEnter(Collider other) {
     if (isInspecting) {
       return;
     }
     if (other.gameObject.TryGetComponent(out Ingredient ingredient)) {
+      hintMarker.SetActive(false);
       isInspecting = true;
       AudioHelper.PlayClipAtPointWithSettings(inspectSound, transform.position);
       inspectParticles.SetActive(true);
