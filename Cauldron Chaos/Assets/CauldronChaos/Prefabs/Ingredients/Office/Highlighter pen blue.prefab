@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9140468113378365285}
   - component: {fileID: -7568998148942239460}
   - component: {fileID: -356327614233792787}
-  - component: {fileID: -366592106402417282}
   - component: {fileID: 8798992619896789443}
   - component: {fileID: 8605958566107542750}
   m_Layer: 0
@@ -172,20 +171,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
---- !u!114 &-366592106402417282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070457540493082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: 
-  parts: []
 --- !u!65 &8798992619896789443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -219,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Highlighter Pen
   parts:
   - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
     Amount: 20

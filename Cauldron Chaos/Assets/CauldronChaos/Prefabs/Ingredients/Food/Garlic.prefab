@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1536287150241251338}
   - component: {fileID: 3653838011079095488}
   - component: {fileID: 2451417514504136544}
-  - component: {fileID: -2346497324680194567}
   - component: {fileID: 6415520009318598014}
   - component: {fileID: -7550330905802846228}
   - component: {fileID: 2899303172221333311}
@@ -111,20 +110,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6334682926148242557, guid: 539b824e5d1dcba408c76f47bdedf268, type: 3}
---- !u!114 &-2346497324680194567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005579080467731733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: 
-  parts: []
 --- !u!114 &6415520009318598014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Garlic
   parts:
   - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
     Amount: 25

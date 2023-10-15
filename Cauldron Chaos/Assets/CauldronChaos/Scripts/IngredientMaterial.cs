@@ -35,5 +35,9 @@ public class IngredientMaterial : ScriptableObject {
   public void ClearChildren() {
     Children.Clear();
   }
+
+  public override string ToString() {
+    return name;
+  }
 }
 

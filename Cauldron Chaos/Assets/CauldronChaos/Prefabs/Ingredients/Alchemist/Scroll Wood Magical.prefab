@@ -234,11 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Fancy Scroll on a Stick
   parts:
   - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
     Amount: 20
-  - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+  - Material: {fileID: 11400000, guid: 2503a29acb48ef94eb70c2a2d17aadd9, type: 2}
     Amount: 30
   - Material: {fileID: 11400000, guid: 65a8d472b4282b842bc337427502a5f4, type: 2}
     Amount: 10

@@ -254,9 +254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Chilli Juice
   parts:
   - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
     Amount: 20
-  - Material: {fileID: 11400000, guid: 09b501223e872fa469662308b493ea64, type: 2}
+  - Material: {fileID: 11400000, guid: c600ad16cc52b2e4bb96a45f7a2b0a58, type: 2}
+    Amount: 20
+  - Material: {fileID: 11400000, guid: bd58f67857fe08b4b9908be2ebf50acf, type: 2}
     Amount: 20

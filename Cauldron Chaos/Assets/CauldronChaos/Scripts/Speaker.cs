@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using TMPro;
 
@@ -9,7 +10,7 @@ public class Speaker : MonoBehaviour {
   [SerializeField]
   private TextMeshPro textMesh;
   [SerializeField]
-  private float charDelay = 0.1f;
+  private float defaultCharDelay = 0.1f;
   [SerializeField]
   private ParticleSystem particles;
   [SerializeField]
@@ -17,15 +18,28 @@ public class Speaker : MonoBehaviour {
 
   private string text;
 
-  public void Speak(string text) {
+  private TaskCompletionSource<bool> tcs;
+
+  private void Start() {
+    particles.Stop();
+    textMesh.text = "";
+  }
+
+  public Task Speak(string text) {
+    return Speak(text, defaultCharDelay);
+  }
+
+  public Task Speak(string text, float charDelay) {
     this.text = text;
     textMesh.text = "";
-    StartCoroutine(SpeakCoroutine());
+    tcs = new TaskCompletionSource<bool>();
+    StartCoroutine(SpeakCoroutine(charDelay));
+    return tcs.Task;
   }
 
   public void MoveTo(string positionName) {
     var targetPosition = narrationPositions.Find(n => n.positionName == positionName);
-    
+
     if (targetPosition != null) {
       transform.position = targetPosition.position;
       transform.rotation = targetPosition.rotation;
@@ -34,11 +48,12 @@ public class Speaker : MonoBehaviour {
     }
   }
 
-  private IEnumerator SpeakCoroutine() {
+  private IEnumerator SpeakCoroutine(float charDelay) {
     particles.Play();
     foreach (char c in text) {
       textMesh.text += c;
       yield return new WaitForSeconds(charDelay);
     }
+    tcs.SetResult(true);
   }
 }

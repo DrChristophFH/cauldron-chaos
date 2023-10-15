@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: -1000588984240026490}
   - component: {fileID: -7565521237019690179}
   - component: {fileID: 32896907284613825}
-  - component: {fileID: 752656788916525798}
   m_Layer: 0
   m_Name: Copper  Bar
   m_TagString: Untagged
@@ -234,8 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
-  parts: []
+  ingredientName: Copper  Bar
+  parts:
+  - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
+    Amount: 50
 --- !u!64 &32896907284613825
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -258,21 +259,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7196335917324490918, guid: 2ebf3d20a3295ad43a68f6094c6c7613, type: 3}
---- !u!114 &752656788916525798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7970336598268413638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientName: 
-  parts:
-  - Material: {fileID: 11400000, guid: 60a616cf87d4e8a41be7a4f51cf178d2, type: 2}
-    Amount: 40
-  - Material: {fileID: 11400000, guid: b2de110b496369749b8f176e07b21958, type: 2}
-    Amount: 10

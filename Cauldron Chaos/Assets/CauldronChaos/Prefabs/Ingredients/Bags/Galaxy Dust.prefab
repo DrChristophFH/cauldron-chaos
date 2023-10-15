@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Galaxy Dust
   parts:
   - Material: {fileID: 11400000, guid: afd31cdaab7c6b74eb796397b9c435b2, type: 2}
     Amount: 20
@@ -245,7 +245,7 @@ MonoBehaviour:
   - Material: {fileID: 11400000, guid: 6312118c458ac8f4cabc7df35dea1103, type: 2}
     Amount: 35
   - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
-    Amount: 25
+    Amount: 10
 --- !u!64 &4610439207568546198
 MeshCollider:
   m_ObjectHideFlags: 0

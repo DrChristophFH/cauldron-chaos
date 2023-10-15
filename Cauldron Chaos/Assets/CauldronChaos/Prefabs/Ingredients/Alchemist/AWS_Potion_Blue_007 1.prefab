@@ -233,12 +233,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44775c54683876b40a2c2f3b909f870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Dirty Water
   parts:
   - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
     Amount: 20
   - Material: {fileID: 11400000, guid: b4819f6f16d60ab40a8c494345a4ba88, type: 2}
     Amount: 20
+  - Material: {fileID: 11400000, guid: 7f91e5ba40125204c9adb67c3b9d8fe0, type: 2}
+    Amount: 5
 --- !u!64 &-7777873125626139833
 MeshCollider:
   m_ObjectHideFlags: 0
