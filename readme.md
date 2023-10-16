@@ -69,38 +69,33 @@ Each state has a set of transitions that will be taken once the cauldron has the
 --- Technical ---
 
 - [x] Create Cauldron State System
-  - [x] Visual Feedback: Entry, During (Exit uniform?) CD
-  - [ ] Audio Feedback: Entry, During CD
-  - [ ] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.) CD
-- [ ] Add sound effects (music, ingredient into cauldron) CD
-- [ ] Create small task system ??
+  - [x] Visual Feedback: Entry, During (Exit uniform?) 
+  - [x] Cauldron Effects: Entry, During (Physics forces, spawn stuff etc.) 
+- [x] Add sound effects (music, ingredient into cauldron) 
 
 --- Gameplay ---
 
-- [ ] Populate Level with ingredients CD/CE
-- [x] Fully create all materials CE
-  - [x] Hierarchy CE
-- [ ] Configure Ingredient stats CD/CE
-  - [ ] Balance
+- [x] Populate Level with ingredients 
+- [x] Fully create all materials 
+  - [x] Hierarchy 
+- [x] Configure Ingredient stats 
 - [x] Build States and Transitions
-- [ ] Create Player 2 Book
 
 --- Polish ---
 
-- [ ] Add physics interactions to world objects
-  - [ ] doors (circular drive or joints)
-  - [ ] drawers (linear drives)
-  - [ ] potions from ceiling(joints?)
+- [x] Add physics interactions to world objects
+  - [x] doors (circular drive or joints)
+  - [x] drawers (linear drives)
+  - [x] potions from ceiling(joints?)
 
+--- Additions ---
 
-table hanging potion fix
-
-mehr flower (flower pack)
-mehr transitions
-
-quest difficulty
+- [x] Ingredient Inspect Station
 
 --- Needs Fix ---
 
 - [ ] Inspect station registers ingredient on pick up again
-- [ ] verdeckte schublade theke
+- [ ] reset ingredient (rare)
+- [ ] show material graph table for VR player
+- [ ] select quests based on difficulty
+- [ ] more transitions

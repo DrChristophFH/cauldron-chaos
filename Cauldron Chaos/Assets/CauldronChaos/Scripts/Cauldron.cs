@@ -57,6 +57,10 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
   }
 
   public void AddPart(Part part) {
+    if (state.Equals(overflowState)) {
+      return;
+    }
+
     foreach (IngredientMaterial material in part.Material.Affected()) {
       Materials.TryGetValue(material, out int current);
       Materials[material] = current + part.Amount;
@@ -82,6 +86,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
     PlayTransitionPuff();
     ApplySmokeConfig(destination.SmokeConfig);
     ApplyContentConfig(destination.ContentConfig);
+    Debug.Log($"Transitioned to {state.name}");
     Notify();
   }
 
@@ -90,6 +95,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
     ApplySmokeConfig(state.SmokeConfig);
     ApplyContentConfig(state.ContentConfig);
     materials.Clear();
+    Debug.Log($"Resetting to {state.name}");
     Notify();
   }
 
