@@ -24,10 +24,34 @@
 \usepackage{cite}                      % needed to automatically sort the references
 \usepackage{tabu}                      % only used for the table example
 \usepackage{booktabs}                  % only used for the table example
-\usepackage{tikz}
-\usetikzlibrary{trees}
-\usepackage{dot2texi}
+\usepackage{listings}
+\usepackage{xcolor}  % for custom colors
 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=mystyle}
 
 %% If you are submitting a paper to a conference for review with a double
 %% blind reviewing process, please replace the value ``0'' below with your
@@ -66,18 +90,18 @@
 
 \maketitle
 
-This paper 
+This paper
 
 \section{Design}
 
-When designing a VR game it is crucial to understand the inherent nature of the medium. 
+When designing a VR game it is crucial to understand the inherent nature of the medium.
 By addressing the strengths and weaknesses of VR already in the design phase, we can
 avoid many of the pitfalls that plague VR games.
 
 \subsection{Possibilities are Restrictions}
 
-The HTC Vive features a vast set of interactions. Controllers, buttons, touchpads, all fully tracked. 
-Although this is a great strength, it also means that the player has a lot of freedom. 
+The HTC Vive features a vast set of interactions. Controllers, buttons, touchpads, all fully tracked.
+Although this is a great strength, it also means that the player has a lot of freedom.
 
 Often, freedom leads to confusion. To counteract this the decision was made not to limit the player,
 but to engineer towards their intuition and expectations. Leading to the following design decisions:
@@ -90,10 +114,10 @@ but to engineer towards their intuition and expectations. Leading to the followi
 
 \subsection{Core Gameplay Loop}
 
-The game is quite simple to learn. Throw ingredients into the cauldron in the correct order to create the 
+The game is quite simple to learn. Throw ingredients into the cauldron in the correct order to create the
 desired potion. One player is the alchemist (in VR) and the other is the assistant (on the computer).
 
-By navigating through a brewing graph the assistant can find out which ingredients are needed and 
+By navigating through a brewing graph the assistant can find out which ingredients are needed and
 in which order. The alchemist can then search for the ingredients in the room and throw them into the
 cauldron.
 
@@ -102,7 +126,10 @@ cauldron.
 Every ingredient is made up of \emph{parts}. Each part has a \emph{material} and an \emph{amount}. Together they
 make up the composition of the ingredient.
 
-Materials follow a hierarchy. An example provides figure \ref{fig:MaterialHierarchyExample}.
+Materials follow a hierarchy. An example provides figure \ref{fig:MaterialHierarchyExample}. This means that
+50 Oil isn't just 50 Oil, but also 50 Liquid and 50 Base. Important to note is that consuming a material also
+consumes the same amount of all its parent materials. An intended side effect of this is that consuming
+from a material higher up in the hierarchy decreases the root material, while maintaining the material of all its children.
 
 \begin{figure}[ht]
   \centering
@@ -121,7 +148,7 @@ Materials follow a hierarchy. An example provides figure \ref{fig:MaterialHierar
 \end{figure}
 
 The alchemist is immediately thrown into the game. Instinctively, the first thing they will do is
-\textbf{orientate themselves}. This is why the game starts with the alchemist standing in the middle of the room as 
+\textbf{orientate themselves}. This is why the game starts with the alchemist standing in the middle of the room as
 seen in figure \ref{fig:InitialView}.
 
 After 5 seconds an \textbf{audible and visual cue} delivers the first task. After communicating with the assistant
@@ -138,34 +165,91 @@ his curiosity will lead him to try and interact with the \textbf{Ingredient Insp
 
 \section{Implementation}
 
-To keep track of the materials, states and transitions, 
+States and ingredient materials are implemented as Unity's \texttt{ScriptableObjects}.
+
+To keep track of the materials, states and transitions, they are tracked in a .dot file. By using a simple .dot parser
+and some custom editor scripts, the graphs are set up in Unity automatically.
 
 \subsection{Dot Parser}
 
+The .dot parser is kept quite simple and is based mainly on the three regular expressions shown in listing \ref{lst:RegexPatterns}.
+
+\begin{lstlisting}[caption=Regex Patterns, label=lst:RegexPatterns]
+  (?:\n *)(\w+)\s*(?:\[(.*?)\])?; //nodes
+  (\w+)\s*->\s*(\w+)\s*(?:\[(.*?)\])?; //edges
+  (\w+)\s*=\s*(.*?); //attributes
+\end{lstlisting}
+
+The parser then returns a simple graph data structure.
+
 \subsection{Ingredient Materials}
 
-\subsection{Cauldron State Graph}
+Ingredient materials have a name, a parent material and a list of child materials. This allows navigating
+the material hierarchy in both directions.
 
-\subsection{Ingredients}
+\subsection{Cauldron States}
+
+The cauldron state graph is a directed graph with states as nodes and transitions as edges. Each state holds:
+
+\begin{itemize}
+  \item A list of \texttt{CauldronTransitions} that lead to other states
+  \item A \texttt{CauldronContentConfig} that holds configuration for the cauldron content shader
+  \item A \texttt{CauldronSmokeConfig} that holds configuration for the cauldron smoke particle system
+\end{itemize}
+
+These three components are all just \texttt{Serializable} classes as they are not reused anywhere else outside
+their state.
+
+\subsection{Cauldron Transitions}
+
+The transitions are defined by a set of required parts (materials and amounts) and a destination state. Using a
+simple function that checks if the cauldron contains the required parts, the parent state greedily selects the
+first transition that is valid.
+
+\subsection{Cauldron}
+
+The cauldron is in essence just a map of materials to amounts. Whenever an ingredient is thrown into the cauldron
+the amount of the materials is increased according to the parts and the material hierarchy. The cauldron also has
+a current state that is checked for transitions whenever an ingredient is added.
+
+The cauldron implements the \texttt{IObservable} interface and notifies all observers whenever the state changes.
+
+The cauldron also provides functions that apply \texttt{CauldronContentConfig} and \texttt{CauldronSmokeConfig} to
+the shader and particle system.
 
 \subsection{Cauldron Content Shader}
 
 Shader Explanation
 
+\subsection{Ingredients}
+
+Ingredients are \texttt{MonoBehaviour}s that have a name and a list of parts. The script requires a \texttt{Throwable}
+component from the SteamVR plugin.
+
 \subsection{Ingredient Inspect Station}
 
-Speaker
+To allow the alchemist to inspect ingredients and their composition the \texttt{IngredientInspectStation} is used.
+Using a trigger area the station detects when an ingredient is placed on it. Displaying the ingredient's name and
+composition is done via a \texttt{TextMeshPro} component. To animate the text a simple coroutine is used.
 
 \subsection{Audio System}
 
-Pooling and stuff
+To make playing audio clips in 3D space easier, a simple audio manager and helper class is used. The audio manager
+has a pool of \texttt{AudioSource}s that can be used to play audio clips. The helper class provides a simple interface
+to play audio clips at a given position.
 
 \section{Stumbling Blocks}
 
 \subsection{SteamVR Don't Destroy On Load}
 
+The SteamVR player prefab comes standard with the \emph{DontDestroyOnLoad} flag set. Together with default Throwable setting
+of not restoring the parent on release, this leads to the duplication of the player and everything he held at some point when
+reloaing the scene.
+
+This was fixed by setting the \emph{Do Not Destroy} flag to false in \texttt{Player -> SteamVRObjects -> [SteamVR]}.
+
 \acknowledgments{
-The author wishes to thank Schmidt Alexander, Schachinger Julian and Unterberger Bernhard for testing and 
-providing valuable feedback.}
+  The author wishes to thank Schmidt Alexander, Schachinger Julian and Unterberger Bernhard for testing and
+  providing valuable feedback.}
 
 \end{document}
