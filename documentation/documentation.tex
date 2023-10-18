@@ -83,7 +83,7 @@ Often, freedom leads to confusion. To counteract this the decision was made not 
 but to engineer towards their intuition and expectations. Leading to the following design decisions:
 
 \begin{itemize}
-  \item \textbf{everything} should be interactable
+  \item \textbf{everything} the player expects to be interactable should be interactable
   \item controls should be intuitive and minimal
   \item the player should be able to move around freely
 \end{itemize}
@@ -102,7 +102,7 @@ cauldron.
 Every ingredient is made up of \emph{parts}. Each part has a \emph{material} and an \emph{amount}. Together they
 make up the composition of the ingredient.
 
-Materials follow a hierarchy. An example provides \ref{fig:MaterialHierarchyExample}.
+Materials follow a hierarchy. An example provides figure \ref{fig:MaterialHierarchyExample}.
 
 \begin{figure}[ht]
   \centering
@@ -136,8 +136,36 @@ problem: "How do I know what to throw into the cauldron?".
 While working out what materials are needed, the alchemist needs to scout the house for ingredients. This is where
 his curiosity will lead him to try and interact with the \textbf{Ingredient Inspect Station}.
 
+\section{Implementation}
+
+To keep track of the materials, states and transitions, 
+
+\subsection{Dot Parser}
+
+\subsection{Ingredient Materials}
+
+\subsection{Cauldron State Graph}
+
+\subsection{Ingredients}
+
+\subsection{Cauldron Content Shader}
+
+Shader Explanation
+
+\subsection{Ingredient Inspect Station}
+
+Speaker
+
+\subsection{Audio System}
+
+Pooling and stuff
+
+\section{Stumbling Blocks}
+
+\subsection{SteamVR Don't Destroy On Load}
+
 \acknowledgments{
-The authors wish to thank A, B, and C. This work was supported in part by
-a grant from XYZ.}
+The author wishes to thank Schmidt Alexander, Schachinger Julian and Unterberger Bernhard for testing and 
+providing valuable feedback.}
 
 \end{document}
