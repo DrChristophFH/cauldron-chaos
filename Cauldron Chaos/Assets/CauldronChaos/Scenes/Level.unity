@@ -14216,6 +14216,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1419604241}
     m_Modifications:
+    - target: {fileID: 3327122439107613590, guid: 8241f7b6208f5f143b6d03a0fceaa79a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4da11bf3e331e3418cb5ab60d081833, type: 2}
     - target: {fileID: 3831626822006747715, guid: 8241f7b6208f5f143b6d03a0fceaa79a, type: 3}
       propertyPath: m_Name
       value: AWS_Crosier_004
@@ -53333,7 +53337,7 @@ Light:
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0.4
-    m_NearPlane: 0.1
+    m_NearPlane: 0.05
     m_CullingMatrixOverride:
       e00: 1
       e01: 0

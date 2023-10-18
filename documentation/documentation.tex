@@ -165,7 +165,15 @@ his curiosity will lead him to try and interact with the \textbf{Ingredient Insp
 
 \section{Implementation}
 
-States and ingredient materials are implemented as Unity's \texttt{ScriptableObjects}.
+States and ingredient materials are implemented as Unity's \texttt{ScriptableObjects}. Figure \ref{fig:ClassDiagram} 
+shows the class diagram of the most important classes.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.45\textwidth]{pictures/ClassDiagram.png}
+  \caption{Class diagram of the most important classes.}
+  \label{fig:ClassDiagram}
+\end{figure}
 
 To keep track of the materials, states and transitions, they are tracked in a .dot file. By using a simple .dot parser
 and some custom editor scripts, the graphs are set up in Unity automatically.
@@ -219,7 +227,21 @@ the shader and particle system.
 
 \subsection{Cauldron Content Shader}
 
-Shader Explanation
+For the shader a combination of different noise textures along with posterization, lerp and vertex displacement is used. 
+Figure \ref{fig:CauldronContentShader} shows the shader graph for the cauldron content shader. The waves are created
+using a gradient noise texture and the bubbles are created using an inverted voronoi noise texture.
+
+Various parameters exposed by the shader are used to configure the shader at runtime. 
+
+Vertex Displacement is done "before" posterization to avoid jumping vertices and get a smoother effect. The posterization
+gives the shader a more cartoony look fitting the low poly style of the game.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\textwidth]{pictures/Shader.png}
+  \caption{The cauldron content shader.}
+  \label{fig:CauldronContentShader}
+\end{figure}
 
 \subsection{Ingredients}
 
