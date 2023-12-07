@@ -6,6 +6,9 @@ using UnityEngine;
 public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
 
   [SerializeField]
+  private Speaker speaker;
+
+  [SerializeField]
   private CauldronState state;
   [SerializeField]
   private CauldronState initialState;
@@ -87,6 +90,7 @@ public class Cauldron : MonoBehaviour, IObservable<CauldronState> {
     ApplySmokeConfig(destination.SmokeConfig);
     ApplyContentConfig(destination.ContentConfig);
     Debug.Log($"Transitioned to {state.name}");
+    speaker.Speak(state.name, 0.4f);
     Notify();
   }
 

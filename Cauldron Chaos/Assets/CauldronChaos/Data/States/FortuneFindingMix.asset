@@ -17,6 +17,18 @@ MonoBehaviour:
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}
       Amount: 70
+  - destination: {fileID: 11400000, guid: 76842e86fe42a3b49919dc84f8a11264, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: dfca9f849e9ec3247b0a3ac286a43728, type: 2}
+      Amount: 90
+    - Material: {fileID: 11400000, guid: f758017c4dd0630438e151b273c99382, type: 2}
+      Amount: 50
+  - destination: {fileID: 11400000, guid: 0f4b8fede2bcde342ae7b7a16fd64f39, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
+      Amount: 100
+    - Material: {fileID: 11400000, guid: 6f55a3ef931911c4a850fada087844d4, type: 2}
+      Amount: 30
   - destination: {fileID: 11400000, guid: bd67266288f6afe438139e5fb8c934af, type: 2}
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 6d5ff5a145751e84795799389c1f1b50, type: 2}

@@ -21,7 +21,9 @@ public class Speaker : MonoBehaviour {
   private TaskCompletionSource<bool> tcs;
 
   private void Start() {
-    particles.Stop();
+    if (particles != null) {
+      particles.Stop();
+    }
     textMesh.text = "";
   }
 
@@ -49,7 +51,9 @@ public class Speaker : MonoBehaviour {
   }
 
   private IEnumerator SpeakCoroutine(float charDelay) {
-    particles.Play();
+    if (particles != null) {
+      particles.Play();
+    }
     foreach (char c in text) {
       textMesh.text += c;
       yield return new WaitForSeconds(charDelay);

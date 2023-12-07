@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CauldronChaos/Scenes/Level.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 41cd846a60bf95a4f9efafca38d1aa97, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8ac4086ab2fa1004e966fb572a096848, type: 2}

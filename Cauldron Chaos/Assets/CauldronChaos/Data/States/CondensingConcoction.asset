@@ -15,12 +15,20 @@ MonoBehaviour:
   transitions:
   - destination: {fileID: 11400000, guid: 3913bff73c5f3eb4085b6cfa3e161d67, type: 2}
     requiredMaterials:
-    - Material: {fileID: 11400000, guid: 4aa5626ca89566f4da226e5b0108d63e, type: 2}
+    - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
       Amount: 50
     - Material: {fileID: 11400000, guid: bd58f67857fe08b4b9908be2ebf50acf, type: 2}
       Amount: 30
     - Material: {fileID: 11400000, guid: 76df1024d41575c488283b449e9d92da, type: 2}
       Amount: 20
+  - destination: {fileID: 11400000, guid: bf2bd164c3108404eaf6b3eb6b266504, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 8e29064cb76952e42bd719582b69b687, type: 2}
+      Amount: 60
+    - Material: {fileID: 11400000, guid: 39bf6497ac36fa54fa31473e6b2fd1e4, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: 60b840fde99ae6b46a8f284898b676fc, type: 2}
+      Amount: 50
   - destination: {fileID: 11400000, guid: 42b9d008d7963fa449946238605cf26e, type: 2}
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 3c56c112e004bb54eadc52ee32d92e26, type: 2}

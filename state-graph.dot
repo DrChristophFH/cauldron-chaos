@@ -163,10 +163,10 @@ digraph state_graph {
   
   // -------------------- Cross Recipe Connections --------------------
   
-  // FourLeafFroth -> TranslucentTonic [color = purple; label = "75 Natural\n70 Metal";];
-  // FourLeafFroth -> WickedBrew [color = black; label = "150 Natural\n50 Organic";];
-  // FortuneFindingMix -> LightweightElixir [color = grey; label = "90 Plastic\n50 Plant";];
-  // FortuneFindingMix -> MuscleMassMixture [color = green; label = "100 Paper\n30 Organic";];
+  FourLeafFroth -> TranslucentTonic [color = purple; label = "75 Natural\n70 Metal";];
+  FourLeafFroth -> WickedBrew [color = black; label = "150 Natural\n50 Organic";];
+  FortuneFindingMix -> LightweightElixir [color = grey; label = "90 Plastic\n50 Plant";];
+  FortuneFindingMix -> MuscleMassMixture [color = green; label = "100 Paper\n30 Organic";];
 
   CondensingConcoction -> SinisterSolution [color = black; label = "60 DarkMagic\n30 Clay\n50 Bone";];
   CondensingConcoction -> StirringSolution [color = red; label = "30 Flammable\n20 Water";];
@@ -177,14 +177,14 @@ digraph state_graph {
   SoothingSyrup -> DandelionTea [color = gray; label = "60 Plant\n10 Acid";];
   DrowsyDraught -> StrangeBrew [style = dotted; label = "40 Sticky\n30 Oxygen";];
   // DrowsyDraught -> 
-  // SleepingDraught -> SleepingSyrup [color = black; label = "130 Sticky\n40 Dirt";];
+  SleepingDraught -> SleepingSyrup [color = black; label = "130 Sticky\n40 Dirt";];
 
   // SimmeringBroth -> 
   // SimmeringBroth ->
   // ClearBroth -> 
   // ClearBroth -> 
   // TranslucentTonic ->
-  // TranslucentTonic -> MorphingMud [color = red; label = "115 Dirt\n20 Oil";];
+  TranslucentTonic -> MorphingMud [color = red; label = "115 Dirt\n20 Oil";];
   // FadingFluid ->
   // FadingFluid ->
   // BarelyVisibleBrew ->
@@ -227,7 +227,7 @@ digraph state_graph {
   // SimmeringBroth ->
   // SimmeringBroth ->
   // StirringSolution ->
-  // StirringSolution -> SinisterSolution [color = black; label = "40 Clay\n30 Plant\n10 Artificial";];
+  StirringSolution -> SinisterSolution [color = black; label = "40 Clay\n30 Plant\n10 Artificial";];
   // PlantExtractBase ->
   // PlantExtractBase ->
   // ThickeningMixture ->
@@ -264,7 +264,7 @@ digraph state_graph {
   // SleepingSyrup ->
   // SleepingSyrup ->
   // TranquilTonic ->
-  // TranquilTonic -> SoothingSyrup [color = darkblue; label = "50 Sticky\n20 Sand";];
+  TranquilTonic -> SoothingSyrup [color = darkblue; label = "50 Sticky\n20 Sand";];
   // ComatoseConcoction ->
   // ComatoseConcoction ->
   // SuspendedAnimationSerum ->

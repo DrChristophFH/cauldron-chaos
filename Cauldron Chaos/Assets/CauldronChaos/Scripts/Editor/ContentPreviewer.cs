@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEditor;
-using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using System;
 
 public class ContentPreviewer : EditorWindow {

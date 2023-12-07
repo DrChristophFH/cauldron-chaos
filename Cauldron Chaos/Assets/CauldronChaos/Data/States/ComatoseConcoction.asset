@@ -19,6 +19,8 @@ MonoBehaviour:
       Amount: 90
     - Material: {fileID: 11400000, guid: d6e9957f5a0d9f241baa4061e307e25e, type: 2}
       Amount: 40
+    - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
+      Amount: 45
   noOverwrite: 1
   smokeConfig:
     StartLifeTime: 4

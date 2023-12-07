@@ -25,6 +25,14 @@ MonoBehaviour:
       Amount: 80
     - Material: {fileID: 11400000, guid: d95e398f51d12844d923b6fc0ccae35f, type: 2}
       Amount: 10
+  - destination: {fileID: 11400000, guid: 50d82c1f0a031e04b85c2cf303666bb5, type: 2}
+    requiredMaterials:
+    - Material: {fileID: 11400000, guid: 85f22eed517858f4c926ffa536aae398, type: 2}
+      Amount: 30
+    - Material: {fileID: 11400000, guid: cba0dfb54ade232429cbd16b1e257935, type: 2}
+      Amount: 10
+    - Material: {fileID: 11400000, guid: 7abbadf749f66294492405503b45b105, type: 2}
+      Amount: 80
   - destination: {fileID: 11400000, guid: c109de2a48cd78c43bba300e74f6d420, type: 2}
     requiredMaterials:
     - Material: {fileID: 11400000, guid: 55668c15df3f8c645864d478735ce1fd, type: 2}

@@ -2,11 +2,9 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using System;
 using State = DotParser.State;
 using Transition = DotParser.Transition;
-using UnityEditor.VersionControl;
 
 public class StateGraphParser : Editor {
 
@@ -23,18 +21,21 @@ public class StateGraphParser : Editor {
     DotParser.Graph graph = parser.Parse(path);
 
     bool keepExistingTransitions = EditorUtility.DisplayDialog("Keep Existing Transitions?", "Do you want to keep existing transitions in already known states?", "Yes", "No");
+    bool keepExistingVisuals = EditorUtility.DisplayDialog("Keep Existing Visuals?", "Do you want to keep existing visuals in already known states?", "Yes", "No");
 
-    HandleStates(graph.States, keepExistingTransitions);
+    HandleStates(graph.States, keepExistingTransitions, keepExistingVisuals);
     CheckExistingStates(graph.States);
     HandleTransitions(graph.Transitions);
   }
 
-  private static void HandleStates(List<State> states, bool keepExistingTransitions) {
+  private static void HandleStates(List<State> states, bool keepExistingTransitions, bool keepExistingVisuals) {
     Debug.Log("Found " + states.Count + " states.");
 
     foreach (State state in states) {
       CauldronState asset = TryGetStateAsset(state.Name);
-      ConfigureStateVisuals(asset, state.Properties);
+      if (!keepExistingVisuals) {
+        ConfigureStateVisuals(asset, state.Properties);
+      }
       if (!keepExistingTransitions) {
         asset.ClearTransitions();
       }
